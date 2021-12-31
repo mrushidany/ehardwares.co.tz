@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import '../../css/tailwind/ehardware.css'
 
 export default function LandingPage(){
     return (

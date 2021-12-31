@@ -1,3 +1,7 @@
 require('./bootstrap');
 
-require('./components/LandingPage');
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+
+Alpine.start();
