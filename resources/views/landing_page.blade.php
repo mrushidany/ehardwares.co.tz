@@ -8,7 +8,9 @@
         <title>ehardwares.co.tz</title>
     </head>
     <body>
-        <div id="landingPage" class="text-3xl font-bold underline"></div>
+        <div id="landingPage" class="text-3xl font-bold underline">
+
+        </div>
 
         <script src="{{ asset('js/manifest.js') }}"></script>
         <script src="{{ asset('js/vendor.js') }}"></script>
