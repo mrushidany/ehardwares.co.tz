@@ -7,6 +7,8 @@
 
             <title>{{ config('app.name') }}</title>
 
+            @include('layouts.ecommerce.stylesheets.link_stylesheets')
+
             <script>(function(w,d){!function(e,t,r,a,s){e[r]=e[r]||{},e[r].executed=[],e.zaraz={deferred:[]};var n=t.getElementsByTagName("title")[0];e[r].c=t.cookie,n&&(e[r].t=t.getElementsByTagName("title")[0].text),e[r].w=e.screen.width,e[r].h=e.screen.height,e[r].j=e.innerHeight,e[r].e=e.innerWidth,e[r].l=e.location.href,e[r].r=t.referrer,e[r].k=e.screen.colorDepth,e[r].n=t.characterSet,e[r].o=(new Date).getTimezoneOffset(),//
                 e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([t,r]),e[s].push({"zaraz.start":(new Date).getTime()});var i=t.getElementsByTagName(a)[0],o=t.createElement(a);o.defer=!0,o.src="../../cdn-cgi/zaraz/sd41d.js?"+new URLSearchParams(e[r]).toString(),i.parentNode.insertBefore(o,i)}(w,d,"zarazData","script","dataLayer");})(window,document);
             </script>
@@ -33,42 +35,44 @@
                                 </a>
                             </li>
                         </ul>
-<ul class="header-links pull-right">
-<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
-<li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
-</ul>
-</div>
-</div>
+                        <ul class="header-links pull-right">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-dollar"></i> USD
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-user-o"></i> My Account
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-
-<div id="header">
-
-<div class="container">
-
-<div class="row">
-
-<div class="col-md-3">
-<div class="header-logo">
-<a href="#" class="logo">
-<img src="img/xlogo.png.pagespeed.ic.IbZDfTEapV.png" alt="">
-</a>
-</div>
-</div>
-
-
-<div class="col-md-6">
-<div class="header-search">
-<form>
-<select class="input-select">
-<option value="0">All Categories</option>
-<option value="1">Category 01</option>
-<option value="1">Category 02</option>
-</select>
-<input class="input" placeholder="Search here">
-<button class="search-btn">Search</button>
-</form>
-</div>
-</div>
+                <div id="header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="header-logo">
+                                    <a href="#" class="logo">
+                                        <img src="img/xlogo.png.pagespeed.ic.IbZDfTEapV.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        <div class="col-md-6">
+                            <div class="header-search">
+                                <form>
+                                    <select class="input-select">
+                                        <option value="0">All Categories</option>
+                                        <option value="1">Category 01</option>
+                                        <option value="1">Category 02</option>
+                                    </select>
+                                    <input class="input" placeholder="Search here">
+                                    <button class="search-btn">Search</button>
+                                </form>
+                            </div>
+                        </div>
 
 
 <div class="col-md-3 clearfix">
