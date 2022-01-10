@@ -723,39 +723,23 @@
                                             </h4>
                                         </div>
                                     </div>
-                                    <div class="product-widget">
-                                        <div class="product-img">
-                                            <img src="img/xproduct08.png.pagespeed.ic.aaUMhbY1m8.png" alt="">
-                                        </div>
-                                        <div class="product-body">
-                                            <p class="product-category">Category</p>
-                                            <h3 class="product-name">
-                                                <a href="#">product name goes here</a>
-                                            </h3>
-                                            <h4 class="product-price">$980.00
-                                                <del class="product-old-price">$990.00</del>
-                                            </h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-widget">
-                                        <div class="product-img">
-                                            <img src="img/xproduct09.png.pagespeed.ic.ZyaawIedge.png" alt="">
-                                        </div>
-                                        <div class="product-body">
-                                            <p class="product-category">Category</p>
-                                            <h3 class="product-name">
-                                                <a href="#">product name goes here</a>
-                                            </h3>
-                                            <h4 class="product-price">$980.00
-                                                <del class="product-old-price">$990.00</del>
-                                            </h4>
-                                        </div>
-                                    </div>
                                 </div>
                             <div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="section-title">
+                        <h4 class="title">Top selling</h4>
+                        <div class="section-nav">
+                            <div id="slick-nav-4" class="products-slick-nav"></div>
+                        </div>
+                    </div>
+                    <div class="products-widget-slick" data-nav="#slick-nav-4">
+                        <div>
                             <div class="product-widget">
                                 <div class="product-img">
-                                    <img src="img/xproduct01.png.pagespeed.ic.bnOya297qz.png" alt="">
+                                    <img src="img/xproduct04.png.pagespeed.ic.X-NiSwyfSW.png" alt="">
                                 </div>
                                 <div class="product-body">
                                     <p class="product-category">Category</p>
@@ -767,203 +751,37 @@
                                     </h4>
                                 </div>
                             </div>
-
-
-<div class="product-widget">
-<div class="product-img">
-<img src="img/xproduct02.png.pagespeed.ic.0F2Q-2YhXR.png" alt="">
-</div>
-<div class="product-body">
-<p class="product-category">Category</p>
-<h3 class="product-name"><a href="#">product name goes here</a></h3>
-<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-</div>
-</div>
-
-
-<div class="product-widget">
-<div class="product-img">
-<img src="img/xproduct03.png.pagespeed.ic.-8OzpBNts2.png" alt="">
-</div>
-<div class="product-body">
-<p class="product-category">Category</p>
-<h3 class="product-name"><a href="#">product name goes here</a></h3>
-<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-<div class="col-md-4 col-xs-6">
-<div class="section-title">
-<h4 class="title">Top selling</h4>
-<div class="section-nav">
-<div id="slick-nav-4" class="products-slick-nav"></div>
-</div>
-</div>
-<div class="products-widget-slick" data-nav="#slick-nav-4">
-<div>
-
-<div class="product-widget">
-<div class="product-img">
-<img src="img/xproduct04.png.pagespeed.ic.X-NiSwyfSW.png" alt="">
-</div>
-<div class="product-body">
-<p class="product-category">Category</p>
-<h3 class="product-name"><a href="#">product name goes here</a></h3>
-<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-</div>
-</div>
-
-
-<div class="product-widget">
-<div class="product-img">
-<img src="img/xproduct05.png.pagespeed.ic.fo26rusUtM.png" alt="">
-</div>
-<div class="product-body">
-<p class="product-category">Category</p>
-<h3 class="product-name"><a href="#">product name goes here</a></h3>
-<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-</div>
-</div>
-
-
-<div class="product-widget">
-<div class="product-img">
-<img src="img/xproduct06.png.pagespeed.ic._yeq3mFhdV.png" alt="">
-</div>
-<div class="product-body">
-<p class="product-category">Category</p>
-<h3 class="product-name"><a href="#">product name goes here</a></h3>
-<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-</div>
-</div>
-
-</div>
-<div>
-
-<div class="product-widget">
-<div class="product-img">
-<img src="img/xproduct07.png.pagespeed.ic.fLNCvoVVwK.png" alt="">
-</div>
-<div class="product-body">
-<p class="product-category">Category</p>
-<h3 class="product-name"><a href="#">product name goes here</a></h3>
-<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-</div>
-</div>
-
-
-<div class="product-widget">
-<div class="product-img">
-<img src="img/xproduct08.png.pagespeed.ic.aaUMhbY1m8.png" alt="">
-</div>
-<div class="product-body">
-<p class="product-category">Category</p>
-<h3 class="product-name"><a href="#">product name goes here</a></h3>
-<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-</div>
-</div>
-
-
-<div class="product-widget">
-<div class="product-img">
-<img src="img/xproduct09.png.pagespeed.ic.ZyaawIedge.png" alt="">
-</div>
-<div class="product-body">
-<p class="product-category">Category</p>
-<h3 class="product-name"><a href="#">product name goes here</a></h3>
-<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-<div class="clearfix visible-sm visible-xs"></div>
-<div class="col-md-4 col-xs-6">
-<div class="section-title">
-<h4 class="title">Top selling</h4>
-<div class="section-nav">
-<div id="slick-nav-5" class="products-slick-nav"></div>
-</div>
-</div>
-<div class="products-widget-slick" data-nav="#slick-nav-5">
-<div>
-
-<div class="product-widget">
-<div class="product-img">
-<img src="img/xproduct01.png.pagespeed.ic.bnOya297qz.png" alt="">
-</div>
-<div class="product-body">
-<p class="product-category">Category</p>
-<h3 class="product-name"><a href="#">product name goes here</a></h3>
-<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-</div>
-</div>
-
-
-<div class="product-widget">
-<div class="product-img">
-<img src="img/xproduct02.png.pagespeed.ic.0F2Q-2YhXR.png" alt="">
-</div>
-<div class="product-body">
-<p class="product-category">Category</p>
-<h3 class="product-name"><a href="#">product name goes here</a></h3>
-<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-</div>
-</div>
-
-
-<div class="product-widget">
-<div class="product-img">
-<img src="img/xproduct03.png.pagespeed.ic.-8OzpBNts2.png" alt="">
-</div>
-<div class="product-body">
-<p class="product-category">Category</p>
-<h3 class="product-name"><a href="#">product name goes here</a></h3>
-<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-</div>
-</div>
-
-</div>
-<div>
-
-<div class="product-widget">
-<div class="product-img">
-<img src="img/xproduct04.png.pagespeed.ic.X-NiSwyfSW.png" alt="">
-</div>
-<div class="product-body">
-<p class="product-category">Category</p>
-<h3 class="product-name"><a href="#">product name goes here</a></h3>
-<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-</div>
-</div>
-
-
-<div class="product-widget">
-<div class="product-img">
-<img src="img/xproduct05.png.pagespeed.ic.fo26rusUtM.png" alt="">
-</div>
-<div class="product-body">
-<p class="product-category">Category</p>
-<h3 class="product-name"><a href="#">product name goes here</a></h3>
-<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-</div>
-</div>
-
-
-<div class="product-widget">
-<div class="product-img">
-<img src="img/xproduct06.png.pagespeed.ic._yeq3mFhdV.png" alt="">
-</div>
-<div class="product-body">
-<p class="product-category">Category</p>
-<h3 class="product-name"><a href="#">product name goes here</a></h3>
-<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-</div>
-</div>
+                        </div>
+                    <div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix visible-sm visible-xs"></div>
+        <div class="col-md-4 col-xs-6">
+            <div class="section-title">
+                <h4 class="title">Top selling</h4>
+                <div class="section-nav">
+                    <div id="slick-nav-5" class="products-slick-nav"></div>
+                </div>
+            </div>
+            <div class="products-widget-slick" data-nav="#slick-nav-5">
+                <div>
+                    <div class="product-widget">
+                        <div class="product-img">
+                            <img src="img/xproduct01.png.pagespeed.ic.bnOya297qz.png" alt="">
+                        </div>
+                        <div class="product-body">
+                            <p class="product-category">Category</p>
+                            <h3 class="product-name">
+                                <a href="#">product name goes here</a>
+                            </h3>
+                            <h4 class="product-price">$980.00
+                                <del class="product-old-price">$990.00</del>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            <div>
 
 </div>
 </div>
