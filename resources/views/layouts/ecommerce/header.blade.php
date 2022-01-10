@@ -3,10 +3,10 @@
     <div id="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 pull-left">
                     <div class="header-logo">
                         <a href="#" class="logo">
-                            <img src="img/xlogo.png.pagespeed.ic.IbZDfTEapV.png" alt="">
+                            <img src="{{ asset('ecommerce/img/ehardwares_logo.png') }}" alt="">
                         </a>
                     </div>
                 </div>

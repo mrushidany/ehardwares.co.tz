@@ -2549,11 +2549,14 @@ textarea.input {
 }
 
 .header-logo {
-    float: left
+    float: left;
+
+
 }
 
 .header-logo .logo img {
-    display: block
+    display: block;
+    object-position: left;
 }
 
 .header-search {
