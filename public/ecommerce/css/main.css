@@ -2712,7 +2712,7 @@ textarea.input {
 #navigation {
     background: #fff;
     border-bottom: 2px solid #e4e7ed;
-    border-top: 3px solid #d10024
+    border-top: 3px solid #ff6600
 }
 
 .main-nav>li+li {
@@ -2726,7 +2726,7 @@ textarea.input {
 .main-nav>li>a:hover,
 .main-nav>li>a:focus,
 .main-nav>li.active>a {
-    color: #d10024;
+    color: #ff6600;
     background-color: transparent
 }
 
@@ -2735,7 +2735,7 @@ textarea.input {
     display: block;
     width: 0%;
     height: 2px;
-    background-color: #d10024;
+    background-color: #ff6600;
     -webkit-transition: .2s all;
     transition: .2s all
 }
