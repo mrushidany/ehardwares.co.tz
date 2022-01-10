@@ -435,69 +435,84 @@
                             </ul>
                         </div>
                     </div>
-<div class="col-md-3 col-xs-6">
-<div class="footer">
-<h3 class="footer-title">Service</h3>
-<ul class="footer-links">
-<li><a href="#">My Account</a></li>
-<li><a href="#">View Cart</a></li>
-<li><a href="#">Wishlist</a></li>
-<li><a href="#">Track My Order</a></li>
-<li><a href="#">Help</a></li>
-</ul>
-</div>
-</div>
-</div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Service</h3>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#">My Account</a>
+                                </li>
+                                <li>
+                                    <a href="#">View Cart</a>
+                                </li>
+                                <li>
+                                    <a href="#">Wishlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Track My Order</a>
+                                </li>
+                                <li>
+                                    <a href="#">Help</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-footer" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <ul class="footer-payments">
+                            <li>
+                                <a href="#"><i class="fa fa-cc-visa"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-credit-card"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-cc-paypal"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-cc-mastercard"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-cc-discover"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-cc-amex"></i></a>
+                            </li>
+                        </ul>
+                        <span class="copyright">Copyright &copy;
+                            <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                            <script>document.write(new Date().getFullYear());</script>
+                            All rights reserved | This template is made with
+                            <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                            <a href="https://colorlib.com/" target="_blank">Colorlib
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js%2bslick.min.js.pagespeed.jc.3oMYTFFUTv.js"></script><script>eval(mod_pagespeed_nePFsnc3nV);</script>
+    <script>eval(mod_pagespeed_wHSoBauwut);</script>
+    <script src="js/nouislider.min.js%2bjquery.zoom.min.js%2bmain.js.pagespeed.jc.UI7AC5_B6N.js"></script><script>eval(mod_pagespeed_WlmYdmNQnI);</script>
+    <script>eval(mod_pagespeed_HxeDIjvTXK);</script>
+    <script>eval(mod_pagespeed_m624O2n4N4);</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-</div>
-
-
-<div id="bottom-footer" class="section">
-<div class="container">
-
-<div class="row">
-<div class="col-md-12 text-center">
-<ul class="footer-payments">
-<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
-<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
-<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
-<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
-<li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
-<li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
-</ul>
-<span class="copyright">
-
-Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
-
-</span>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</footer>
-
-
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js%2bslick.min.js.pagespeed.jc.3oMYTFFUTv.js"></script><script>eval(mod_pagespeed_nePFsnc3nV);</script>
-<script>eval(mod_pagespeed_wHSoBauwut);</script>
-<script src="js/nouislider.min.js%2bjquery.zoom.min.js%2bmain.js.pagespeed.jc.UI7AC5_B6N.js"></script><script>eval(mod_pagespeed_WlmYdmNQnI);</script>
-<script>eval(mod_pagespeed_HxeDIjvTXK);</script>
-<script>eval(mod_pagespeed_m624O2n4N4);</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-</script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6c86d3c8f87b88aa","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+      gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6c86d3c8f87b88aa","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from preview.colorlib.com/theme/electro/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jan 2022 19:21:10 GMT -->
 </html>
