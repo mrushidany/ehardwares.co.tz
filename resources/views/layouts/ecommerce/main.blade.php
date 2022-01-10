@@ -337,80 +337,104 @@
                     </div>
                 </div>
                 <div class="clearfix visible-sm visible-xs"></div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="section-title">
-                            <h4 class="title">Top selling</h4>
-                            <div class="section-nav">
-                                <div id="slick-nav-5" class="products-slick-nav"></div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="section-title">
+                        <h4 class="title">Top selling</h4>
+                        <div class="section-nav">
+                            <div id="slick-nav-5" class="products-slick-nav"></div>
+                        </div>
+                    </div>
+                    <div class="products-widget-slick" data-nav="#slick-nav-5">
+                        <div>
+                            <div class="product-widget">
+                                <div class="product-img">
+                                    <img src="img/xproduct01.png.pagespeed.ic.bnOya297qz.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <p class="product-category">Category</p>
+                                    <h3 class="product-name">
+                                        <a href="#">product name goes here</a>
+                                    </h3>
+                                    <h4 class="product-price">$980.00
+                                        <del class="product-old-price">$990.00</del>
+                                    </h4>
+                                </div>
                             </div>
                         </div>
-                        <div class="products-widget-slick" data-nav="#slick-nav-5">
-                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="product-widget">
-<div class="product-img">
-<img src="img/xproduct01.png.pagespeed.ic.bnOya297qz.png" alt="">
-</div>
-<div class="product-body">
-<p class="product-category">Category</p>
-<h3 class="product-name"><a href="#">product name goes here</a></h3>
-<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
-
-
-<footer id="footer">
-
-<div class="section">
-
-<div class="container">
-
-<div class="row">
-<div class="col-md-3 col-xs-6">
-<div class="footer">
-<h3 class="footer-title">About Us</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-<ul class="footer-links">
-<li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
-<li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
-<li><a href="#"><i class="fa fa-envelope-o"></i><span class="__cf_email__" data-cfemail="ff9a929e9693bf9a929e9693d19c9092">[email&#160;protected]</span></a></li>
-</ul>
-</div>
-</div>
-<div class="col-md-3 col-xs-6">
-<div class="footer">
-<h3 class="footer-title">Categories</h3>
-<ul class="footer-links">
-<li><a href="#">Hot deals</a></li>
-<li><a href="#">Laptops</a></li>
-<li><a href="#">Smartphones</a></li>
-<li><a href="#">Cameras</a></li>
-<li><a href="#">Accessories</a></li>
-</ul>
-</div>
-</div>
-<div class="clearfix visible-xs"></div>
-<div class="col-md-3 col-xs-6">
-<div class="footer">
-<h3 class="footer-title">Information</h3>
-<ul class="footer-links">
-<li><a href="#">About Us</a></li>
-<li><a href="#">Contact Us</a></li>
-<li><a href="#">Privacy Policy</a></li>
-<li><a href="#">Orders and Returns</a></li>
-<li><a href="#">Terms & Conditions</a></li>
-</ul>
-</div>
-</div>
+    <footer id="footer">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">About Us</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-envelope-o"></i><span class="__cf_email__" data-cfemail="ff9a929e9693bf9a929e9693d19c9092">[email&#160;protected]</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Categories</h3>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#">Hot deals</a>
+                                </li>
+                                <li>
+                                    <a href="#">Laptops</a>
+                                </li>
+                                <li>
+                                    <a href="#">Smartphones</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cameras</a>
+                                </li>
+                                <li>
+                                    <a href="#">Accessories</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix  visible-xs"></div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Information</h3>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Orders and Returns</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 <div class="col-md-3 col-xs-6">
 <div class="footer">
 <h3 class="footer-title">Service</h3>
