@@ -15,8 +15,10 @@ class CreateBusinessClientsTable extends Migration
     {
         Schema::create('business_clients', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('role_user_id');
-            $table->foreign('role_user_id')->references('id')->on('role_user')->onDelete('cascade')->onUpdate('cascade');
+            $table->unsignedBigInteger('role_id');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('role_id')->references('id')->on('roles')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
             $table->softDeletesTz($column = 'deleted_at', $precision = 0);
         });
