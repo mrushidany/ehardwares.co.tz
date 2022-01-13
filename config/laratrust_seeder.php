@@ -15,17 +15,28 @@ return [
         'superadministrator' => [
             'users' => 'c,r,u,d',
             'payments' => 'c,r,u,d',
-            'profile' => 'r,u'
+            'profile' => 'r,u',
+            'hardware_categories' => 'c,r,u,d',
+            'hardware_inventories' => 'c,r,u,d',
+            'sales_discounts' => 'c,r,u,d',
+            'hardwares' => 'c,r,u,d'
         ],
         'administrator' => [
             'users' => 'c,r,u,d',
-            'profile' => 'r,u'
+            'profile' => 'r,u',
+            'hardware_categories' => 'c,r,u,d',
+            'hardware_inventories' => 'c,r,u,d',
+            'sales_discounts' => 'c,r,u,d',
+            'hardwares' => 'c,r,u,d'
+        ],
+        'owner' => [
+            'hardware_categories' => 'c,r,u,d',
+            'hardware_inventories' => 'c,r,u,d',
+            'sales_discounts' => 'c,r,u,d',
+            'hardwares' => 'c,r,u,d'
         ],
         'user' => [
             'profile' => 'r,u',
-        ],
-        'role_name' => [
-            'module_1_name' => 'c,r,u,d',
         ]
     ],
 
