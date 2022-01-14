@@ -16,7 +16,7 @@ class DashboardController extends Controller
      {
          if(Auth::user()->hasRole('super_administrator'))
          {
-            echo "Hey there were are in the dashboard ready to mingle super administratorsss";
+            return view('ecommerce.admin.super.index');
          }
 
 
