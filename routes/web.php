@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 //Landing Page Route
-Route::get('/', function () { return view('landing_page');})->name('landing_page');
+Route::get('/', function () { echo "This page is under construction .....";})->name('home');
+Route::get('/landing_page', function () { return view('landing_page');})->name('landing_page');
 
 // Dashboard Controller Routes
 Route::group(['middleware' => ['auth']], function() {
