@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdministratorController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,7 +21,9 @@ Route::get('/landing_page', function () { return view('landing_page');})->name('
 
 // Dashboard Controller Routes
 Route::group(['middleware' => ['auth']], function() {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/admin', [AdministratorController::class, 'index'])->name('admin');
+    Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
 });
 
 
