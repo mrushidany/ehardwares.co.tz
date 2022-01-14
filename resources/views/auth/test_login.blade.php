@@ -49,55 +49,64 @@
                                 </div>
                                 <div class="col-auto fs--1 text-600">
                                     <span class="mb-0 undefined">or</span>
-                                    <span><a href="register.html">Create an account</a></span>
+                                    <span>
+                                        <a href="register.html">Create an account</a>
+                                    </span>
                                 </div>
-                </div>
-                <form method="POST" action="{{ route('login') }}">
-                    @csrf
-                  <div class="mb-3">
-                      <input id="email" class="form-control @error('email') is-invalid @enderror" type="email" placeholder="Email address" value="{{ old('email') }}" required autofocus />
-                      @error('email')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                     @enderror
-                    </div>
-                  <div class="mb-3">
-                      <input id="password" class="form-control  @error('password') is-invalid @enderror" type="password" placeholder="Password" required autocomplete="current-password" />
-                      @error('password')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                      @enderror
-                    </div>
-                  <div class="row flex-between-center">
-                    <div class="col-auto">
-                      <div class="form-check mb-0">
-                          <input class="form-check-input" type="checkbox" id="remember_me" name="remember_me" checked="checked" />
-                          <label class="form-check-label mb-0" for="basic-checkbox">Remember me</label>
+                            </div>
+                            <form method="POST" action="{{ route('login') }}">
+                                @csrf
+                                <div class="mb-3">
+                                    <input id="email" class="form-control @error('email') is-invalid @enderror" type="email" placeholder="Email address" value="{{ old('email') }}" required autofocus />
+                                    @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                                <div class="mb-3">
+                                    <input id="password" class="form-control  @error('password') is-invalid @enderror" type="password" placeholder="Password" required autocomplete="current-password" />
+                                    @error('password')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                                <div class="row flex-between-center">
+                                    <div class="col-auto">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="checkbox" id="remember_me" name="remember_me" checked="checked" />
+                                                <label class="form-check-label mb-0" for="basic-checkbox">Remember me</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        @if (Route::has('password.request'))
+                                            <a class="fs--1" href="{{ route('password.request') }}">Forgot Password?</a>
+                                        @endif
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <button class="btn btn-primary d-block w-100 mt-3" type="submit" name="submit">Log in</button>
+                                </div>
+                            </form>
+                            <div class="position-relative mt-4">
+                                <hr class="bg-300" />
+                                <div class="divider-content-center">or log in with</div>
+                            </div>
+                            <div class="row g-2 mt-2">
+                                <div class="col-sm-12">
+                                    <a class="btn btn-outline-google-plus btn-sm d-block w-100" href="#">
+                                        <span class="fab fa-google-plus-g me-2" data-fa-transform="grow-8"></span> Google
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-auto">
-                        @if (Route::has('password.request'))
-                        <a class="fs--1" href="{{ route('password.request') }}">Forgot Password?</a>
-                        @endif
-                    </div>
-                  </div>
-                  <div class="mb-3"><button class="btn btn-primary d-block w-100 mt-3" type="submit" name="submit">Log in</button></div>
-                </form>
-                <div class="position-relative mt-4">
-                  <hr class="bg-300" />
-                  <div class="divider-content-center">or log in with</div>
                 </div>
-                <div class="row g-2 mt-2">
-                  <div class="col-sm-12"><a class="btn btn-outline-google-plus btn-sm d-block w-100" href="#"><span class="fab fa-google-plus-g me-2" data-fa-transform="grow-8"></span> Google</a></div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </main><!-- ===============================================-->
+    </main>
+    <!-- ===============================================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->
 
@@ -115,6 +124,6 @@
     <script src="{{ asset('ecommerce/polyfill/polyfill.min58be.js?features=window.scroll')}}"></script>
     <script src="{{ asset('ecommerce/vendors/list.js/list.min.js') }}"></script>
     <script src="{{ asset('ecommerce/assets/js/theme.js') }}"></script>
-  </body>
+</body>
 
 </html>
