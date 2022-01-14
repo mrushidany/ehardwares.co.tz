@@ -269,8 +269,8 @@
     --falcon-form-check-input-border: 1px solid var(--falcon-form-check-input-border-color);
     --falcon-form-check-input-border-color: #b6c1d2;
     --falcon-form-check-input-checked-color: #fff;
-    --falcon-form-check-input-checked-bg-color: #2c7be5;
-    --falcon-form-check-input-checked-border-color: #2c7be5;
+    --falcon-form-check-input-checked-bg-color: #FF4500;
+    --falcon-form-check-input-checked-border-color: #FF4500;
     --falcon-form-check-input-indeterminate-color: #fff;
     --falcon-form-check-input-indeterminate-bg-color: #2c7be5;
     --falcon-form-check-input-indeterminate-border-color: #2c7be5;
@@ -4137,8 +4137,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked {
-    background-color: #2c7be5;
-    border-color: #2c7be5
+    background-color: #FF4500;
+    border-color: #FF4500
 }
 
 .form-check-input:checked[type=checkbox] {
