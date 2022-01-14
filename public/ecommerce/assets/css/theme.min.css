@@ -4962,6 +4962,26 @@ fieldset:disabled .tox .tox-dialog__footer .tox-button--secondary,
     box-shadow: none
 }
 
+.btn-ehardware,
+.navbar-vertical .btn-purchase,
+.tox .tox-menu__footer .tox-button:last-child,
+.tox .tox-dialog__footer .tox-button:last-child {
+    color: #fff;
+    background-color: #FF4500;
+    border-color: #FF4500;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075)
+}
+
+.btn-ehardware:hover,
+.navbar-vertical .btn-purchase:hover,
+.tox .tox-menu__footer .tox-button:hover:last-child,
+.tox .tox-dialog__footer .tox-button:hover:last-child {
+    color: #fff;
+    background-color: #FF4500;
+    border-color: #FF4500;
+}
+
 .btn-primary,
 .navbar-vertical .btn-purchase,
 .tox .tox-menu__footer .tox-button:last-child,

@@ -85,8 +85,8 @@
                                         @endif
                                     </div>
                                 </div>
-                                <div class="mb-3">
-                                    <button class="btn btn-primary d-block w-100 mt-3" type="submit" name="submit">Log in</button>
+                                <div class="mb-3" >
+                                    <button class="btn btn-ehardware d-block w-100 mt-3" type="submit" name="submit">Log in</button>
                                 </div>
                             </form>
                             <div class="position-relative mt-4">
