@@ -10,4 +10,10 @@ class DashboardController extends Controller
      {
          $this->middleware('auth');
      }
+
+     public function index()
+     {
+         echo "Hey there were are in the dashboard ready to mingle";
+
+     }
 }
