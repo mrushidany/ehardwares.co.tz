@@ -44,14 +44,8 @@
                     <div class="card">
                         <div class="card-body p-4 p-sm-5">
                             <div class="row flex-between-center mb-2">
-                                <div class="col-auto">
+                                <div class="col-auto offset-5">
                                     <h5>Log in</h5>
-                                </div>
-                                <div class="col-auto fs--1 text-600">
-                                    <span class="mb-0 undefined">or</span>
-                                    <span>
-                                        <a href="register.html">Create an account</a>
-                                    </span>
                                 </div>
                             </div>
                             <form method="POST" action="{{ route('login') }}">
