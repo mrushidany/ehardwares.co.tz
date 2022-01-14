@@ -10,18 +10,18 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/super_admin/register', [RegisteredUserController::class, 'create'])
+Route::get('/priveledged/register', [RegisteredUserController::class, 'create'])
                 ->middleware('guest')
                 ->name('register');
 
-Route::post('/super_admin/register', [RegisteredUserController::class, 'store'])
+Route::post('/priveledged/register', [RegisteredUserController::class, 'store'])
                 ->middleware('guest');
 
-Route::get('/super_admin/login', [AuthenticatedSessionController::class, 'create'])
+Route::get('/admin/login', [AuthenticatedSessionController::class, 'create'])
                 ->middleware('guest')
                 ->name('login');
 
-Route::post('/super_admin/login', [AuthenticatedSessionController::class, 'store'])
+Route::post('/admin/login', [AuthenticatedSessionController::class, 'store'])
                 ->middleware('guest');
 
 Route::get('/forgot-password', [PasswordResetLinkController::class, 'create'])
