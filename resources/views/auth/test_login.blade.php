@@ -27,27 +27,30 @@
     <link href="{{ asset('ecommerce/assets/css/theme.min.css')}}" rel="stylesheet" id="style-default">
     <link href="{{ asset('ecommerce/assets/css/user.min.css')}}" rel="stylesheet" id="user-style-default">
 
-  </head>
+</head>
 
-  <body>
-    <!-- ===============================================-->
-    <!--    Main Content-->
-    <!-- ===============================================-->
+<body>
+   <!-- ===============================================-->
+   <!--    Main Content-->
+   <!-- ===============================================-->
     <main class="main" id="top">
-      <div class="container" data-layout="container">
-        <div class="row flex-center min-vh-100 py-6">
-          <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
-              <a style="color:orangered" class="d-flex flex-center mb-4 text-orange-600" href="{{ route('landing_page') }}">
-                <img class="me-2" src="{{ asset('ecommerce/img/icon.jpeg') }}" alt="" width="58" />
-                <span class="font-sans-serif fw-bolder fs-5">ehardwares</span>
-            </a>
-            <div class="card">
-              <div class="card-body p-4 p-sm-5">
-                <div class="row flex-between-center mb-2">
-                  <div class="col-auto">
-                    <h5>Log in</h5>
-                  </div>
-                  <div class="col-auto fs--1 text-600"><span class="mb-0 undefined">or</span> <span><a href="register.html">Create an account</a></span></div>
+        <div class="container" data-layout="container">
+            <div class="row flex-center min-vh-100 py-6">
+                <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                    <a style="color:orangered" class="d-flex flex-center mb-4 text-orange-600" href="{{ route('landing_page') }}">
+                        <img class="me-2" src="{{ asset('ecommerce/img/icon.jpeg') }}" alt="" width="58" />
+                        <span class="font-sans-serif fw-bolder fs-5">ehardwares</span>
+                    </a>
+                    <div class="card">
+                        <div class="card-body p-4 p-sm-5">
+                            <div class="row flex-between-center mb-2">
+                                <div class="col-auto">
+                                    <h5>Log in</h5>
+                                </div>
+                                <div class="col-auto fs--1 text-600">
+                                    <span class="mb-0 undefined">or</span>
+                                    <span><a href="register.html">Create an account</a></span>
+                                </div>
                 </div>
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
@@ -87,7 +90,7 @@
                   <div class="divider-content-center">or log in with</div>
                 </div>
                 <div class="row g-2 mt-2">
-                  <div class="col-sm-12"><a class="btn btn-outline-google-plus btn-sm d-block w-100" href="#"><span class="fab fa-google-plus-g me-2" data-fa-transform="grow-8"></span> google</a></div>
+                  <div class="col-sm-12"><a class="btn btn-outline-google-plus btn-sm d-block w-100" href="#"><span class="fab fa-google-plus-g me-2" data-fa-transform="grow-8"></span> Google</a></div>
                 </div>
               </div>
             </div>
