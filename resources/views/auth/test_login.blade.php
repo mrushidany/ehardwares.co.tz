@@ -57,7 +57,7 @@
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
                                 <div class="mb-3">
-                                    <input id="email" class="form-control @error('email') is-invalid @enderror" type="email" placeholder="Email address" value="{{ old('email') }}" required autofocus />
+                                    <input id="email" class="form-control @error('email') is-invalid @enderror" type="email" name="email" placeholder="Email address" value="{{ old('email') }}" required autofocus />
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -65,7 +65,7 @@
                                     @enderror
                                 </div>
                                 <div class="mb-3">
-                                    <input id="password" class="form-control  @error('password') is-invalid @enderror" type="password" placeholder="Password" required autocomplete="current-password" />
+                                    <input id="password" class="form-control  @error('password') is-invalid @enderror" type="password" name="password" placeholder="Password" required autocomplete="current-password" />
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -75,7 +75,7 @@
                                 <div class="row flex-between-center">
                                     <div class="col-auto">
                                         <div class="form-check mb-0">
-                                            <input class="form-check-input" type="checkbox" id="remember_me" name="remember_me" checked="checked" />
+                                            <input class="form-check-input" type="checkbox" id="remember_me" name="remember" checked="checked" />
                                                 <label class="form-check-label mb-0" for="basic-checkbox">Remember me</label>
                                         </div>
                                     </div>
