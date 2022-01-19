@@ -13,8 +13,8 @@
                   <!--/.bg-holder-->
                   <div class="position-relative z-index-2">
                     <div>
-                      <h3 class="text-primary mb-1">Good Afternoon, Jonathan!</h3>
-                      <p>Here’s what happening with <i style="color: blue">ehardwares.co.tz </i> today </p>
+                      <h3 class="text-primary mb-1">Good Afternoon, {{ Auth::user()->first_name }} !</h3>
+                      <p>Here’s what happening with <i style="color: orangered">ehardwares.co.tz </i> today </p>
                     </div>
                     <div class="d-flex py-3">
                       <div class="pe-3">
