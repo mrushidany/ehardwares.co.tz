@@ -11,7 +11,6 @@
     <!--    Favicons-->
     <!-- ===============================================-->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('ecommerce/img/icon.jpeg') }}">
-    <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="theme-color" content="#ffffff">
     <script src="{{ asset('ecommerce/assets/js/config.js') }}"></script>
     <script src="{{ asset('ecommerce/vendors/overlayscrollbars/OverlayScrollbars.min.js') }}"></script>
