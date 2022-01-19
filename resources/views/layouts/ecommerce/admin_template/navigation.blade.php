@@ -37,13 +37,4 @@
             <span class="toggle-line"></span>
         </span>
     </button>
-    <ul class="navbar-nav navbar-nav-icons ms-auto flex-row align-items-center">
-      <li class="nav-item dropdown"><a class="nav-link pe-0" id="navbarDropdownUser" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <div class="avatar avatar-xl">
-            <img class="rounded-circle" src="{{ asset('ecommerce/assets/img/team/5-thumb.png') }}" alt="" />
-          </div>
-        </a>
-
-      </li>
-    </ul>
   </nav>

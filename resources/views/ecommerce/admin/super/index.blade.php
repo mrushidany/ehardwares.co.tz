@@ -25,11 +25,12 @@
             </div>
           </div>
         </li>
-        <li class="nav-item dropdown"><a class="nav-link pe-0" id="navbarDropdownUser" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <div class="avatar avatar-xl">
-              <img class="rounded-circle" src="assets/img/team/3-thumb.png" alt="" />
-            </div>
-          </a>
+        <li class="nav-item dropdown">
+            <a class="nav-link pe-0" id="navbarDropdownUser" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="avatar avatar-xl">
+                  <img class="rounded-circle" src="{{ asset('ecommerce/assets/img/team/5-thumb.png') }}" alt="" />
+                </div>
+              </a>
           <div class="dropdown-menu dropdown-menu-end py-0" aria-labelledby="navbarDropdownUser">
             <div class="bg-white dark__bg-1000 rounded-2 py-2">
               <a class="dropdown-item" href="">Profile &amp; account</a>
