@@ -23,7 +23,7 @@ Route::get('/landing_page', function () { return view('landing_page');})->name('
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/admin', [AdministratorController::class, 'index'])->name('admin');
     Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-    Route::get('/admin/settings', [AdministratorController::class, 'index'])->name('settings');
+    Route::get('/admin/settings', [AdministratorController::class, 'settings'])->name('settings');
 
 });
 

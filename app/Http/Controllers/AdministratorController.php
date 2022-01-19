@@ -19,4 +19,9 @@ class AdministratorController extends Controller
             return redirect()->route('dashboard');
         }
     }
+
+    public function settings()
+    {
+
+    }
 }

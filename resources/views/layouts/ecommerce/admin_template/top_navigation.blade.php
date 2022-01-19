@@ -38,7 +38,7 @@
                 <div class="dropdown-menu dropdown-menu-end py-0" aria-labelledby="navbarDropdownUser">
                     <div class="bg-white dark__bg-1000 rounded-2 py-2">
                         <a class="dropdown-item" href="">Profile &amp; account</a>
-                        <a class="dropdown-item" href="">Settings</a>
+                        <a class="dropdown-item" href="{{ route('settings') }}">Settings</a>
                         <div class="dropdown-divider"></div>
                         <form action="{{ route('logout') }}" method="POST">
                             @csrf
