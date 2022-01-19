@@ -44,7 +44,10 @@
                             <a class="dropdown-item" href="">Profile &amp; account</a>
                             <a class="dropdown-item" href="">Settings</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="">Logout</a>
+                            <form action="{{ route('logout') }}" method="POST">
+                                @csrf
+                                <button class="dropdown-item" onclick="event.preventDefault(); this.closest('form').submit();">Logout</button>
+                            </form>
                         </div>
                     </div>
                 </li>
