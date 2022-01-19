@@ -1,6 +1,7 @@
 <!-- ===============================================-->
     <!--    JavaScripts-->
     <!-- ===============================================-->
+    <script src="{{ asset('eccomerce/js/jquery.min.js') }}"></script>
     <script src="{{ asset('ecommerce/vendors/popper/popper.min.js') }}"></script>
     <script src="{{ asset('ecommerce/vendors/bootstrap/bootstrap.min.js') }}"></script>
     <script src="{{ asset('ecommerce/vendors/anchorjs/anchor.min.js') }}"></script>
