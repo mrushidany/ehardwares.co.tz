@@ -25,8 +25,8 @@
     </main><!-- ===============================================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->
-    @include('layouts.ecommerce.admin_template.scripts')
     @include('layouts.ecommerce.admin_template.scripts_link')
+    @include('layouts.ecommerce.admin_template.scripts')
     @yield('scripts')
   </body>
 </html>

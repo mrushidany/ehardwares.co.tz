@@ -11,13 +11,13 @@
     </div>
     <div class="card-body px-0 py-0">
       <div class="table-responsive scrollbar">
-        <table class="table table-sm fs--1 mb-0 overflow-hidden">
+        <table class="table table-sm fs--1 mb-0 overflow-hidden all_users_table">
           <thead class="bg-200 text-900">
             <tr>
               <th class="sort pe-1 align-middle white-space-nowrap" data-sort="name">Name</th>
               <th class="sort pe-1 align-middle white-space-nowrap" data-sort="email">Email</th>
-              <th class="sort pe-1 align-middle white-space-nowrap" data-sort="product">Phone Number</th>
-              <th class="sort pe-1 align-middle white-space-nowrap text-center" data-sort="payment">Role</th>
+              <th class="sort pe-1 align-middle white-space-nowrap" data-sort="phone_number">Phone Number</th>
+              <th class="sort pe-1 align-middle white-space-nowrap text-center" data-sort="role">Role</th>
               <th class="no-sort pe-1 align-middle data-table-row-action"></th>
             </tr>
           </thead>
@@ -31,8 +31,15 @@
 
 @section('scripts')
 
+<script type="text/javascript">
+    $(function () {
+        var datatable = $('.all_users_table').DataTable({
+            processing: true,
+            serverSide: true,
 
+        })
+    })
 
-
+</script>
 
 @endsection
