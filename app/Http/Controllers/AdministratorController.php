@@ -32,4 +32,9 @@ class AdministratorController extends Controller
             return view('ecommerce.admin.super.settings.index')->with($data);
         }
     }
+
+    public function all_users()
+    {
+        return view('ecommerce.admin.super.settings.all_users');
+    }
 }

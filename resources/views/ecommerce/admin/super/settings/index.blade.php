@@ -12,7 +12,7 @@
                     <span class="fas fa-users text-primary fs-5"></span> &nbsp;&nbsp;
                     <div class="flex-1">
                         <h6 class="fs-0 mb-0">
-                            <a class="stretched-link" href="#!">Users</a>
+                            <a class="stretched-link" href="{{ route('all_users') }}">Users</a>
                         </h6>
                         <p class="mb-1">{{ $users }} users</p>
                     </div>
