@@ -23,4 +23,5 @@
     <link href="{{ asset('ecommerce/vendors/overlayscrollbars/OverlayScrollbars.min.css') }}" rel="stylesheet">
     <link href="{{ asset('ecommerce/assets/css/theme.min.css') }}" rel="stylesheet" id="style-default">
     <link href="{{ asset('ecommerce/assets/css/user.min.css') }}" rel="stylesheet" id="user-style-default">
+    <link rel="stylesheet" href="{{ asset('ecommerce/datatable/datatables.min.js') }}">
 

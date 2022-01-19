@@ -12,3 +12,4 @@
     <script src="{{ asset('ecommerce/polyfill/polyfill.min58be.js?features=window.scroll') }}"></script>
     <script src="{{ asset('ecommerce/vendors/list.js/list.min.js') }}"></script>
     <script src="{{ asset('ecommerce/assets/js/theme.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('ecommerce/datatable/datatables.min.js') }}"></script>
