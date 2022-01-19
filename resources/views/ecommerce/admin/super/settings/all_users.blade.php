@@ -1,30 +1,40 @@
 @extends('ecommerce.admin.super.main')
 
 @section('content')
-    <div class="card mb-3">
+       <div class="card mb-3">
         <div class="card-header">
             <div class="row flex-between-end">
                 <div class="col-auto align-self-center">
-                    <h5 class="mb-0" data-anchor="data-anchor" id="table-example">
-                        All users
-                        <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#table-example" style="padding-left: 0.375em;"></a>
-                    </h5>
+                    <h5 class="mb-0" data-anchor="data-anchor" id="card-with-background">All users</h5>
                 </div>
-
+                <div class="col-auto ms-auto">
+                    {{-- Buttons to be added --}}
+                </div>
             </div>
-            <div class="card-body pt-0">
-                <div class="table-responsive scrollbar">
-                    <table class="table table-bordered table-striped fs--1 mb-0 all_users_table">
-                        <thead class="bg-200 text-900">
-                             <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Age</th>
-                            </tr>
-                        </thead>
-                        <tbody class="list">
-                        </tbody>
-                    </table>
+        </div>
+        <div class="card-body bg-light">
+            <div class="card mb-3">
+                <div class="card-body position-relative">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card-body pt-0">
+                                <table id="example" class="table table-striped table-bordered" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
+                                            <th>Role</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
