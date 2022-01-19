@@ -2459,7 +2459,4 @@
 
     @include('layouts.ecommerce.admin_template.scripts_link');
   </body>
-
-
-<!-- Mirrored from prium.github.io/falcon/v3.4.0/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 31 Dec 2021 08:42:23 GMT -->
 </html>
