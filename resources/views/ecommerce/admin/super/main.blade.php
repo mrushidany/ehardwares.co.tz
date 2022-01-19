@@ -13,7 +13,14 @@
       <div class="container" data-layout="container">
         @include('layouts.ecommerce.admin_template.navigation')
 
-        @yield('content')
+        <div class="content">
+            @include('layouts.ecommerce.admin_template.top_navigation')
+
+            @yield('content')
+
+            @include('layouts.ecommerce.admin_template.footer')
+        </div>
+
       </div>
     </main><!-- ===============================================-->
     <!--    End of Main Content-->

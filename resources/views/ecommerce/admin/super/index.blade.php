@@ -1,8 +1,6 @@
 @extends('ecommerce.admin.super.main')
 
 @section('content')
-<div class="content">
-    @include('layouts.ecommerce.admin_template.top_navigation')
     <div class="row g-3 mb-3">
         <div class="col-xxl-6 col-xl-12">
           <div class="row g-3">
@@ -238,6 +236,5 @@
           </div>
         </div>
       </div>
-        @include('layouts.ecommerce.admin_template.footer')
-     </div>
+
 @endsection

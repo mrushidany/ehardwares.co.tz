@@ -22,6 +22,9 @@ class AdministratorController extends Controller
 
     public function settings()
     {
-
+        if(Auth::user()->hasRole('super_administrator'))
+        {
+            return view('ecommerce.admin.super.settings.index');
+        }
     }
 }
