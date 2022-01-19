@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -24,7 +25,11 @@ class AdministratorController extends Controller
     {
         if(Auth::user()->hasRole('super_administrator'))
         {
-            return view('ecommerce.admin.super.settings.index');
+            $data =
+            [
+                'users' => User::all()->count()
+            ];
+            return view('ecommerce.admin.super.settings.index')->with($data);
         }
     }
 }
