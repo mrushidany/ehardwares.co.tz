@@ -18,7 +18,7 @@
             <ul class="navbar-nav flex-column mb-3" id="navbarVerticalNav">
                 <li class="nav-item">
                     <!-- parent pages-->
-                    <a class="nav-link" href="#" aria-expanded="false">
+                    <a class="nav-link" href="{{ route('dashboard') }}" aria-expanded="false">
                         <div class="d-flex align-items-center">
                             <span class="nav-link-icon">
                                 <span class="fas fa-chart-pie"></span>
