@@ -79,9 +79,10 @@
 
 @section('scripts')
 <script type="application/javascript">
-    function save_new_user() {
-        console.log('Save button clicked');
-    }
-
+    $(document).ready(function (){
+        $('.save_new_user').on('click', function() {
+            alert('Save button is clicked!');
+        })
+    })
 </script>
 @endsection
