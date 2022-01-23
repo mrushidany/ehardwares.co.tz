@@ -47,17 +47,31 @@
                             <span class="d-none d-md-block mt-1 fs--1">Done</span>
                         </a>
                     </li>
-        </ul>
-      </div>
-      <div class="card-body py-4" id="wizard-controller">
-        <div class="tab-content">
-          <div class="tab-pane active px-sm-3 px-md-5" role="tabpanel" aria-labelledby="bootstrap-wizard-validation-tab1" id="bootstrap-wizard-validation-tab1">
-            <form class="needs-validation" novalidate="novalidate">
-              <div class="mb-3"><label class="form-label" for="bootstrap-wizard-validation-wizard-name">Name</label><input class="form-control" type="text" name="name" placeholder="John Smith" id="bootstrap-wizard-validation-wizard-name"></div>
-              <div class="mb-3"><label class="form-label" for="bootstrap-wizard-validation-wizard-email">Email*</label><input class="form-control" type="email" name="email" placeholder="Email address" pattern="^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$" required="required" id="bootstrap-wizard-validation-wizard-email" data-wizard-validate-email="true">
-                <div class="invalid-feedback">You must add email</div>
-              </div>
-              <div class="row g-2">
+                </ul>
+            </div>
+        <div class="card-body py-4" id="wizard-controller">
+            <div class="tab-content">
+                <div class="tab-pane active px-sm-3 px-md-5" role="tabpanel" aria-labelledby="bootstrap-wizard-validation-tab1" id="bootstrap-wizard-validation-tab1">
+                    <form class="needs-validation" novalidate="novalidate">
+                        <div class="mb-3">
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <label class="form-label" for="First Name">First Name</label>
+                                    <input class="form-control" type="text" name="first_name" placeholder="John" id="bootstrap-wizard-validation-wizard-name">
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label" for="Last Name">Last Name</label>
+                                    <input class="form-control" type="text" name="last_name" placeholder="Smith" id="bootstrap-wizard-validation-wizard-name">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="bootstrap-wizard-validation-wizard-email">Email*</label>
+                            <input class="form-control" type="email" name="email" placeholder="Email address" pattern="^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$" required="required" id="bootstrap-wizard-validation-wizard-email" data-wizard-validate-email="true">
+                            <div class="invalid-feedback">You must add email</div>
+                        </div>
+                        <div class="row g-2">
                 <div class="col-6">
                   <div class="mb-3"><label class="form-label" for="bootstrap-wizard-validation-wizard-password">Password*</label><input class="form-control" type="password" name="password" placeholder="Password" required="required" id="bootstrap-wizard-validation-wizard-password" data-wizard-validate-password="true">
                     <div class="invalid-feedback">Please enter password</div>
