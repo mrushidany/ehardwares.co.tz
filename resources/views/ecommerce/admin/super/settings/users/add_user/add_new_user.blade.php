@@ -52,20 +52,7 @@
         <div class="card-body py-4" id="wizard-controller">
             <div class="tab-content">
                 @include('ecommerce.admin.super.settings.users.add_user.tabs.account_tab')
-                <div class="tab-pane px-sm-3 px-md-5" role="tabpanel" aria-labelledby="bootstrap-wizard-validation-tab2" id="bootstrap-wizard-validation-tab2">
-                    <form>
-
-              <div class="mb-3"><label class="form-label" for="bootstrap-wizard-validation-gender">Gender</label><select class="form-select" name="gender" id="bootstrap-wizard-validation-gender">
-                  <option value="">Select your gender ...</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                  <option value="Other">Other</option>
-                </select></div>
-              <div class="mb-3"><label class="form-label" for="bootstrap-wizard-validation-wizard-phone">Phone</label><input class="form-control" type="text" name="phone" placeholder="Phone" id="bootstrap-wizard-validation-wizard-phone"></div>
-              <div class="mb-3"><label class="form-label" for="bootstrap-wizard-validation-wizard-datepicker">Date of Birth</label><input class="form-control datetimepicker flatpickr-input" type="text" placeholder="d/m/y" data-options="{&quot;dateFormat&quot;:&quot;d/m/y&quot;,&quot;disableMobile&quot;:true}" id="bootstrap-wizard-validation-wizard-datepicker" readonly="readonly"></div>
-              <div class="mb-3"><label class="form-label" for="bootstrap-wizard-validation-wizard-address">Address</label><textarea class="form-control" rows="4" id="bootstrap-wizard-validation-wizard-address"></textarea></div>
-            </form>
-          </div>
+                @include('ecommerce.admin.super.settings.users.add_user.tabs.roles_and_priviledges_tab')
           <div class="tab-pane px-sm-3 px-md-5" role="tabpanel" aria-labelledby="bootstrap-wizard-validation-tab3" id="bootstrap-wizard-validation-tab3">
             <form class="form-validation">
               <div class="row g-2">
