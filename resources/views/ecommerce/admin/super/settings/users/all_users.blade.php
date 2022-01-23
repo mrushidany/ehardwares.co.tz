@@ -54,11 +54,7 @@
 @section('scripts')
 
 <script type="application/javascript">
-    console.log('test javascript');
 
-    $('.all_users_table').DataTable({
-
-    });
 
 </script>
 

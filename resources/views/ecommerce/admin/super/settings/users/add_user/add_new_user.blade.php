@@ -76,3 +76,12 @@
 </div>
 </div>
 @endsection
+
+@section('scripts')
+<script type="application/javascript">
+    function save_new_user() {
+        console.log('Save button clicked');
+    }
+
+</script>
+@endsection
