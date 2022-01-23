@@ -1,4 +1,4 @@
-<div class="tab-pane px-sm-3 px-md-5" role="tabpanel" aria-labelledby="bootstrap-wizard-validation-tab2" id="bootstrap-wizard-validation-tab2">
+<div class="tab-pane px-sm-3 px-md-5" role="tabpanel" aria-labelledby="roles_and_priviledges_tab" id="roles_and_priviledges_tab">
     <form>
         <div class="mb-3">
             <label class="form-label" for="Role">Role</label>

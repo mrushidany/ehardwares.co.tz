@@ -18,7 +18,7 @@
             <div class="card-header bg-light pt-3 pb-2">
                 <ul class="nav justify-content-between nav-wizard">
                     <li class="nav-item">
-                        <a class="nav-link active fw-semi-bold" href="#bootstrap-wizard-validation-tab1" data-bs-toggle="tab" data-wizard-step="data-wizard-step">
+                        <a class="nav-link active fw-semi-bold" href="#account_tab" data-bs-toggle="tab" data-wizard-step="data-wizard-step">
                              <span class="nav-item-circle-parent">
                                  <span class="nav-item-circle">
                                     <span class="fas fa-lock"></span>
@@ -28,7 +28,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semi-bold" href="#bootstrap-wizard-validation-tab2" data-bs-toggle="tab" data-wizard-step="data-wizard-step">
+                        <a class="nav-link fw-semi-bold" href="#roles_and_priviledges_tab" data-bs-toggle="tab" data-wizard-step="data-wizard-step">
                             <span class="nav-item-circle-parent">
                                 <span class="nav-item-circle">
                                     <span class="fas fa-user"></span>
@@ -38,7 +38,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semi-bold" href="#bootstrap-wizard-validation-tab4" data-bs-toggle="tab" data-wizard-step="data-wizard-step">
+                        <a class="nav-link fw-semi-bold" href="#done_tab" data-bs-toggle="tab" data-wizard-step="data-wizard-step">
                             <span class="nav-item-circle-parent">
                                 <span class="nav-item-circle">
                                     <span class="fas fa-thumbs-up"></span>

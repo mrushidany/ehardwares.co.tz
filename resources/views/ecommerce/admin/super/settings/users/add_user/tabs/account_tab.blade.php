@@ -1,4 +1,4 @@
-<div class="tab-pane active px-sm-3 px-md-5" role="tabpanel" aria-labelledby="bootstrap-wizard-validation-tab1" id="bootstrap-wizard-validation-tab1">
+<div class="tab-pane active px-sm-3 px-md-5" role="tabpanel" aria-labelledby="account_tab" id="account_tab">
     <form class="needs-validation" novalidate="novalidate">
         <div class="row g-2">
             <div class="col-6">
