@@ -1,7 +1,7 @@
 @extends('ecommerce.admin.super.main')
 
 @section('content')
-       <div class="card mb-3">
+    <div class="card mb-3">
         <div class="card-header">
             <div class="row flex-between-end">
                 <div class="col-auto align-self-center">
@@ -18,7 +18,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="card-body pt-0">
-                                <table id="example" class="table table-striped table-bordered" style="width:100%">
+                                <table class="table table-striped table-bordered all_users_table" style="width:100%">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
