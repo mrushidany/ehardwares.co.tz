@@ -42,4 +42,9 @@ class AdministratorController extends Controller
     {
         return view('ecommerce.admin.super.settings.users.add_user.add_new_user');
     }
+
+    public function save_new_user(Request $request)
+    {
+        dd('we are in save new user method');
+    }
 }

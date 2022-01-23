@@ -26,6 +26,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/admin/settings', [AdministratorController::class, 'settings'])->name('settings');
     Route::get('/admin/settings/all_users', [AdministratorController::class, 'all_users'])->name('all_users');
     Route::get('/admin/settings/add_new_user', [AdministratorController::class, 'add_new_user'])->name('admin_add_user');
+    Route::post('admin/settings/save_new_user', [AdministratorController::class, 'save_new_user'])->name('save_new_user');
 
 
 });

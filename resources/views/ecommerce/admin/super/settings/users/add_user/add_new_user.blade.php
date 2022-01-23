@@ -1,7 +1,7 @@
 @extends('ecommerce.admin.super.main')
 
 @section('content')
-    <div class="col-lg-6 col-xl-12 col-xxl-6 h-100">
+    <div class="col-lg-6 col-xl-12 col-xxl-6 h-100 user_data">
         <div class="d-flex mb-4">
             <span class="fa-stack me-2 ms-n1">
                 <i class="fas fa-circle fa-stack-2x text-300"></i>
@@ -81,7 +81,19 @@
 <script type="application/javascript">
     $(document).ready(function (){
         $('.save_new_user').on('click', function() {
-            alert('Save button is clicked!');
+            $.ajax({
+                url: "{{ route('save_new_user') }}",
+                method: "POST",
+                data: $(".user_data").serialize(),
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                dataType: "json",
+                success: function(data) {
+                    console.log(data);
+                }
+            })
+
         })
     })
 </script>

@@ -12,6 +12,7 @@
     <!-- ===============================================-->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('ecommerce/img/icon.jpeg') }}">
     <meta name="theme-color" content="#ffffff">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <script src="{{ asset('ecommerce/assets/js/config.js') }}"></script>
     <script src="{{ asset('ecommerce/vendors/overlayscrollbars/OverlayScrollbars.min.js') }}"></script>
 
