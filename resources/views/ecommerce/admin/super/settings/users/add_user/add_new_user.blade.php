@@ -52,22 +52,9 @@
         <div class="card-body py-4" id="wizard-controller">
             <div class="tab-content">
                 @include('ecommerce.admin.super.settings.users.add_user.tabs.account_tab')
-          <div class="tab-pane px-sm-3 px-md-5" role="tabpanel" aria-labelledby="bootstrap-wizard-validation-tab2" id="bootstrap-wizard-validation-tab2">
-            <form>
-              <div class="mb-3">
-                <div class="row dz-clickable" data-dropzone="data-dropzone" data-options="{&quot;maxFiles&quot;:1,&quot;data&quot;:[{&quot;name&quot;:&quot;avatar.png&quot;,&quot;size&quot;:&quot;54kb&quot;,&quot;url&quot;:&quot;../../assets/img/team&quot;}]}">
+                <div class="tab-pane px-sm-3 px-md-5" role="tabpanel" aria-labelledby="bootstrap-wizard-validation-tab2" id="bootstrap-wizard-validation-tab2">
+                    <form>
 
-                  <div class="col-md-auto">
-                    <div class="dz-preview dz-preview-single"><div class="dz-preview-cover d-flex align-items-center justify-content-center mb-3 mb-md-0 dz-image-preview">                                  <div class="avatar avatar-4xl"><img class="rounded-circle" src="../../assets/img/team/avatar.png" alt="avatar.png" data-dz-thumbnail="data-dz-thumbnail"></div>                                  <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress=""></span></div>                                </div></div>
-                  </div>
-                  <div class="col-md">
-                    <div class="dz-message dropzone-area px-2 py-3" data-dz-message="data-dz-message">
-                      <div class="text-center"><img class="me-2" src="../../assets/img/icons/cloud-upload.svg" width="25" alt="">Upload your profile picture<p class="mb-0 fs--1 text-400">Upload a 300x300 jpg image with <br>a maximum size of 400KB</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div class="mb-3"><label class="form-label" for="bootstrap-wizard-validation-gender">Gender</label><select class="form-select" name="gender" id="bootstrap-wizard-validation-gender">
                   <option value="">Select your gender ...</option>
                   <option value="Male">Male</option>
