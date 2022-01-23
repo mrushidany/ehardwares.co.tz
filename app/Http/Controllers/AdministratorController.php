@@ -35,11 +35,11 @@ class AdministratorController extends Controller
 
     public function all_users()
     {
-        return view('ecommerce.admin.super.settings.all_users');
+        return view('ecommerce.admin.super.settings.users.all_users');
     }
 
     public function add_new_user()
     {
-        return view('ecommerce.admin.super.settings.add_new_user');
+        return view('ecommerce.admin.super.settings.users.add_user.add_new_user');
     }
 }
