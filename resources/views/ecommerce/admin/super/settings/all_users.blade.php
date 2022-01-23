@@ -19,7 +19,7 @@
                         <div class="col-auto ms-auto">
                             <div class="nav nav-pills nav-pills-falcon flex-grow-1">
                                 <span>
-                                    <button class="btn btn-outline-primary btn-sm me-1 mb-1" type="button"><i class="fas fa-plus"></i>&nbsp;User</button>
+                                    <a class="btn btn-outline-primary btn-sm me-1 mb-1" href="#"><i class="fas fa-plus"></i>&nbsp;User</a>
                                 </span>
                             </div>
                         </div>
