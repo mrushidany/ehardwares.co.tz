@@ -149,15 +149,15 @@
                                     <div class="col">
                                         <p class="font-sans-serif lh-1 mb-1 fs-2">58.4K</p>
                                         <div class="badge badge-soft-primary rounded-pill fs--2">
-                                            <span class="fas fa-caret-up me-1"></span>13.6%</div>
+                                            <span class="fas fa-caret-up me-1"></span>13.6%
                                         </div>
-                                        <div class="col-auto ps-0">
-                                            <div class="total-order-ecommerce" data-echarts="{&quot;series&quot;:[{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:[110,100,250,210,530,480,320,325]}],&quot;grid&quot;:{&quot;bottom&quot;:&quot;-10px&quot;}}" _echarts_instance_="ec_1642598351995" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;">
-                                                <div style="position: relative; width: 144px; height: 64px; padding: 0px; margin: 0px; border-width: 0px;">
-                                                    <canvas data-zr-dom-id="zr_0" width="144" height="64" style="position: absolute; left: 0px; top: 0px; width: 144px; height: 64px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
-                                                </div>
-                                                <div class=""></div>
+                                    </div>
+                                    <div class="col-auto ps-0">
+                                        <div class="total-order-ecommerce" data-echarts="{&quot;series&quot;:[{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:[110,100,250,210,530,480,320,325]}],&quot;grid&quot;:{&quot;bottom&quot;:&quot;-10px&quot;}}" _echarts_instance_="ec_1642598351995" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;">
+                                            <div style="position: relative; width: 144px; height: 64px; padding: 0px; margin: 0px; border-width: 0px;">
+                                                <canvas data-zr-dom-id="zr_0" width="144" height="64" style="position: absolute; left: 0px; top: 0px; width: 144px; height: 64px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
                                             </div>
+                                            <div class=""></div>
                                         </div>
                                     </div>
                                 </div>
@@ -167,4 +167,5 @@
                 </div>
             </div>
         </div>
+    </div>
 @endsection
