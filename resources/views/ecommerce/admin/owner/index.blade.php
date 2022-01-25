@@ -43,7 +43,7 @@
                                         </div>
                                     </div>
                                      <div class="col-auto d-flex align-items-center">
-                                        <a class="alert-link fs--1 fw-medium" href="#!">View products
+                                        <a class="alert-link fs--1 fw-medium" href="#!">View invoices
                                             <i class="fas fa-chevron-right ms-1 fs--2"></i>
                                         </a>
                                     </div>
