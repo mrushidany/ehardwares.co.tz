@@ -83,6 +83,7 @@ class AdministratorController extends Controller
         $data =
         [
             'role_name' => $role->display_name,
+            'location' => 'Dar es Salaam, Tanzania',
         ];
         return view('ecommerce.admin.profile')->with($data);
     }
