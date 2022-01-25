@@ -19,7 +19,7 @@ class AdministratorController extends Controller
 
     public function index()
     {
-        if(Auth::user()->hasRole('super_administrator'))
+        if(Auth::user()->hasRole('super_administrator') || Auth::user()->hasRole('administrator') || Auth::user()->hasRole('owner'))
         {
             return redirect()->route('dashboard');
         }
