@@ -66,8 +66,9 @@ class AdministratorController extends Controller
         $user->password = Hash::make($request->password);
         $user->created_at = Carbon::now()->format('Y-m-d H:i:s');
         $user->updated_at = Carbon::now()->format('Y-m-d H:i:s');
-        $user->attachRole($request->role);
         $user->save();
+
+        $user->attachRole($request->role);
 
         $data = ['state' => 'Done', 'title' => 'Successful', 'message' => 'Record created successful'];
         return \Request::ajax() ? response()->json($data) : redirect()->route('all_users');
