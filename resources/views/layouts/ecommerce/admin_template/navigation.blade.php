@@ -7,7 +7,7 @@
                 </span>
             </button>
         </div>
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{{ route('dashboard') }}">
                 <div class="d-flex align-items-center py-3" style="text-decoration-color: orangered">
                     <img class="me-2" src="{{ asset('ecommerce/img/icon.jpeg') }}" alt="" width="40" />
                 </div>
