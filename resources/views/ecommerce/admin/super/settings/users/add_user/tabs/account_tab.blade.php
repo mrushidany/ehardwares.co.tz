@@ -41,7 +41,7 @@
             <div class="col-6">
                 <div class="mb-3">
                     <label class="form-label" for="Confirm Password">Confirm Password*</label>
-                    <input class="form-control" type="password" name="confirm_password" placeholder="Confirm Password" required="required" id="bootstrap-wizard-validation-wizard-confirm-password" data-wizard-validate-confirm-password="true">
+                    <input class="form-control" type="password" name="password_confirmation" placeholder="Confirm Password" required="required" id="bootstrap-wizard-validation-wizard-confirm-password" data-wizard-validate-confirm-password="true">
                     <div class="invalid-feedback">Passwords need to match</div>
                 </div>
             </div>

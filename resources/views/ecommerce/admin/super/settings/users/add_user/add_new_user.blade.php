@@ -92,6 +92,7 @@
                     email : $('input[name="email"]').val(),
                     phone_number : $('input[name="phone_number"]').val(),
                     password : $('input[name="password"]').val(),
+                    password_confirmation : $('input[name="password_confirmation"]').val(),
                     role : $('select[name="role"]').val(),
                  },
                 success: function(data) {

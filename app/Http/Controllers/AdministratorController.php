@@ -3,8 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\Rules;
 
 class AdministratorController extends Controller
 {
@@ -45,6 +49,25 @@ class AdministratorController extends Controller
 
     public function save_new_user(Request $request)
     {
-        dd($request->all());
+        $request->validate([
+            'email' => 'required|email|unique:users',
+            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+        ]);
+
+        $user = User::create([
+            'first_name' => $request->first_name,
+            'last_name' => $request->last_name,
+            'phone_number' => $request->phone_number,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
+        ]);
+
+        $user->attachRole($request->role);
+        event(new Registered($user));
+
+        $data = ['state' => 'Done', 'title' => 'Successful', 'message' => 'Record created successful'];
+        return \Request::ajax() ? response()->json($data) : redirect()->route('all_users');
     }
 }
