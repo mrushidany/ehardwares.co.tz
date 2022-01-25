@@ -229,11 +229,19 @@
             <div class="card-body pe-xxl-0">
               <!-- Find the JS file for the following chart at: src/js/charts/echarts/total-sales-ecommerce.js-->
               <!-- If you are not using gulp based workflow, you can find the transpiled code at: public/assets/js/theme.js-->
-              <div class="echart-line-total-sales-ecommerce" data-echart-responsive="true" data-options="{&quot;optionOne&quot;:&quot;ecommerceLastMonth&quot;,&quot;optionTwo&quot;:&quot;ecommercePrevYear&quot;}" _echarts_instance_="ec_1642598351992" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; width: 818px; height: 298px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="818" height="298" style="position: absolute; left: 0px; top: 0px; width: 818px; height: 298px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class="" style="position: absolute; display: block; border-style: solid; white-space: nowrap; z-index: 9999999; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 10px; background-color: rgb(249, 250, 253); border-width: 1px; border-radius: 4px; color: rgb(11, 23, 39); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 7px 10px; top: 0px; left: 0px; transform: translate3d(132px, -18px, 0px); border-color: rgb(216, 226, 239); pointer-events: none; visibility: hidden; opacity: 0;"><svg class="svg-inline--fa fa-circle fa-w-16" style="color: #2c7be5;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg><!-- <span class="fas fa-circle" style="color: #2c7be5"></span> Font Awesome fontawesome.com -->
-<span class="text-600">Last Month: 60</span><br><svg class="svg-inline--fa fa-circle fa-w-16" style="color: rgba(245,128,62, 0.6);" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg><!-- <span class="fas fa-circle" style="color: rgba(245,128,62, 0.6)"></span> Font Awesome fontawesome.com -->
-<span class="text-600">Previous Year: 40</span></div></div>
+              <div class="echart-line-total-sales-ecommerce" data-echart-responsive="true" data-options="{&quot;optionOne&quot;:&quot;ecommerceLastMonth&quot;,&quot;optionTwo&quot;:&quot;ecommercePrevYear&quot;}" _echarts_instance_="ec_1642598351992" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;">
+                <div style="position: relative; width: 818px; height: 298px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+                    <canvas data-zr-dom-id="zr_0" width="818" height="298" style="position: absolute; left: 0px; top: 0px; width: 818px; height: 298px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                </div>
+                <div class="" style="position: absolute; display: block; border-style: solid; white-space: nowrap; z-index: 9999999; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 10px; background-color: rgb(249, 250, 253); border-width: 1px; border-radius: 4px; color: rgb(11, 23, 39); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 7px 10px; top: 0px; left: 0px; transform: translate3d(132px, -18px, 0px); border-color: rgb(216, 226, 239); pointer-events: none; visibility: hidden; opacity: 0;">
+                    <span class="fas fa-circle" style="color: #2c7be5"></span>
+                    <span class="text-600">Last Month: 60</span><br>
+                    <span class="fas fa-circle" style="color: rgba(245,128,62, 0.6)"></span>
+                    <span class="text-600">Previous Year: 40</span>
+                </div>
             </div>
-          </div>
         </div>
       </div>
+    </div>
+</div>
 @endsection
