@@ -23,10 +23,6 @@
                                     <p class="text-600 fs--1 fw-medium">Today's visit </p>
                                     <h4 class="text-800 mb-0">3</h4>
                                 </div>
-                                <div class="ps-3">
-                                    <p class="text-600 fs--1">Today’s total sales </p>
-                                    <h4 class="text-800 mb-0">10,000 /=</h4>
-                                </div>
                             </div>
                         </div>
                     </div>
