@@ -45,6 +45,6 @@ class AdministratorController extends Controller
 
     public function save_new_user(Request $request)
     {
-        dd('we are in save new user method');
+        dd($request->all());
     }
 }
