@@ -7,6 +7,7 @@ use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 
@@ -76,6 +77,13 @@ class AdministratorController extends Controller
 
     public function profile()
     {
-        return view('ecommerce.admin.profile');
+        $id = Auth::user()->id;
+        $role_user = DB::table('role_user')->where('user_id',$id)->first();
+        $role = DB::table('roles')->where('id',$role_user->role_id)->first();
+        $data =
+        [
+            'role_name' => $role->display_name,
+        ];
+        return view('ecommerce.admin.profile')->with($data);
     }
 }
