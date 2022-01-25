@@ -73,4 +73,9 @@ class AdministratorController extends Controller
         $data = ['state' => 'Done', 'title' => 'Successful', 'message' => 'Record created successful'];
         return \Request::ajax() ? response()->json($data) : redirect()->route('all_users');
     }
+
+    public function profile()
+    {
+        return view('ecommerce.admin.profile');
+    }
 }
