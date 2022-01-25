@@ -8,7 +8,12 @@
                 <div class="bg-holder rounded-3 rounded-bottom-0" style="background-image:url({{ asset('ecommerce/assets/img/generic/4.jpg') }});"></div>
               <!--/.bg-holder-->
                 <div class="avatar avatar-5xl avatar-profile">
-                    <img class="rounded-circle img-thumbnail shadow-sm" src="{{ asset('ecommerce/assets/img/team/avatar.png') }}" width="200" alt="">
+                    @if (Auth::user()->hasRole('super_administrator'))
+                        <img class="rounded-circle img-thumbnail shadow-sm" src="{{ asset('ecommerce/assets/img/team/5-thumb.png') }}" width="200" alt="">
+                    @else
+                        <img class="rounded-circle img-thumbnail shadow-sm" src="{{ asset('ecommerce/assets/img/team/avatar.png') }}" width="200" alt="">
+                    @endif
+
                 </div>
             </div>
             <div class="card-body">
