@@ -1,4 +1,4 @@
-@extends('ecommerce.admin.super.main')
+@extends('ecommerce.admin.main')
 
 @section('content')
     <div class="row g-3 mb-3">

@@ -20,7 +20,11 @@ class DashboardController extends Controller
          }
          else if(Auth::user()->hasRole('administrator'))
          {
-             return view('ecommerce.admin.junior.index');
+            return view('ecommerce.admin.junior.index');
+         }
+         else if(Auth::user()->hasRole('owner'))
+         {
+            return view('ecommerce.admin.owner.index');
          }
 
 
