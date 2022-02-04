@@ -5,7 +5,7 @@
         </div>
         <form>
             <div class="modal-body p-0">
-                <div class="rounded-top-lg py-3 ps-4 pe-6 bg-light">
+                <div class="rounded-top-lg py-3 ps-4 pe-6 bg-light text-center">
                     <h4 class="mb-1" id="modalExampleDemoLabel">Add a new hardware category </h4>
                 </div>
                 <div class="p-4 pb-0">
