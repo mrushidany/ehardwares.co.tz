@@ -21,7 +21,7 @@
                     <div class="col-auto ms-auto">
                         <div class="nav nav-pills nav-pills-falcon flex-grow-1">
                             <span>
-                                <a class="btn btn-outline-primary btn-sm me-1 mb-1" href="{{ route('admin_add_user') }}"><i class="fas fa-plus"></i>&nbsp;User</a>
+                                <a class="btn btn-outline-primary btn-sm me-1 mb-1" href="{{ route('admin_add_user') }}"><i class="fas fa-plus"></i>&nbsp;Category</a>
                             </span>
                         </div>
                     </div>
@@ -32,10 +32,8 @@
                             <table class="table table-striped table-bordered all_users_table" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Phone Number</th>
-                                        <th>Role</th>
+                                        <th>Category Name</th>
+                                        <th>Description</th>
                                         <th></th>
                                     </tr>
                                 </thead>
