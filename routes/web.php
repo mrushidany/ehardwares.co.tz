@@ -23,7 +23,7 @@ Route::get('/landing_page', function () { return view('landing_page');})->name('
 Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
 
     // Dashboard Controller Routes
-    Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     // Administrator Controller Routes
     Route::get('/', [AdministratorController::class, 'index'])->name('admin');
