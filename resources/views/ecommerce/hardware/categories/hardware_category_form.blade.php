@@ -9,14 +9,20 @@
         </div>
         <div class="p-4 pb-0">
           <form>
-            <div class="mb-3">
-              <label class="col-form-label" for="recipient-name">Recipient:</label>
-              <input class="form-control" id="recipient-name" type="text">
-            </div>
-            <div class="mb-3">
-              <label class="col-form-label" for="message-text">Message:</label>
-              <textarea class="form-control" id="message-text"></textarea>
-            </div>
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <label class="col-form-label" for="hardware_category_name">Name</label>
+                    <input class="form-control" name="category_name" type="text">
+                  </div>
+
+                  <div class="mb-3 col-6">
+                    <label class="col-form-label" for="message-text">Description</label>
+                    <textarea class="form-control" rows="1" name="description"></textarea>
+                  </div>
+
+              </div>
+
+
           </form>
         </div>
       </div>
