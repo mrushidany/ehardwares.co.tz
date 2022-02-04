@@ -13,3 +13,5 @@
     <script src="{{ asset('ecommerce/vendors/list.js/list.min.js') }}"></script>
     <script src="{{ asset('ecommerce/assets/js/theme.js') }}"></script>
 
+    <!--   Application scripts-->
+    <script src="{{ asset('js/ehardwares.js') }}"></script>
