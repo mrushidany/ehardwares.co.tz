@@ -53,7 +53,17 @@
                                     <span class="nav-link-icon">
                                         <span class="text-xl fs-1 bi-diagram-3"></span>
                                     </span>
-                                    <span class="nav-link-text ps-1">Categories</span>
+                                    <span class="nav-link-text ps-1">Hardware Categories</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <span class="nav-link-icon">
+                                        <span class="text-xl fs-1 bi-building"></span>
+                                    </span>
+                                    <span class="nav-link-text ps-1">Hardware Stock</span>
                                 </div>
                             </a>
                         </li>
