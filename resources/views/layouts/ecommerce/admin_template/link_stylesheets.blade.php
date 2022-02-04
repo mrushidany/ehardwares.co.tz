@@ -25,4 +25,8 @@
     <link href="{{ asset('ecommerce/assets/css/theme.min.css') }}" rel="stylesheet" id="style-default">
     <link href="{{ asset('ecommerce/assets/css/user.min.css') }}" rel="stylesheet" id="user-style-default">
 
+    <!-- ===============================================-->
+    <!--    Icons-->
+    <!-- ===============================================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
 

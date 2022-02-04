@@ -38,7 +38,7 @@
                             <hr class="mb-0 navbar-vertical-divider" />
                         </div>
                     </div>
-                    <a class="nav-link" href="" role="button" aria-expanded="false">
+                    <a class="nav-link dropdown-indicator" href="#hardware" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="hardware">
                         <div class="d-flex align-items-center">
                             <span class="nav-link-icon">
                                 <span class="fas fa-tools"></span>
@@ -46,6 +46,19 @@
                             <span class="nav-link-text ps-1">Hardware</span>
                         </div>
                     </a>
+                    <ul class="nav collapse false" id="hardware">
+                        <li class="nav-item">
+                            <a class="nav-link" href="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <span class="nav-link-icon">
+                                        <span class="text-xl fs-1 bi-diagram-3"></span>
+                                    </span>
+                                    <span class="nav-link-text ps-1">Categories</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
                 </li>
             </ul>
         </div>
