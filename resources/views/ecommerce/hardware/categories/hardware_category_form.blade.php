@@ -1,4 +1,4 @@
-<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 700px">
+<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 900px">
     <div class="modal-content position-relative">
         <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
             <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -15,8 +15,8 @@
                             <input class="form-control" name="category_name" type="text">
                         </div>
                         <div class="mb-3 col-6">
-                            <label class="col-form-label" for="message-text">Description</label>
-                            <textarea class="form-control" rows="1" name="description"></textarea>
+                            <label class="col-form-label" for="description">Description</label>
+                            <textarea class="form-control" rows="2" name="description"></textarea>
                         </div>
                     </div>
                 </div>
