@@ -20,18 +20,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () { echo "This page is under construction .....";})->name('home');
 Route::get('/landing_page', function () { return view('landing_page');})->name('landing_page');
 
-Route::group(['middleware' => ['auth']], function() {
+Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
 
     // Dashboard Controller Routes
     Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     // Administrator Controller Routes
-    Route::get('/admin', [AdministratorController::class, 'index'])->name('admin');
-    Route::get('/admin/settings', [AdministratorController::class, 'settings'])->name('settings');
-    Route::get('/admin/settings/all_users', [AdministratorController::class, 'all_users'])->name('all_users');
-    Route::get('/admin/settings/add_new_user', [AdministratorController::class, 'add_new_user'])->name('admin_add_user');
-    Route::post('admin/settings/save_new_user', [AdministratorController::class, 'save_new_user'])->name('save_new_user');
-    Route::get('/admin/profile', [AdministratorController::class, 'profile'])->name('admin_profile');
+    Route::get('/', [AdministratorController::class, 'index'])->name('admin');
+    Route::get('/settings', [AdministratorController::class, 'settings'])->name('settings');
+    Route::get('/settings/all_users', [AdministratorController::class, 'all_users'])->name('all_users');
+    Route::get('/settings/add_new_user', [AdministratorController::class, 'add_new_user'])->name('admin_add_user');
+    Route::post('/settings/save_new_user', [AdministratorController::class, 'save_new_user'])->name('save_new_user');
+    Route::get('/profile', [AdministratorController::class, 'profile'])->name('admin_profile');
 
     // Hardware Controllers Routes
     Route::get('/hardware/categories', [HardwareCategoriesController::class, 'index'])->name('hardware_categories');
