@@ -48,7 +48,7 @@
                     </a>
                     <ul class="nav collapse false" id="hardware">
                         <li class="nav-item">
-                            <a class="nav-link" href="" aria-expanded="false">
+                            <a class="nav-link" href="{{ route('hardware_categories') }}" aria-expanded="false">
                                 <div class="d-flex align-items-center">
                                     <span class="nav-link-icon">
                                         <span class="text-xl fs-1 bi-diagram-3"></span>

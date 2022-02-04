@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdministratorController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HardwareCategoriesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,6 +32,9 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/admin/settings/add_new_user', [AdministratorController::class, 'add_new_user'])->name('admin_add_user');
     Route::post('admin/settings/save_new_user', [AdministratorController::class, 'save_new_user'])->name('save_new_user');
     Route::get('/admin/profile', [AdministratorController::class, 'profile'])->name('admin_profile');
+
+    // Hardware Controllers Routes
+    Route::get('/hardware/categories', [HardwareCategoriesController::class, 'index'])->name('hardware_categories');
 
 });
 
