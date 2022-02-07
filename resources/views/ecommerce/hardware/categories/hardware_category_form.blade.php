@@ -24,7 +24,7 @@
             <div class="modal-footer">
                 <button class="btn btn-outline-warning me-1 mb-1" type="reset">Reset</button>
                 <button class="btn btn-outline-success me-1 mb-1" type="button">Save</button>
-                <button class="btn btn-outline-success me-1 mb-1 disabled" type="button">Saving .....</button>
+                <button class="btn btn-outline-success me-1 mb-1 disabled" style="display: none;" type="button">Saving .....</button>
             </div>
         </form>
     </div>
