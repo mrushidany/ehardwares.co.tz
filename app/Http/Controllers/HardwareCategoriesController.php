@@ -105,7 +105,9 @@ class HardwareCategoriesController extends Controller
                             ->get();
         return DataTables::of($category_list)
                             ->addColumn('action', function ($list) {
-
+                                $button = '';
+                                $button .= '<a class="btn p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"><span class="text-500 fas fa-edit"></span></a>';
+                                return '<nobr>'. $button . '</nobr>';
                             })
                             ->make(true);
     }

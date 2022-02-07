@@ -111,5 +111,4 @@ $('.hardware_categories_table').DataTable({
         zeroRecords: "<div class='alert alert-info' style='background-color: #ccf6e4'>No matching hardware category(ies) found</div>",
         emptyTable: "<div class='alert alert-info' style='background-color: #ccf6e4'>No hardware category(ies) found</div>"
     },
-
 });
