@@ -48,6 +48,7 @@ $('.save_hardware_category').on('click', function(e) {
                 description : description,
              },
             success: function(data) {
+                $('form').trigger('reset');
                 $('.close').click();
                 console.log(data);
             }
