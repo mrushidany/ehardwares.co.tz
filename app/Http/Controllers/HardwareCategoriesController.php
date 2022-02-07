@@ -102,6 +102,7 @@ class HardwareCategoriesController extends Controller
     {
         $category_list = DB::table('hardware_categories')
                             ->select('category_name', 'description')
+                            ->orderBy('id', 'asc')
                             ->get();
         return DataTables::of($category_list)
                             ->addColumn('action', function ($list) {
