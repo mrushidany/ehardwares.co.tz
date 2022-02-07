@@ -34,7 +34,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card-body pt-0">
-                            <table class="table table-striped table-bordered hadware_categories_table" style="width:100%">
+                            <table class="table table-striped table-bordered hardware_categories_table" style="width:100%">
                                 <thead>
                                     <tr>
                                         <th>Category Name</th>

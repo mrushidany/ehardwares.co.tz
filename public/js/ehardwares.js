@@ -93,7 +93,6 @@ $('.save_hardware_category').on('click', function(e) {
             }
         })
     }
-
-
-
 });
+
+$('.hardware_categories_table').DataTable();

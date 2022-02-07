@@ -21,7 +21,7 @@
      <!-- ===============================================-->
     <!--    iziToast-->
     <!-- ===============================================-->
-    <script type="text/javascript" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="{{ asset('ecommerce/DataTable/datatables.min.js') }}"></script>
 
     <!--   Application scripts-->
     <script src="{{ asset('js/ehardwares.js') }}"></script>
