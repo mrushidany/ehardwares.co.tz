@@ -34,7 +34,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     Route::get('/profile', [AdministratorController::class, 'profile'])->name('admin_profile');
 
     // Hardware Controllers Routes
-    Route::get('/hardware/categories', [HardwareCategoriesController::class, 'index'])->name('hardware_categories');
+    Route::resource('hardware_categories', HardwareCategoriesController::class);
 
 });
 
