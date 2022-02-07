@@ -21,5 +21,7 @@ $('.save_new_user').on('click', function() {
 })
 
 $('.save_hardware_category').on('click', function() {
+    $(this).attr('style', 'display: none;');
     $('.loading_button').removeAttr('style');
+
 });
