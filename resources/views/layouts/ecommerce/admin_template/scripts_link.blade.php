@@ -13,5 +13,10 @@
     <script src="{{ asset('ecommerce/vendors/list.js/list.min.js') }}"></script>
     <script src="{{ asset('ecommerce/assets/js/theme.js') }}"></script>
 
+     <!-- ===============================================-->
+    <!--    iziToast-->
+    <!-- ===============================================-->
+    <script type="text/javascript" src="{{ asset('ecommerce/iziToast/dist/js/iziToast.min.js') }}"></script>
+
     <!--   Application scripts-->
     <script src="{{ asset('js/ehardwares.js') }}"></script>
