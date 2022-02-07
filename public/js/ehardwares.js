@@ -88,7 +88,9 @@ $('.save_hardware_category').on('click', function(e) {
             success: function(data) {
                 $('form').trigger('reset');
                 $('.close').click();
+                $('.hardware_categories_table').DataTable().draw();
                 toast(data.type, data.title, data.message);
+
                 console.log(data);
             }
         })
