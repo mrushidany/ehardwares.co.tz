@@ -46,7 +46,7 @@ class HardwareCategoriesController extends Controller
         $category->save();
 
         if($category){
-            $data = ['title' => 'Done', 'message' => 'Saved new category'];
+            $data = ['type' => 'success', 'title' => 'Success', 'message' => 'Saved new category'];
             return $request->ajax() ? response()->json($data) : redirect()->back();
         }
     }
