@@ -30,6 +30,7 @@ $('.save_hardware_category').on('click', function(e) {
 
     if(name !== '' && description !== ''){
         $(this).attr('style', 'display: none;');
+        $('.reset_hardware_category').attr('style', 'display: none;');
         $('.loading_button').removeAttr('style');
 
         $.ajaxSetup({
