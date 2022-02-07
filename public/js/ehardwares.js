@@ -106,6 +106,10 @@ $('.hardware_categories_table').DataTable({
         {data: 'category_name', name: 'category_name', orderable: true, searchable: true},
         {data: 'description', name: 'description', orderable: false, searchable: true},
         {data: 'action', name: 'action', orderable: false, searchable: false },
-    ]
+    ],
+    language: {
+        zeroRecords: "<div class='alert alert-info' style='background-color: #4B5F71'>No matching primary material(s) found</div>",
+        emptyTable: "<div class='alert alert-info' style='background-color: #4B5F71'>No primary material(s) found</div>"
+    },
 
 });
