@@ -31,7 +31,7 @@ $('.save_hardware_category').on('click', function() {
         $('.loading_button').removeAttr('style');
 
         $.ajax({
-            url: "{{ route('hardware_categories.store') }}",
+            url: "{{ route('save_hardware_category') }}",
             method: "POST",
             data:
             {
