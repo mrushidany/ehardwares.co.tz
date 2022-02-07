@@ -29,18 +29,6 @@ $('.save_hardware_category').on('click', function() {
     if(name !== '' && description !== ''){
         $(this).attr('style', 'display: none;');
         $('.loading_button').removeAttr('style');
-
-        $.ajax({
-            url: "{{ route('hardware_categories.store') }}",
-            method: "POST",
-            data: {
-                _token : $('meta[name="csrf-token"]').attr('content'),
-                name : name,
-                description : description,
-            },
-            success: function(){
-
-            }
         })
     }
 
