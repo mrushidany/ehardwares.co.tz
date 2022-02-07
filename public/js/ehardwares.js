@@ -32,12 +32,17 @@ $('.save_hardware_category').on('click', function(e) {
         $(this).attr('style', 'display: none;');
         $('.loading_button').removeAttr('style');
 
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+            }
+        });
+
         $.ajax({
-            url: "{{ route('save_hardware_category') }}",
+            url: "/admin/hardware_categories/save_hadware_category",
             method: "POST",
             data:
             {
-                _token : $('meta[name="csrf-token"]').attr('content'),
                 name : name,
                 description : description,
              },
