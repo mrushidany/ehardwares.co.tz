@@ -24,11 +24,15 @@ $('.save_hardware_category').on('click', function() {
 
     var button = $(this);
     var form = button.closest('form');
-
     var name = form.find('input[name="category_name"]').val();
     var description = form.find('textarea[name="description"]').val();
-    alert(name + "   " + description );
-    $(this).attr('style', 'display: none;');
-    $('.loading_button').removeAttr('style');
+
+    if(name !== '' && description !== ''){
+        alert(name + "   " + description );
+        $(this).attr('style', 'display: none;');
+        $('.loading_button').removeAttr('style');
+    }
+
+
 
 });
