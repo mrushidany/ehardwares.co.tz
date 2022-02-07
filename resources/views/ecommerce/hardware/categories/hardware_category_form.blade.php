@@ -3,7 +3,8 @@
         <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
             <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form class="hardware_category_form">
+        <form class="hardware_category_form" action="{{ route('hardware_categories.store') }}" method="POST">
+            @csrf
             <div class="modal-body p-0">
                 <div class="rounded-top-lg py-3 ps-4 pe-6 bg-light text-center">
                     <h4 class="mb-1" id="modalExampleDemoLabel">Add a new hardware category </h4>
