@@ -29,7 +29,6 @@ $('.save_hardware_category').on('click', function() {
     if(name !== '' && description !== ''){
         $(this).attr('style', 'display: none;');
         $('.loading_button').removeAttr('style');
-        })
     }
 
 
