@@ -3,7 +3,7 @@
         <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
             <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form>
+        <form class="hardware_category_for">
             <div class="modal-body p-0">
                 <div class="rounded-top-lg py-3 ps-4 pe-6 bg-light text-center">
                     <h4 class="mb-1" id="modalExampleDemoLabel">Add a new hardware category </h4>
@@ -23,8 +23,8 @@
             </div>
             <div class="modal-footer">
                 <button class="btn btn-outline-warning me-1 mb-1" type="reset">Reset</button>
-                <button class="btn btn-outline-success me-1 mb-1" type="button">Save</button>
-                <button class="btn btn-outline-success me-1 mb-1 disabled" style="display: none;" type="button">Saving .....</button>
+                <button class="btn btn-outline-success me-1 mb-1 save_hardware_category" type="button">Save</button>
+                <button class="btn btn-outline-success me-1 mb-1 disabled loading_button" style="display: none;" type="button">Saving .....</button>
             </div>
         </form>
     </div>
