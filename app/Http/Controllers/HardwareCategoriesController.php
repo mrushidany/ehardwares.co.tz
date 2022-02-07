@@ -39,7 +39,7 @@ class HardwareCategoriesController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        dd("We are here in the store method");
     }
 
     /**
