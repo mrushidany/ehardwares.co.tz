@@ -35,3 +35,8 @@
     <!-- ===============================================-->
     <link rel="stylesheet" href="{{ asset('ecommerce/iziToast/dist/css/iziToast.min.css') }}" />
 
+    <!-- ===============================================-->
+    <!--    DataTable-->
+    <!-- ===============================================-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css" />
+
