@@ -98,5 +98,7 @@ $('.save_hardware_category').on('click', function(e) {
 $('.hardware_categories_table').DataTable({
     serverSide: true,
     processing: true,
+    lengthMenu: [[10, 25, 50], [10, 25, 50]],
+
 
 });
