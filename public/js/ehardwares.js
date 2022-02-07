@@ -99,6 +99,11 @@ $('.hardware_categories_table').DataTable({
     serverSide: true,
     processing: true,
     lengthMenu: [[10, 25, 50], [10, 25, 50]],
-    ajax: "{!! route('') !!}",
+    ajax: "{!! route('hardware_category_list') !!}",
+    columns: [
+        {data: 'category_name', name: 'category_name', orderable: true, searchable: true},
+        {data: 'description', name: 'description', orderable: false, searchable: true},
+        {data: 'action', name: 'action', orderable: false, searchable: false },
+    ]
 
 });
