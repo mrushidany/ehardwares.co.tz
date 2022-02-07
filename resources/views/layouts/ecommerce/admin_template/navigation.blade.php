@@ -38,6 +38,7 @@
                             <hr class="mb-0 navbar-vertical-divider" />
                         </div>
                     </div>
+                    @if (Auth::user()->hasRole('admin') || Auth::user()->hasRole('super_administrator'))
                     <a class="nav-link dropdown-indicator" href="#hardware" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="hardware">
                         <div class="d-flex align-items-center">
                             <span class="nav-link-icon">
@@ -69,6 +70,8 @@
                         </li>
 
                     </ul>
+                    @endif
+
                 </li>
             </ul>
         </div>
