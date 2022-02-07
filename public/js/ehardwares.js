@@ -108,8 +108,8 @@ $('.hardware_categories_table').DataTable({
         {data: 'action', name: 'action', orderable: false, searchable: false },
     ],
     language: {
-        zeroRecords: "<div class='alert alert-info' style='background-color: #4B5F71'>No matching primary material(s) found</div>",
-        emptyTable: "<div class='alert alert-info' style='background-color: #4B5F71'>No primary material(s) found</div>"
+        zeroRecords: "<div class='alert alert-info' style='background-color: #ccf6e4'>No matching hardware category(ies) found</div>",
+        emptyTable: "<div class='alert alert-info' style='background-color: #ccf6e4'>No hardware category(ies) found</div>"
     },
 
 });
