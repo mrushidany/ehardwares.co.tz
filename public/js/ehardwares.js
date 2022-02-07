@@ -1,3 +1,41 @@
+var toast = function(type, title, message){
+    if (type == 'error') {
+        title = typeof title !== 'undefined' ? title : 'Error';
+        iziToast.error({
+            title: title,
+            message: message,
+            position: 'topRight'
+        });
+    } else if (type == 'warning') {
+        typeof title !== 'undefined' ? title : 'Caution';
+        iziToast.warning({
+            title: title,
+            message: message,
+            position: 'topRight'
+        });
+    } else if (type == 'success') {
+        title = typeof title !== 'undefined' ? title : 'Success';
+        iziToast.success({
+            title: title,
+            message: message,
+            position: 'topRight'
+        });
+    } else if (type == 'info') {
+        title = typeof title !== 'undefined' ? title : 'Hi';
+        iziToast.info({
+            title: title,
+            message: message,
+            position: 'topRight'
+        });
+    } else {
+        iziToast.show({
+            title: title,
+            message: message,
+            position: 'topRight'
+        });
+    }
+}
+
 $('.save_new_user').on('click', function() {
     $.ajax({
         url: "{{ route('save_new_user') }}",
