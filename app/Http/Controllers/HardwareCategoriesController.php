@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\HardwareCategory;
 use Illuminate\Http\Request;
 
 class HardwareCategoriesController extends Controller
@@ -39,7 +40,15 @@ class HardwareCategoriesController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        $category = new HardwareCategory();
+        $category->category_name = $request->name;
+        $category->description = $request->description;
+        $category->save();
+
+        if($category){
+            $data = ['title' => 'Done', 'message' => 'Saved new category'];
+            return $request->ajax() ? response()->json($data) : redirect()->back();
+        }
     }
 
     /**
