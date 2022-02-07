@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\HardwareCategory;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Yajra\DataTables\Facades\DataTables;
 
 class HardwareCategoriesController extends Controller
 {
@@ -98,6 +100,13 @@ class HardwareCategoriesController extends Controller
 
     public function hardware_category_list()
     {
+        $category_list = DB::table('hardware_categories')
+                            ->select('category_name', 'description')
+                            ->get();
+        return DataTables::of($category_list)
+                            ->addColumn('action', function ($list) {
 
+                            })
+                            ->make(true);
     }
 }
