@@ -107,6 +107,7 @@ class HardwareCategoriesController extends Controller
                             ->addColumn('action', function ($list) {
                                 $button = '';
                                 $button .= '<a class="btn p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"><span class="text-500 fas fa-edit"></span></a>';
+                                $button .= '<button class="btn p-0 ms-2" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete" aria-describedby="tooltip253699"><span class="text-500 fas fa-trash-alt"></span></a>';
                                 return '<nobr>'. $button . '</nobr>';
                             })
                             ->make(true);
