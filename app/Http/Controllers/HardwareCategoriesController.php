@@ -107,8 +107,8 @@ class HardwareCategoriesController extends Controller
         return DataTables::of($category_list)
                             ->addColumn('action', function ($list) {
                                 $button = '';
-                                $button .= '<a class="btn btn-sm p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"><span class="text-500 fas fa-edit"></span></a>';
-                                $button .= '<button class="btn btn-sm p-0 ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete" aria-describedby="tooltip253699"><span class="text-500 fas fa-trash-alt"></span></a>';
+                                $button .= '<button class="btn btn-sm p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"><span class="text-500 fas fa-edit"></span></button>';
+                                $button .= '<button class="btn btn-sm p-0 ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete" aria-describedby="tooltip253699"><span class="text-500 fas fa-trash-alt"></span></button>';
                                 return '<nobr>'. $button . '</nobr>';
                             })
                             ->make(true);
