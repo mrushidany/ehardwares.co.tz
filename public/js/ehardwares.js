@@ -40,7 +40,23 @@ var toast = function(type, title, message)
 
 // Users Section
 $('.all_users_table').DataTable({
-
+    serverSide: true,
+    processing: true,
+    lengthMenu: [[10, 25, 50], [10, 25, 50]],
+    ajax: {
+        url: "/admin/settings/all_users_list",
+    },
+    columns: [
+        {data: 'name', name: 'name', orderable: true, searchable: true},
+        {data: 'email', name: 'email', orderable: true, searchable: true},
+        {data: 'phone_number', name: 'phone_number', orderable: true, searchable: true},
+        {data: 'role', name: 'role', orderable: true, searchable: true},
+        {data: 'action', name: 'action', orderable: false, searchable: false },
+    ],
+    language: {
+        zeroRecords: "<div class='alert alert-info' style='background-color: #ccf6e4'>No matching user(s) found</div>",
+        emptyTable: "<div class='alert alert-info' style='background-color: #ccf6e4'>No user(s) found</div>"
+    },
 });
 
 $('.save_new_user').on('click', function()
