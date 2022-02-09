@@ -32,6 +32,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     Route::get('/settings/add_new_user', [AdministratorController::class, 'add_new_user'])->name('admin_add_user');
     Route::post('/settings/save_new_user', [AdministratorController::class, 'save_new_user'])->name('save_new_user');
     Route::get('/profile', [AdministratorController::class, 'profile'])->name('admin_profile');
+    Route::get('/all_users_list', [AdministratorController::class, 'all_users_list'])->name('all_users_list');
 
     // Hardware Controllers Routes
     Route::resource('/hardware_categories', HardwareCategoriesController::class)->only('index');
