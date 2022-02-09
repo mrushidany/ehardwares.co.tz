@@ -87,4 +87,9 @@ class AdministratorController extends Controller
         ];
         return view('ecommerce.admin.profile')->with($data);
     }
+
+    public function all_users_list()
+    {
+
+    }
 }
