@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
+use Yajra\DataTables\Facades\DataTables;
 
 class AdministratorController extends Controller
 {
@@ -90,6 +91,18 @@ class AdministratorController extends Controller
 
     public function all_users_list()
     {
+        $users_list = DB::table('role_user')
+                        ->leftJoin('roles', 'roles.id', '=', 'role_user.role_id')
+                        ->leftJoin('users', 'users.id', '=', 'role_user.user_id')
+                        ->select('users.first_name as name','users.email', 'users.phone_number', 'roles.display_name as role');
 
+        return DataTables::of($users_list)
+                           ->addColumn('action', function ($list){
+                            $button = '';
+                            $button .= '<button class="btn btn-sm p-0 " data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" data-bs-original-title="Edit" aria-label="Edit"><span class="text-500 fas fa-edit"></span></button>';
+                            $button .= '<button class="btn btn-sm p-0 ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" data-bs-original-title="Delete" aria-label="Delete" aria-describedby="tooltip253699"><span class="text-500 fas fa-trash-alt"></span></button>';
+                            return '<nobr>'. $button . '</nobr>';
+                           })
+                           ->make(true);
     }
 }
