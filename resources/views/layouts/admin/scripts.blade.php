@@ -30,7 +30,7 @@
         navbarVertical.removeAttribute('style');
         navbarTopVertical.removeAttribute('style');
         navbarTop.remove(navbarTop);
-        navbarTopCombo.remove(navbarTopCombo);
+       // navbarTopCombo.remove(navbarTopCombo);
       }
 
 
