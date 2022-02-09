@@ -1,4 +1,4 @@
-@extends('ecommerce.admin.super.main')
+@extends('ecommerce.admin.main')
 
 @section('content')
     <div class="card mb-3">
