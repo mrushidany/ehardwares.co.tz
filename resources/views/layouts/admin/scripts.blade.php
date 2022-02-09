@@ -32,6 +32,4 @@
         navbarTop.remove(navbarTop);
        // navbarTopCombo.remove(navbarTopCombo);
       }
-
-
   </script>
