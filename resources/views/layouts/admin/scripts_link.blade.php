@@ -26,4 +26,4 @@
     <script type="text/javascript" src="{{ asset('ecommerce/DataTable/datatables.min.js') }}"></script>
 
     <!--   Application scripts-->
-    <script src="{{ asset('js/ehardwares.js') }}"></script>
+    <script src="{{ asset('js/ehardwares.js') }}" type="text/javascript"></script>
