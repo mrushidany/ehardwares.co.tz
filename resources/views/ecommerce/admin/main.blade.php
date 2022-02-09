@@ -2,7 +2,7 @@
 <html lang="en-US" dir="ltr">
 
 <head>
-    @include('layouts.ecommerce.admin_template.link_stylesheets')
+    @include('layouts.admin.link_stylesheets')
 </head>
 
   <body>
@@ -11,21 +11,21 @@
     <!-- ===============================================-->
     <main class="main" id="top">
       <div class="container" data-layout="container">
-        @include('layouts.ecommerce.admin_template.navigation')
+        @include('layouts.admin.navigation')
 
         <div class="content">
-            @include('layouts.ecommerce.admin_template.top_navigation')
+            @include('layouts.admin.top_navigation')
 
             @yield('content')
 
-            @include('layouts.ecommerce.admin_template.footer')
+            @include('layouts.admin.footer')
         </div>
 
       </div>
     </main><!-- ===============================================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->
-    @include('layouts.ecommerce.admin_template.scripts_link')
-    @include('layouts.ecommerce.admin_template.scripts')
+    @include('layouts.admin.scripts_link')
+    @include('layouts.admin
   </body>
 </html>
