@@ -1,4 +1,6 @@
-var toast = function(type, title, message){
+// Notifications Sections
+var toast = function(type, title, message)
+{
     if (type == 'error') {
         title = typeof title !== 'undefined' ? title : 'Error';
         iziToast.error({
@@ -36,7 +38,9 @@ var toast = function(type, title, message){
     }
 }
 
-$('.save_new_user').on('click', function() {
+// Users Section
+$('.save_new_user').on('click', function()
+ {
     $.ajax({
         url: "{{ route('save_new_user') }}",
         method: "POST",
@@ -58,6 +62,7 @@ $('.save_new_user').on('click', function() {
 
 })
 
+// Hardware Section
 $('.save_hardware_category').on('click', function(e) {
     e.preventDefault();
 
