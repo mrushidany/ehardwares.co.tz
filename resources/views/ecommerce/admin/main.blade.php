@@ -26,6 +26,6 @@
     <!--    End of Main Content-->
     <!-- ===============================================-->
     @include('layouts.admin.scripts_link')
-    @include('layouts.admin
+    @include('layouts.admin.scripts')
   </body>
 </html>
