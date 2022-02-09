@@ -2,6 +2,8 @@
     <!--    JavaScripts-->
     <!-- ===============================================-->
     <script src="{{ asset('js/jquery.js') }}"></script>
+    <script src="{{ asset('ecommerce/assets/js/config.js') }}"></script>
+    <script src="{{ asset('ecommerce/vendors/overlayscrollbars/OverlayScrollbars.min.js') }}"></script>
     <script src="{{ asset('ecommerce/vendors/popper/popper.min.js') }}"></script>
     <script src="{{ asset('ecommerce/vendors/bootstrap/bootstrap.min.js') }}"></script>
     <script src="{{ asset('ecommerce/vendors/anchorjs/anchor.min.js') }}"></script>
