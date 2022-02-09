@@ -1,4 +1,4 @@
-@extends('ecommerce.admin.super.main')
+@extends('ecommerce.admin.main')
 
 @section('content')
     <div class="col-lg-6 col-xl-12 col-xxl-6 h-100 user_data">
