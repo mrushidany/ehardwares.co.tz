@@ -39,6 +39,10 @@ var toast = function(type, title, message)
 }
 
 // Users Section
+$('.all_users_table').DataTable({
+
+});
+
 $('.save_new_user').on('click', function()
  {
     $.ajax({
