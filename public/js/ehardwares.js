@@ -113,6 +113,9 @@ $('.save_hardware_category').on('click', function(e) {
             success: function(data) {
                 $('form').trigger('reset');
                 $('.close').click();
+                $('.save_hardware_category').removeAttr('style');
+                $('.reset_hardware_category').removeAttr('style');
+                $('.loading_button').attr('style','display: none;');
                 $('.hardware_categories_table').DataTable().draw();
                 toast(data.type, data.title, data.message);
 
