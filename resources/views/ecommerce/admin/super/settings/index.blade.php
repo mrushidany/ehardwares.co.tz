@@ -23,7 +23,7 @@
                     <span class="fas fa-cogs text-primary fs-5"></span> &nbsp;&nbsp;
                     <div class="flex-1">
                         <h6 class="fs-0 mb-0">
-                            <a class="stretched-link" href="">Settings</a>
+                            <a class="stretched-link" href=""> App Settings</a>
                         </h6>
                     </div>
 
