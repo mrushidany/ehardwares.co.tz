@@ -146,5 +146,19 @@ $('.hardware_categories_table').DataTable({
 //Settings Section
 $('.db_migrate').on('click', function (e) {
     e.preventDefault();
-    alert('DB Migrate button clicked');
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+        }
+    });
+
+    $.ajax({
+        url: "admin/settings/database/migrate",
+        method: "POST",
+
+        success: function(data) {
+
+        }
+    })
 })
