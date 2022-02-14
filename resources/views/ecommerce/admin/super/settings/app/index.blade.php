@@ -4,14 +4,14 @@
 <div class="content">
     <div class="card">
         <div class="card-header">
-          <div class="row flex-between-end">
-            <div class="col-auto align-self-center">
-              <h5 class="mb-0" data-anchor="data-anchor" id="example">Example<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#example" style="padding-left: 0.375em;"></a></h5>
-              <p class="mb-0 mt-2">Using the card component, you can extend the default collapse behavior to create an accordion. To properly achieve the accordion style, be sure to use <code> .accordion </code> as a wrapper.</p>
+            <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                    <h5 class="mb-0" data-anchor="data-anchor" id="example">Example
+                        <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#example" style="padding-left: 0.375em;"></a>
+                    </h5>
+                    <p class="mb-0 mt-2">Using the card component, you can extend the default collapse behavior to create an accordion. To properly achieve the accordion style, be sure to use <code> .accordion </code> as a wrapper.</p>
             </div>
-            <div class="col-auto ms-auto">
-              <div class="nav nav-pills nav-pills-falcon flex-grow-1 mt-2" role="tablist"><button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-e8c9367f-b535-4cba-a4c4-53eeebf4822e" type="button" role="tab" aria-controls="dom-e8c9367f-b535-4cba-a4c4-53eeebf4822e" aria-selected="true" id="tab-dom-e8c9367f-b535-4cba-a4c4-53eeebf4822e">Preview</button><button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-7f953944-019f-4e69-895d-dcb1091057a2" type="button" role="tab" aria-controls="dom-7f953944-019f-4e69-895d-dcb1091057a2" aria-selected="false" id="tab-dom-7f953944-019f-4e69-895d-dcb1091057a2">Code</button></div>
-            </div>
+
           </div>
         </div>
         <div class="card-body bg-light">
