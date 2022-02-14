@@ -7,5 +7,9 @@ use Illuminate\Http\Request;
 
 class DatabaseSettingsController extends Controller
 {
-    //
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 }
