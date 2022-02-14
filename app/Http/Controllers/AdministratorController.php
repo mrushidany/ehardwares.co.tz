@@ -108,6 +108,6 @@ class AdministratorController extends Controller
 
     public function app_settings()
     {
-
+        return view('ecommerce.admin.super.settings.app.index');
     }
 }
