@@ -142,3 +142,9 @@ $('.hardware_categories_table').DataTable({
         emptyTable: "<div class='alert alert-info' style='background-color: #ccf6e4'>No hardware category(ies) found</div>"
     },
 });
+
+//Settings Section
+$('.db_migrate').on('click', function (e) {
+    e.preventDefault();
+    alert('DB Migrate button clicked');
+})
