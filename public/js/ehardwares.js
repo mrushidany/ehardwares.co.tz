@@ -163,3 +163,24 @@ $('.db_migrate').on('click', function (e) {
         }
     })
 })
+
+$('.db_migrate_rollback').on('click', function (e) {
+    e.preventDefault();
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+        }
+    });
+
+    $.ajax({
+        url: "database/migrate_rollback",
+        method: "POST",
+
+        success: function(data) {
+            toast(data.type, data.title, data.message);
+            console.log(data)
+        }
+    })
+})
+

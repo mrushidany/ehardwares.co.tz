@@ -18,10 +18,10 @@ class DatabaseSettingsController extends Controller
     {
         try {
             Artisan::call('migrate');
-            $data = ['state' => 'Done', 'title' => 'Successful', 'message' => 'Migrated Sucessfull'];
+            $data = ['state' => 'success', 'title' => 'Success', 'message' => 'Migrated Sucessfull'];
             return $request->ajax() ? response()->json($data) : redirect()->route('app_settings');
         } catch (\Throwable $th) {
-            $data = ['state' => 'Error', 'title' => 'Failed', 'message' => $th];
+            $data = ['state' => 'error', 'title' => 'Failed', 'message' => $th];
             return $request->ajax() ? response()->json($data) : redirect()->route('app_settings');
         }
 
