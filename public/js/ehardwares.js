@@ -158,6 +158,7 @@ $('.db_migrate').on('click', function (e) {
         method: "POST",
 
         success: function(data) {
+            toast(data.type, data.title, data.message);
             console.log(data)
         }
     })
