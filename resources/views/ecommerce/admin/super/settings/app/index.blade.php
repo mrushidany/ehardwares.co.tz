@@ -18,7 +18,7 @@
         </div>
         <div class="card-body bg-light">
             <div class="tab-content">
-                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-e8c9367f-b535-4cba-a4c4-53eeebf4822e" id="dom-e8c9367f-b535-4cba-a4c4-53eeebf4822e">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-e8c9367f-b535-4cba-a4c4-53eeebf4822e">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading1">
