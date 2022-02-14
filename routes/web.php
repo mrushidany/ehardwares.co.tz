@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdministratorController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HardwareCategoriesController;
+use App\Http\Controllers\Settings\DatabaseSettingsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,6 +42,9 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
 
     Route::post('/hardware_categories/save_hadware_category', [HardwareCategoriesController::class, 'store'])->name('save_hardware_category');
     Route::get('/hardware_categories/list', [HardwareCategoriesController::class, 'hardware_category_list'])->name('hardware_category_list');
+
+    // Database Settings
+    Route::post('/settings/database/migrate', [DatabaseSettingsController::class, 'db_migrate'])->name('db_migrate');
 
 
 });
