@@ -26,4 +26,17 @@ class DatabaseSettingsController extends Controller
         }
 
     }
+
+    public function db_migrate_rollback(Request $request)
+    {
+        try {
+            Artisan::call('migrate:rollback');
+            $data = ['state' => 'success', 'title' => 'Success', 'message' => 'Rolled back sucessfull'];
+            return $request->ajax() ? response()->json($data) : redirect()->route('app_settings');
+        } catch (\Throwable $th) {
+            $data = ['state' => 'error', 'title' => 'Failed', 'message' => $th];
+            return $request->ajax() ? response()->json($data) : redirect()->route('app_settings');
+        }
+
+    }
 }
