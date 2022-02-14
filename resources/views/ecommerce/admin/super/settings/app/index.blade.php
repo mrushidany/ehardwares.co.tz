@@ -28,7 +28,7 @@
                                 <div class="accordion-body">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <button class="btn btn-falcon-default me-1 mb-1" type="button">
+                                            <button class="btn btn-falcon-default me-1 mb-1 db_migrate" type="button">
                                                 <span class="fas fa-database me-1" data-fa-transform="shrink-3"></span> DB Migrate
                                             </button>
                                         </div>
