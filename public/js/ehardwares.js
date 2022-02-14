@@ -164,7 +164,7 @@ $('.db_migrate').on('click', function (e) {
     })
 })
 
-$('.db_migrate_rollback').on('click', function (e) {
+$('.dg_migrate_rollback').on('click', function (e) {
     e.preventDefault();
 
     $.ajaxSetup({
