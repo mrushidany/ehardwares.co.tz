@@ -158,7 +158,7 @@ $('.db_migrate').on('click', function (e) {
         method: "POST",
 
         success: function(data) {
-
+            console.log(data)
         }
     })
 })
