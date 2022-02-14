@@ -22,14 +22,16 @@
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading1">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#database_settings" aria-expanded="true" aria-controls="collapse1">Database Settings</button>
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#database_settings" aria-expanded="true" aria-controls="collapse1">
+                                    <span class="fas fa-database me-1" data-fa-transform="shrink-3"></span> Database Settings
+                                </button>
                             </h2>
                             <div class="accordion-collapse collapse show" id="database_settings" aria-labelledby="heading1" data-bs-parent="#accordionExample" style="">
                                 <div class="accordion-body">
                                     <div class="row">
                                         <div class="col-md-4">
                                             <button class="btn btn-falcon-default me-1 mb-1 db_migrate" type="button">
-                                                <span class="fas fa-database me-1" data-fa-transform="shrink-3"></span> DB Migrate
+                                                <span class="fas fa-sync me-1" data-fa-transform="shrink-3"></span> DB Migrate
                                             </button>
                                         </div>
                                     </div>
