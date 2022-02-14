@@ -12,4 +12,9 @@ class DatabaseSettingsController extends Controller
     {
         $this->middleware('auth');
     }
+
+    public function db_migrate()
+    {
+
+    }
 }
