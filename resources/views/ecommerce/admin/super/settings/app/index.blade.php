@@ -34,6 +34,11 @@
                                                 <span class="fas fa-sync me-1" data-fa-transform="shrink-3"></span> DB Migrate
                                             </button>
                                         </div>
+                                        <div class="col-md-4">
+                                            <button class="btn btn-falcon-default me-1 mb-1 db_migrate" type="button">
+                                                <span class="fas fa-undo me-1" data-fa-transform="shrink-3"></span> DB Migrate RollBack
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
