@@ -20,7 +20,7 @@
             </div>
             <div class="col-sm-6 col-md-4 mb-3">
                 <div class="d-flex position-relative align-items-center mb-2">
-                    <span class="fas fa-cogs text-primary fs-5"></span> &nbsp;&nbsp;
+                    <span class="fas fa-laptop-code text-primary fs-5"></span> &nbsp;&nbsp;
                     <div class="flex-1">
                         <h6 class="fs-0 mb-0">
                             <a class="stretched-link" href=""> App Settings</a>
