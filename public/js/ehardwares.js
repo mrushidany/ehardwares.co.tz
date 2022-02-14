@@ -154,7 +154,7 @@ $('.db_migrate').on('click', function (e) {
     });
 
     $.ajax({
-        url: "admin/settings/database/migrate",
+        url: "database/migrate",
         method: "POST",
 
         success: function(data) {
