@@ -8,9 +8,9 @@
                 <div class="col">
                     <nav style="--falcon-breadcrumb-divider: '»';" aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li>
-                          <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Settings</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">App Settings</li>
+                            <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('settings') }}">Settings</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">App Settings</li>
                         </ol>
                       </nav>
                 </div>
