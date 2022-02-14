@@ -14,8 +14,16 @@ class DatabaseSettingsController extends Controller
         $this->middleware('auth');
     }
 
-    public function db_migrate()
+    public function db_migrate(Request $request)
     {
-        Artisan::call('migrate', array('--path' => 'app/migrations', '--force' => true));
+        try {
+            Artisan::call('migrate', array('--path' => 'app/migrations', '--force' => true));
+            $data = ['state' => 'Done', 'title' => 'Successful', 'message' => 'Migrated Sucessfull'];
+            return $request->ajax() ? response()->json($data) : redirect()->route('app_settings');
+        } catch (\Throwable $th) {
+            $data = ['state' => 'Error', 'title' => 'Failed', 'message' => $th];
+            return $request->ajax() ? response()->json($data) : redirect()->route('app_settings');
+        }
+
     }
 }
