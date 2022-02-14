@@ -26,7 +26,13 @@
                             </h2>
                             <div class="accordion-collapse collapse show" id="database_settings" aria-labelledby="heading1" data-bs-parent="#accordionExample" style="">
                                 <div class="accordion-body">
-                                    Once you’re set up, payouts arrive in your bank account on a 2-day rolling basis. Or you can opt to receive payouts weekly or monthly.
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <button class="btn btn-falcon-default me-1 mb-1" type="button">
+                                                <span class="fas fa-database me-1" data-fa-transform="shrink-3"></span> DB Migrate
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

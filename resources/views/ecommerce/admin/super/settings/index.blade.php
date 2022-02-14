@@ -26,9 +26,7 @@
                             <a class="stretched-link" href="{{ route('app_settings') }}"> App Settings</a>
                         </h6>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>
