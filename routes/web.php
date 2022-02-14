@@ -45,6 +45,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
 
     // Database Settings
     Route::post('/settings/database/migrate', [DatabaseSettingsController::class, 'db_migrate'])->name('db_migrate');
+    Route::post('/settings/database/migrate_rollback', [DatabaseSettingsController::class, 'db_migrate_rollback'])->name('db_migrate_rollback');
 
 
 });
