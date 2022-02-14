@@ -5,13 +5,15 @@
     <div class="card">
         <div class="card-header">
             <div class="row flex-between-end">
-                <div class="col-auto align-self-center">
-                    <h5 class="mb-0" data-anchor="data-anchor" id="example">Example
-                        <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#example" style="padding-left: 0.375em;"></a>
-                    </h5>
-                    <p class="mb-0 mt-2">Using the card component, you can extend the default collapse behavior to create an accordion. To properly achieve the accordion style, be sure to use <code> .accordion </code> as a wrapper.</p>
-            </div>
-
+                <div class="col">
+                    <nav style="--falcon-breadcrumb-divider: '»';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li>
+                          <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Settings</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">App Settings</li>
+                        </ol>
+                      </nav>
+                </div>
           </div>
         </div>
         <div class="card-body bg-light">
