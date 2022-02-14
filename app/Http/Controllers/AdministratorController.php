@@ -105,4 +105,9 @@ class AdministratorController extends Controller
                            })
                            ->make(true);
     }
+
+    public function app_settings()
+    {
+
+    }
 }
