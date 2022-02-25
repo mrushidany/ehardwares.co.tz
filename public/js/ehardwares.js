@@ -174,7 +174,7 @@ $('.hardware_sub_categories_table').DataTable({
     processing: true,
     lengthMenu: [[10, 25, 50], [10, 25, 50]],
     ajax: {
-        url: "/admin/hardware_categories/list",
+        url: "/admin/hardware_categories/sub_category_list",
     },
     columns: [
         {data: 'category_name', name: 'category_name', orderable: true, searchable: true},

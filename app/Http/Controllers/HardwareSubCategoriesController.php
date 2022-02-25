@@ -91,4 +91,9 @@ class HardwareSubCategoriesController extends Controller
     {
         //
     }
+
+    public function hardware_sub_category_list()
+    {
+
+    }
 }
