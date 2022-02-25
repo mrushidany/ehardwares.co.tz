@@ -5,7 +5,7 @@
                 <div class="nav nav-pills nav-pills-falcon flex-grow-1">
                     <span>
                         <button class="btn btn-outline-primary btn-sm me-1 mb-1" type="button" data-bs-toggle="modal" data-bs-target="#hardware_category_modal">
-                            <i class="fas fa-plus"></i>&nbsp;Category
+                            <i class="fas fa-plus"></i>&nbsp; Main Category
                         </button>
                         <button class="btn btn-outline-primary btn-sm me-1 mb-1" type="button" data-bs-toggle="modal" data-bs-target="#hardware_category_modal">
                             <i class="fas fa-file-csv"></i>
