@@ -1,7 +1,7 @@
 @extends('ecommerce.admin.main')
 
 @section('content')
-
+<div class="row g-0">
     <div class="card mb-3">
         <div class="card-header">
             <div class="row flex-between-center">
@@ -16,6 +16,26 @@
             </div>
         </div>
         <div class="card-body bg-light">
+            <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="hardware_categories_tab" id="hardware_categories_tab">
+                    <ul class="nav nav-tabs" id="categories_tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="main_categories_tab" data-bs-toggle="tab" href="#main_categories_tab" role="tab" aria-controls="main_categories_tab" aria-selected="true">Main Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="sub_categories_tab" data-bs-toggle="tab" href="#sub_categories_tab" role="tab" aria-controls="tab-profile" aria-selected="false">Sub Cateories</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content border-x border-bottom p-3" id="myTabContent">
+                        <div class="tab-pane fade active show" id="main_categories_tab" role="tabpanel" aria-labelledby="main_categories_tab">
+
+                        </div>
+                    <div class="tab-pane fade" id="sub_categories_tab" role="tabpanel" aria-labelledby="sub_categories_tab">
+
+                    </div>
+                </div>
+            </div>
+        </div>
             <div class="card mb-3">
                 <div class="card-body position-relative">
                     <div class="row">
@@ -57,4 +77,5 @@
             </div>
         </div>
     </div>
+</div>
 @endsection
