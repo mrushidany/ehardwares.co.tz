@@ -10,7 +10,7 @@
                 </div>
                 <div class="p-4 pb-0">
                     <div class="row">
-                        <div class="mb-3 col-4">
+                        <div class="mb-3 col-md-4">
                             <label for="main_category">Main Category</label>
                             <select class="form-select js-choice" id="organizerSingle" size="1" name="main_category_id" data-options='{"removeItemButton":true,"placeholder":true}'>
                                 <option value="">Select main category</option>
@@ -19,11 +19,11 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="mb-3 col-4">
+                        <div class="mb-3 col-md-4">
                             <label class="col-form-label" for="hardware_category_name">Name</label>
                             <input class="form-control" name="name" type="text">
                         </div>
-                        <div class="mb-3 col-4">
+                        <div class="mb-3 col-md-4">
                             <label class="col-form-label" for="description">Description</label>
                             <textarea class="form-control" rows="2" name="description"></textarea>
                         </div>
