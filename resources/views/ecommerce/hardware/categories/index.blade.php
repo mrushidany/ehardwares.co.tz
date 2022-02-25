@@ -17,13 +17,13 @@
         </div>
         <div class="card-body bg-light">
             <div class="tab-content">
-                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="hardware_categories_tab" id="hardware_categories_tab">
-                    <ul class="nav nav-tabs" id="categories_tab" role="tablist">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-04a84c37-02de-4512-aca8-22eaf4ce4808" id="dom-04a84c37-02de-4512-aca8-22eaf4ce4808">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="main_categories_tab" data-bs-toggle="tab" href="#main_categories_tab" role="tab" aria-controls="main_categories_tab" aria-selected="true">Main Categories</a>
+                            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#main_categories_tab" role="tab" aria-controls="main_categories_tab" aria-selected="true">Main Categories</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="sub_categories_tab" data-bs-toggle="tab" href="#sub_categories_tab" role="tab" aria-controls="tab-profile" aria-selected="false">Sub Categories</a>
+                            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#sub_categories_tab" role="tab" aria-controls="tab-profile" aria-selected="false">Sub Categories</a>
                         </li>
                     </ul>
                     <div class="tab-content border-x border-bottom p-3" id="myTabContent">
