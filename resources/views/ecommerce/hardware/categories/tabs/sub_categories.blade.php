@@ -7,11 +7,11 @@
                         <button class="btn btn-outline-primary btn-sm me-1 mb-1" type="button" data-bs-toggle="modal" data-bs-target="#hardware_sub_category_modal">
                             <i class="fas fa-plus"></i>&nbsp; Sub-Category
                         </button>
-                        <button class="btn btn-outline-primary btn-sm me-1 mb-1" type="button" data-bs-toggle="modal" data-bs-target="#hardware_category_modal">
+                        <button class="btn btn-outline-primary btn-sm me-1 mb-1" type="button" data-bs-toggle="modal" data-bs-target="#hardware_sub_category_modal">
                             <i class="fas fa-file-csv"></i>
                         </button>
-                        <div class="modal fade" id="hardware__sub_category_modal" tabindex="-1" role="dialog" aria-hidden="true">
-                            @include('ecommerce.hardware.categories.hardware_category_form')
+                        <div class="modal fade" id="hardware_sub_category_modal" tabindex="-1" role="dialog" aria-hidden="true">
+
                         </div>
                     </span>
                 </div>
@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="card-body pt-0">
-                    <table class="table table-striped table-bordered hardware_categories_table" style="width:100%">
+                    <table class="table table-striped table-bordered hardware_sub_categories_table" style="width:100%">
                         <thead>
                             <tr>
                                 <th>Category Name</th>
