@@ -38,3 +38,8 @@
     <!-- ===============================================-->
     <link rel="stylesheet" href="{{ asset('ecommerce/DataTable/datatables.min.css') }}" />
 
+    <!-- ===============================================-->
+    <!--    Select2 and Choices-->
+    <!-- ===============================================-->
+    <link href="{{ asset('ecommerce/vendors/choices/choices.min.css') }}" rel="stylesheet" />
+
