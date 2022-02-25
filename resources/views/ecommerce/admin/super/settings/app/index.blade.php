@@ -53,7 +53,7 @@
                                 <div class="accordion-body">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <button class="btn btn-falcon-danger me-1 mb-1 config_cache" type="button">
+                                            <button class="btn btn-falcon-danger me-1 mb-1 clear_cache" type="button">
                                                 <span class="far fa-trash-alt me-1" data-fa-transform="shrink-3"></span> Clear Cache
                                             </button>
                                         </div>
