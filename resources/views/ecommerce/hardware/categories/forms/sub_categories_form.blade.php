@@ -17,7 +17,6 @@
                                 @foreach ($main_categories as $category)
                                     <option>{{ $category->category_name }}</option>
                                 @endforeach
-
                             </select>
                         </div>
                         <div class="mb-3 col-4">
