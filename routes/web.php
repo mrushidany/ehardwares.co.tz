@@ -45,6 +45,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     Route::get('/hardware_categories/list', [HardwareCategoriesController::class, 'hardware_category_list'])->name('hardware_category_list');
 
     Route::post('/hardware_categories/save_hardware_sub_category', [HardwareSubCategoriesController::class, 'store'])->name('save_hardware_sub_category');
+    Route::get('/hardware_categories/sub_category_list', [HardwareSubCategoriesController::class, 'hardware_sub_category_list'])->name('hardware_sub_category_list');
 
 
     // Database Settings
