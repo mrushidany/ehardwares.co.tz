@@ -1,4 +1,6 @@
-// Notifications Sections
+/*
+ Notifications Sections
+*/
 var toast = function(type, title, message)
 {
     if (type == 'error') {
@@ -38,8 +40,13 @@ var toast = function(type, title, message)
     }
 }
 
-// Defined functions
+/*
+ End of notifications sections
+*/
 
+/*
+ Defined functions sections
+*/
 //Ajax Setup function
 function ajax_setup(){
     $.ajaxSetup({
@@ -49,7 +56,14 @@ function ajax_setup(){
     });
 }
 
-// Users Section
+/*
+ End of defined functions sections
+*/
+
+
+/*
+ Users sections
+*/
 $('.all_users_table').DataTable({
     serverSide: true,
     processing: true,
@@ -90,10 +104,15 @@ $('.save_new_user').on('click', function()
             console.log(data);
         }
     })
-
 })
 
-// Hardware Section
+/*
+ End of defined functions sections
+*/
+
+/*
+ Hardware sections
+*/
 $('.save_hardware_category').on('click', function(e) {
     e.preventDefault();
 
@@ -150,7 +169,13 @@ $('.hardware_categories_table').DataTable({
     },
 });
 
-//Settings Section
+/*
+ End of hardware sections
+*/
+
+/*
+ Settings sections
+*/
 $('.db_migrate').on('click', function (e) {
     e.preventDefault();
 
@@ -198,5 +223,8 @@ $('.clear_cache').on('click', function(e) {
         }
 
     })
-
 })
+
+/*
+ End of settings sections
+*/
