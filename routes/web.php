@@ -39,8 +39,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
 
 
     // Hardware Controllers Routes
-    Route::resource('/hardware_categories', HardwareCategoriesController::class)->only('index');
-
+    Route::resource('/hardware_categories', HardwareCategoriesController::class)->only(['index', 'destroy']);
     Route::post('/hardware_categories/save_hardware_category', [HardwareCategoriesController::class, 'store'])->name('save_hardware_category');
     Route::get('/hardware_categories/list', [HardwareCategoriesController::class, 'hardware_category_list'])->name('hardware_category_list');
 
