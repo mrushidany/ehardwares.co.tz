@@ -11,7 +11,7 @@
                             <i class="fas fa-file-csv"></i>
                         </button>
                         <div class="modal fade" id="hardware_sub_category_modal" tabindex="-1" role="dialog" aria-hidden="true">
-
+                            @include('ecommerce.hardware.categories.forms.sub_categories_form')
                         </div>
                     </span>
                 </div>
