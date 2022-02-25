@@ -101,7 +101,7 @@ $('.save_new_user').on('click', function()
             role : $('select[name="role"]').val(),
          },
         success: function(data) {
-            console.log(data);
+
         }
     })
 })
@@ -162,8 +162,6 @@ $('.save_hardware_category').on('click', function(e) {
                 $('.loading_button').attr('style','display: none;');
                 $('.hardware_categories_table').DataTable().draw();
                 toast(data.type, data.title, data.message);
-
-                console.log(data);
             }
         })
     }
@@ -220,8 +218,6 @@ $('.save_hardware_sub_category').on('click', function(e) {
                 $('.loading_button').attr('style','display: none;');
                 $('.hardware_sub_categories_table').DataTable().draw();
                 toast(data.type, data.title, data.message);
-
-                console.log(data);
             }
         })
     }
@@ -263,7 +259,6 @@ $('.dg_migrate_rollback').on('click', function (e) {
 
         success: function(data) {
             toast(data.type, data.title, data.message);
-            console.log(data);
         }
     })
 })
@@ -279,7 +274,6 @@ $('.clear_cache').on('click', function(e) {
 
         success: function(data) {
             toast(data.type, data.title, data.message);
-            console.log(data);
         }
 
     })
