@@ -46,6 +46,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     // Database Settings
     Route::post('/settings/database/migrate', [DatabaseSettingsController::class, 'db_migrate'])->name('db_migrate');
     Route::post('/settings/database/migrate_rollback', [DatabaseSettingsController::class, 'db_migrate_rollback'])->name('db_migrate_rollback');
+    Route::post('/settings/database/clear_cache', [DatabaseSettingsController::class, 'clear_cache'])->name('clear_cache');
 
 
 });
