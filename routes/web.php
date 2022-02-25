@@ -43,6 +43,9 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     Route::post('/hardware_categories/save_hardware_category', [HardwareCategoriesController::class, 'store'])->name('save_hardware_category');
     Route::get('/hardware_categories/list', [HardwareCategoriesController::class, 'hardware_category_list'])->name('hardware_category_list');
 
+    Route::post('/hardware_categories/save_hardware_sub_category', [HardwareCategoriesController::class, 'save_hardware_sub_category'])->name('save_hardware_sub_category');
+
+
     // Database Settings
     Route::post('/settings/database/migrate', [DatabaseSettingsController::class, 'db_migrate'])->name('db_migrate');
     Route::post('/settings/database/migrate_rollback', [DatabaseSettingsController::class, 'db_migrate_rollback'])->name('db_migrate_rollback');
