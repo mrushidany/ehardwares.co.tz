@@ -23,7 +23,7 @@
                     <table class="table table-striped table-bordered hardware_categories_table" style="width:100%">
                         <thead>
                             <tr>
-                                <th>Category Name</th>
+                                <th>Main-Category Name</th>
                                 <th>Description</th>
                                 <th></th>
                             </tr>
