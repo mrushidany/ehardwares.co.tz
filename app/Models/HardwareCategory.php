@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class HardwareCategory extends Model
 {
     use HasFactory;
+
+    public function hardware_sub_categories()
+    {
+        return $this->hasMany(HardwareSubCategory::class);
+    }
+
 }
