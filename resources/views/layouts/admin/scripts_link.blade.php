@@ -25,6 +25,11 @@
     <!-- ===============================================-->
     <script type="text/javascript" src="{{ asset('ecommerce/DataTable/datatables.min.js') }}"></script>
 
+      <!-- ===============================================-->
+    <!--    Select2 and Choices-->
+    <!-- ===============================================-->
+    <script src="{{ asset('ecommerce/vendors/choices/choices.min.js')}}"></script>
+
     <!--   Application scripts-->
     <script src="{{ asset('js/ehardwares.js') }}" type="text/javascript"></script>
 
