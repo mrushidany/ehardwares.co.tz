@@ -45,6 +45,17 @@ var toast = function(type, title, message)
 */
 
 /*
+ CRUD functions sections
+*/
+function delete(url) {
+    alert(url)
+}
+
+/*
+ End of CRUD functions sections
+*/
+
+/*
  Defined functions sections
 */
 //Ajax Setup function
