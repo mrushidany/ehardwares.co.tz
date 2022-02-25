@@ -177,7 +177,7 @@ $('.hardware_sub_categories_table').DataTable({
         url: "/admin/hardware_categories/sub_category_list",
     },
     columns: [
-        {data: 'category_name', name: 'category_name', orderable: true, searchable: true},
+        {data: 'name', name: 'name', orderable: true, searchable: true},
         {data: 'description', name: 'description', orderable: false, searchable: true},
         {data: 'action', name: 'action', orderable: false, searchable: false },
     ],
