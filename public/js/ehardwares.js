@@ -47,8 +47,8 @@ var toast = function(type, title, message)
 /*
  CRUD functions sections
 */
-function delete(url) {
-    alert(url)
+function destroy() {
+    alert("We are here");
 }
 
 /*
