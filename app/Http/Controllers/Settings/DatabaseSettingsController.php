@@ -37,6 +37,17 @@ class DatabaseSettingsController extends Controller
             $data = ['state' => 'error', 'title' => 'Failed', 'message' => $th];
             return $request->ajax() ? response()->json($data) : redirect()->route('app_settings');
         }
+    }
 
+    public function clear_cache(Request $request)
+    {
+        try {
+            Artisan::call('cache:clear');
+            $data = ['state' => 'success', 'title' => 'Success', 'message' => 'Cache succesfull cleared'];
+            return $request->ajax() ? response()->json($data) : redirect()->route('app_settings');
+        } catch (\Throwable $th) {
+            $data = ['state' => 'error', 'title' => 'Failed', 'message' => $th];
+            return $request->ajax() ? response()->json($data) : redirect()->route('app_settings');
+        }
     }
 }
