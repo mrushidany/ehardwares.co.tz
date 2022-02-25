@@ -14,7 +14,7 @@ class DropHardwareInventoriesIdForeignKeyInHardwaresTable extends Migration
     public function up()
     {
         Schema::table('hardwares', function (Blueprint $table) {
-           $table->dropForeign(['hardware_inventories_id']);
+           $table->dropForeign(['inventory_id']);
         });
     }
 
