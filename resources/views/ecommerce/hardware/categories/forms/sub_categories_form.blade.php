@@ -14,11 +14,11 @@
                             <label for="main_category">Main Category</label>
                             <select class="form-select js-choice" id="organizerSingle" size="1" name="main_category_id" data-options='{"removeItemButton":true,"placeholder":true}'>
                                 <option value="">Select main category</option>
-                                <option>Massachusetts Institute of Technology</option>
-                                <option>University of Chicago</option>
-                                <option>GSAS Open Labs At Harvard</option>
-                                <option>California Institute of Technology </option>
-                              </select>
+                                @foreach ($main_categories as $category)
+                                    <option>{{ $category->category_name }}</option>
+                                @endforeach
+
+                            </select>
                         </div>
                         <div class="mb-3 col-4">
                             <label class="col-form-label" for="hardware_category_name">Name</label>

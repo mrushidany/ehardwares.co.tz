@@ -1,4 +1,3 @@
-{{ dd($main_categories) }}
 <div class="card mb-3">
     <div class="card-body position-relative">
         <div class="row">

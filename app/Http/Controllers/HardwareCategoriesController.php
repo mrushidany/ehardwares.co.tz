@@ -22,8 +22,7 @@ class HardwareCategoriesController extends Controller
     public function index()
     {
         $data = [
-            'main_categories' =>  HardwareCategory::find(1)->hardware_sub_categories,
-        ];
+            'main_categories' => HardwareCategory::get(),        ];
         return view('ecommerce.hardware.categories.index')->with($data);
     }
 
