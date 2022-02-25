@@ -107,11 +107,7 @@ $('.save_hardware_category').on('click', function(e) {
         $('.reset_hardware_category').attr('style', 'display: none;');
         $('.loading_button').removeAttr('style');
 
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
-            }
-        });
+        ajax_setup();
 
         $.ajax({
             url: "/admin/hardware_categories/save_hadware_category",
@@ -158,11 +154,7 @@ $('.hardware_categories_table').DataTable({
 $('.db_migrate').on('click', function (e) {
     e.preventDefault();
 
-    $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
-        }
-    });
+    ajax_setup();
 
     $.ajax({
         url: "database/migrate",
@@ -178,11 +170,7 @@ $('.db_migrate').on('click', function (e) {
 $('.dg_migrate_rollback').on('click', function (e) {
     e.preventDefault();
 
-    $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
-        }
-    });
+    ajax_setup();
 
     $.ajax({
         url: "database/migrate_rollback",
@@ -198,7 +186,6 @@ $('.dg_migrate_rollback').on('click', function (e) {
 $('.clear_cache').on('click', function(e) {
     e.preventDefault();
 
-    $.ajaxSetup({
-        header
-    })
+    ajax_setup();
+
 })
