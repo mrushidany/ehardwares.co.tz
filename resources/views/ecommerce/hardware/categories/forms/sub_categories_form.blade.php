@@ -31,8 +31,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-outline-warning me-1 mb-1 reset_hardware_category" type="reset">Reset</button>
-                <button class="btn btn-outline-success me-1 mb-1 save_hardware_category" type="button">Save</button>
+                <button class="btn btn-outline-warning me-1 mb-1 reset_hardware_sub_category" type="reset">Reset</button>
+                <button class="btn btn-outline-success me-1 mb-1 save_hardware_sub_category" type="button">Save</button>
                 <button class="btn btn-outline-success me-1 mb-1 disabled loading_button" style="display: none;" type="button">Saving .....</button>
             </div>
         </form>
