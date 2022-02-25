@@ -51,7 +51,13 @@
                             </h2>
                             <div class="accordion-collapse collapse" id="configuration_settings" aria-labelledby="heading2" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    You can issue either partial or full refunds. There are no fees to refund a charge, but the fees from the original charge are not returned.
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <button class="btn btn-falcon-danger me-1 mb-1 config_cache" type="button">
+                                                <span class="far fa-trash-alt me-1" data-fa-transform="shrink-3"></span> Clear Cache
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
