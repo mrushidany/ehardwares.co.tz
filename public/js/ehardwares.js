@@ -178,7 +178,7 @@ $('.dg_migrate_rollback').on('click', function (e) {
 
         success: function(data) {
             toast(data.type, data.title, data.message);
-            console.log(data)
+            console.log(data);
         }
     })
 })
@@ -187,5 +187,16 @@ $('.clear_cache').on('click', function(e) {
     e.preventDefault();
 
     ajax_setup();
+
+    $.ajax({
+        url: "database/clear_cache",
+        method: "POST",
+
+        success: function(data) {
+            toast(data.type, data.title, data.message);
+            console.log(data);
+        }
+
+    })
 
 })
