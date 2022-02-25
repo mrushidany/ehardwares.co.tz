@@ -13,7 +13,7 @@
                         <div class="mb-3 col-4">
                             <label for="main_category">Main Category</label>
                             <select class="form-select js-choice" id="organizerSingle" size="1" name="main_category" data-options='{"removeItemButton":true,"placeholder":true}'>
-                                <option value="">Select hardware cagoryte</option>
+                                <option value="">Select main category</option>
                                 <option>Massachusetts Institute of Technology</option>
                                 <option>University of Chicago</option>
                                 <option>GSAS Open Labs At Harvard</option>
