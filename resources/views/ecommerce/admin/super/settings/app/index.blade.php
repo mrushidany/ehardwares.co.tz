@@ -46,7 +46,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#configuration_settings" aria-expanded="true" aria-controls="collapse2">
-                                    <span class="fas fa-database me-1" data-fa-transform="shrink-3"></span> Configuration Settings
+                                    <span class="fas fa-rocket me-1" data-fa-transform="shrink-3"></span> Configuration Settings
                                 </button>
                             </h2>
                             <div class="accordion-collapse collapse" id="configuration_settings" aria-labelledby="heading2" data-bs-parent="#accordionExample">
