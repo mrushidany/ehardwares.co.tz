@@ -129,7 +129,7 @@ $('.save_hardware_category').on('click', function(e) {
         ajax_setup();
 
         $.ajax({
-            url: "/admin/hardware_categories/save_hadware_category",
+            url: "/admin/hardware_categories/save_hardware_category",
             method: "POST",
             data:
             {
@@ -141,6 +141,46 @@ $('.save_hardware_category').on('click', function(e) {
                 $('.close').click();
                 $('.save_hardware_category').removeAttr('style');
                 $('.reset_hardware_category').removeAttr('style');
+                $('.loading_button').attr('style','display: none;');
+                $('.hardware_categories_table').DataTable().draw();
+                toast(data.type, data.title, data.message);
+
+                console.log(data);
+            }
+        })
+    }
+});
+
+$('.save_hardware_sub_category').on('click', function(e) {
+    e.preventDefault();
+
+    var button = $(this);
+    var form = button.closest('form');
+    var main_category = form.find('select[name="main_category_id"]').val();
+    var name = form.find('input[name="name"]').val();
+    var description = form.find('textarea[name="description"]').val();
+
+    if(main_category !== '' && name !== '' && description !== ''){
+        $(this).attr('style', 'display: none;');
+        $('.reset_hardware_sub_category').attr('style', 'display: none;');
+        $('.loading_button').removeAttr('style');
+
+        ajax_setup();
+
+        $.ajax({
+            url: "/admin/hardware_categories/save_hardware_sub_category",
+            method: "POST",
+            data:
+            {
+                main_category : main_category,
+                name : name,
+                description : description,
+             },
+            success: function(data) {
+                $('form').trigger('reset');
+                $('.close').click();
+                $('.save_hardware_sub_category').removeAttr('style');
+                $('.reset_hardware_sub_category').removeAttr('style');
                 $('.loading_button').attr('style','display: none;');
                 $('.hardware_categories_table').DataTable().draw();
                 toast(data.type, data.title, data.message);
