@@ -12,7 +12,7 @@
                     <div class="row">
                         <div class="mb-3 col-4">
                             <label for="main_category">Main Category</label>
-                            <select class="form-select js-choice" id="organizerSingle" size="1" name="main_category" data-options='{"removeItemButton":true,"placeholder":true}'>
+                            <select class="form-select js-choice" id="organizerSingle" size="1" name="main_category_id" data-options='{"removeItemButton":true,"placeholder":true}'>
                                 <option value="">Select main category</option>
                                 <option>Massachusetts Institute of Technology</option>
                                 <option>University of Chicago</option>
@@ -22,7 +22,7 @@
                         </div>
                         <div class="mb-3 col-4">
                             <label class="col-form-label" for="hardware_category_name">Name</label>
-                            <input class="form-control" name="category_name" type="text">
+                            <input class="form-control" name="name" type="text">
                         </div>
                         <div class="mb-3 col-4">
                             <label class="col-form-label" for="description">Description</label>
