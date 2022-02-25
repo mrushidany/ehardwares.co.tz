@@ -38,6 +38,17 @@ var toast = function(type, title, message)
     }
 }
 
+// Defined functions
+
+//Ajax Setup function
+function ajax_setup(){
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+        }
+    });
+}
+
 // Users Section
 $('.all_users_table').DataTable({
     serverSide: true,
@@ -184,3 +195,10 @@ $('.dg_migrate_rollback').on('click', function (e) {
     })
 })
 
+$('.clear_cache').on('click', function(e) {
+    e.preventDefault();
+
+    $.ajaxSetup({
+        header
+    })
+})
