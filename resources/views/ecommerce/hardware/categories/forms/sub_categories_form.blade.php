@@ -6,15 +6,25 @@
         <form class="hardware_category_form">
             <div class="modal-body p-0">
                 <div class="rounded-top-lg py-3 ps-4 pe-6 bg-light text-center">
-                    <h4 class="mb-1" id="modalExampleDemoLabel">Add a new hardware category </h4>
+                    <h4 class="mb-1" id="modalExampleDemoLabel">Add a new sub-hardware category </h4>
                 </div>
                 <div class="p-4 pb-0">
                     <div class="row">
-                        <div class="mb-3 col-6">
+                        <div class="mb-3 col-4">
+                            <label for="main_category">Main Category</label>
+                            <select class="form-select js-choice" id="organizerSingle" size="1" name="main_category" data-options='{"removeItemButton":true,"placeholder":true}'>
+                                <option value="">Select hardware cagoryte</option>
+                                <option>Massachusetts Institute of Technology</option>
+                                <option>University of Chicago</option>
+                                <option>GSAS Open Labs At Harvard</option>
+                                <option>California Institute of Technology </option>
+                              </select>
+                        </div>
+                        <div class="mb-3 col-4">
                             <label class="col-form-label" for="hardware_category_name">Name</label>
                             <input class="form-control" name="category_name" type="text">
                         </div>
-                        <div class="mb-3 col-6">
+                        <div class="mb-3 col-4">
                             <label class="col-form-label" for="description">Description</label>
                             <textarea class="form-control" rows="2" name="description"></textarea>
                         </div>
