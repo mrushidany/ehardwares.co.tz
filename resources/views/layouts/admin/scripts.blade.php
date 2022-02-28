@@ -101,7 +101,7 @@ function main_post(url, method){
 function destroy(url) {
     var method = 'DELETE';
     Swal.fire({
-        title: 'Do you want to delete this sub category?',
+        title: 'Do you want to delete this?',
         showDenyButton: true,
         showCancelButton: true,
         confirmButtonText: 'Delete',
