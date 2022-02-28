@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\HardwareCategory;
+use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Yajra\DataTables\Facades\DataTables;
@@ -95,9 +96,22 @@ class HardwareCategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request,$id)
     {
-        //
+        try {
+            DB::beginTransaction();
+            HardwareCategory::where('id',$id)->delete();
+            DB::commit();
+            $data = ['type' => 'success', 'title' => 'Success', 'message' => 'Deleted sub category'];
+            return $request->ajax() ? response()->json($data) : redirect()->back()->with($data);
+
+        }catch(QueryException $queryException){
+            DB::rollBack();
+            $data =['type' => 'error', 'title' => 'Fail', 'msg' => 'Record could not be Deleted'];
+            return $request->ajax() ? response()->json($data) : redirect()->back()->with($data);
+        }
+        $data =['type' => 'error', 'title' => 'Fail', 'msg' => 'Record could not be Deleted'];
+        return $request->ajax() ? response()->json($data) : redirect()->back()->with($data);
     }
 
     public function hardware_category_list()
