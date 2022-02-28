@@ -82,9 +82,35 @@ var toast = function(type, title, message)
 /*
  CRUD functions sections
 */
-function destroy() {
-    alert("We are here");
+function main_post(url, method){
+    ajax_setup();
+    $.ajax({
+            url: url,
+            type: 'POST',
+            data: { _method : method },
+        });
 }
+
+function destroy(url) {
+    var method = 'DELETE';
+    Swal.fire({
+        title: 'Do you want to delete this sub category?',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Delete',
+        denyButtonText: `Don't delete`,
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            main_post(url, method)
+            Swal.fire('Deleted!', '', 'success')
+        } else if (result.isDenied) {
+          Swal.fire('Sub category is not deleted', '', 'info')
+        }
+      })
+}
+
+
 
 /*
  End of CRUD functions sections
@@ -268,26 +294,6 @@ $('.save_hardware_sub_category').on('click', function(e) {
         })
     }
 });
-
-function delete_hardware_sub_category(url){
-    console.log(url);
-    Swal.fire({
-        title: 'Do you want to delete this sub category?',
-        showDenyButton: true,
-        showCancelButton: true,
-        confirmButtonText: 'Delete',
-        denyButtonText: `Don't delete`,
-      }).then((result) => {
-        /* Read more about isConfirmed, isDenied below */
-        if (result.isConfirmed) {
-          Swal.fire('Deleted!', '', 'success')
-        } else if (result.isDenied) {
-          Swal.fire('Sub category is not deleted', '', 'info')
-        }
-      })
-}
-
-
 
 /*
  End of hardware sections
