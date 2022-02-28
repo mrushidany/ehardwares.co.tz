@@ -188,23 +188,6 @@ $('.save_new_user').on('click', function()
 /*
  Hardware sections
 */
-$('.hardware_categories_table').DataTable({
-    serverSide: true,
-    processing: true,
-    lengthMenu: [[10, 25, 50], [10, 25, 50]],
-    ajax: {
-        url: "{{ route('hardware_category_list') }}",
-    },
-    columns: [
-        {data: 'category_name', name: 'category_name', orderable: true, searchable: true},
-        {data: 'description', name: 'description', orderable: false, searchable: true},
-        {data: 'action', name: 'action', orderable: false, searchable: false },
-    ],
-    language: {
-        zeroRecords: "<div class='alert alert-info' style='background-color: #ccf6e4'>No matching hardware category(ies) found</div>",
-        emptyTable: "<div class='alert alert-info' style='background-color: #ccf6e4'>No hardware category(ies) found</div>"
-    },
-});
 
 $('.save_hardware_category').on('click', function(e) {
     e.preventDefault();
