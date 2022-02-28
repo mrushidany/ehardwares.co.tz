@@ -15,20 +15,25 @@
     <script src="{{ asset('ecommerce/vendors/list.js/list.min.js') }}"></script>
     <script src="{{ asset('ecommerce/assets/js/theme.js') }}"></script>
 
-     <!-- ===============================================-->
+    <!-- ===============================================-->
     <!--    iziToast-->
     <!-- ===============================================-->
     <script type="text/javascript" src="{{ asset('ecommerce/iziToast/dist/js/iziToast.min.js') }}"></script>
 
-     <!-- ===============================================-->
+    <!-- ===============================================-->
     <!--    Datatable-->
     <!-- ===============================================-->
     <script type="text/javascript" src="{{ asset('ecommerce/DataTable/datatables.min.js') }}"></script>
 
-      <!-- ===============================================-->
+    <!-- ===============================================-->
     <!--    Select2 and Choices-->
     <!-- ===============================================-->
     <script src="{{ asset('ecommerce/vendors/choices/choices.min.js')}}"></script>
+
+    <!-- ===============================================-->
+    <!--    Sweet alert 2-->
+    <!-- ===============================================-->
+    <script src="{{ asset('ecommerce/swal/dist/sweetalert2.js') }}"></script>
 
     <!--   Application scripts-->
     <script src="{{ asset('js/ehardwares.js') }}" type="text/javascript"></script>
