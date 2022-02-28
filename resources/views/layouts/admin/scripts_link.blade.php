@@ -33,7 +33,7 @@
     <!-- ===============================================-->
     <!--    Sweet alert 2-->
     <!-- ===============================================-->
-    <script src="{{ asset('ecommerce/swal/dist/sweetalert2.js') }}"></script>
+    <script src="{{ asset('ecommerce/swal/dist/sweetalert2.all.min.js') }}"></script>
 
     <!--   Application scripts-->
     <script src="{{ asset('js/ehardwares.js') }}" type="text/javascript"></script>
