@@ -269,7 +269,8 @@ $('.save_hardware_sub_category').on('click', function(e) {
     }
 });
 
-function delete_hardware_sub_category(){
+function delete_hardware_sub_category(url){
+    console.log(url);
     Swal.fire({
         title: 'Do you want to delete this sub category?',
         showDenyButton: true,

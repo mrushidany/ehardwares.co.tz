@@ -97,7 +97,7 @@ class HardwareSubCategoriesController extends Controller
     public function hardware_sub_category_list()
     {
         $category_list = DB::table('hardware_sub_categories')
-                            ->select('name', 'description')
+                            ->select('id','name', 'description')
                             ->orderBy('id', 'asc')
                             ->get();
         return DataTables::of($category_list)
@@ -105,7 +105,7 @@ class HardwareSubCategoriesController extends Controller
 
                                 $button = '';
                                 $button .= '<a href="" class="btn btn-sm p-0 " data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" data-bs-original-title="Edit" aria-label="Edit"><span class="text-500 fas fa-edit"></span></a>';
-                                $button .= '<a href="javascript:delete_hardware_sub_category()" class="btn btn-sm p-0 ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" data-bs-original-title="Delete" aria-label="Delete" aria-describedby="tooltip253699"><span class="text-500 fas fa-trash-alt"></span></a>';
+                                $button .= '<a href="javascript:delete_hardware_sub_category(\''. route('hardware_sub_categories.destroy',$list->id) .'\')" class="btn btn-sm p-0 ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" data-bs-original-title="Delete" aria-label="Delete" aria-describedby="tooltip253699"><span class="text-500 fas fa-trash-alt"></span></a>';
                                 return '<nobr>'. $button . '</nobr>';
                             })
                             ->make(true);
