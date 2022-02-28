@@ -103,14 +103,14 @@ class HardwareCategoriesController extends Controller
     public function hardware_category_list()
     {
         $category_list = DB::table('hardware_categories')
-                            ->select('category_name', 'description')
+                            ->select('id','category_name', 'description')
                             ->orderBy('id', 'asc')
                             ->get();
         return DataTables::of($category_list)
                             ->addColumn('action', function ($list) {
                                 $button = '';
                                 $button .= '<a class="btn btn-sm p-0 " data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" data-bs-original-title="Edit" aria-label="Edit"><span class="text-500 fas fa-edit"></span></a>';
-                                $button .= '<a class="btn btn-sm p-0 ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" data-bs-original-title="Delete" aria-label="Delete" aria-describedby="tooltip253699"><span class="text-500 fas fa-trash-alt"></span></a>';
+                                $button .= '<a href="javascript:destroy(\''. route('hardware_categories.destroy',$list->id) .'\')" class="btn btn-sm p-0 ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" data-bs-original-title="Delete" aria-label="Delete" aria-describedby="tooltip253699"><span class="text-500 fas fa-trash-alt"></span></a>';
                                 return '<nobr>'. $button . '</nobr>';
                             })
                             ->make(true);
