@@ -107,10 +107,10 @@ class HardwareCategoriesController extends Controller
 
         }catch(QueryException $queryException){
             DB::rollBack();
-            $data =['type' => 'error', 'title' => 'Fail', 'msg' => 'Record could not be Deleted'];
+            $data =['type' => 'error', 'title' => 'Fail', 'message' => 'Record could not be Deleted'];
             return $request->ajax() ? response()->json($data) : redirect()->back()->with($data);
         }
-        $data =['type' => 'error', 'title' => 'Fail', 'msg' => 'Record could not be Deleted'];
+        $data =['type' => 'error', 'title' => 'Fail', 'message' => 'Record could not be Deleted'];
         return $request->ajax() ? response()->json($data) : redirect()->back()->with($data);
     }
 
