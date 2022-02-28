@@ -102,7 +102,7 @@ class HardwareCategoriesController extends Controller
             DB::beginTransaction();
             HardwareCategory::where('id',$id)->delete();
             DB::commit();
-            $data = ['type' => 'success', 'title' => 'Success', 'message' => 'Deleted sub category'];
+            $data = ['type' => 'success', 'title' => 'Success', 'message' => 'Deleted category'];
             return $request->ajax() ? response()->json($data) : redirect()->back()->with($data);
 
         }catch(QueryException $queryException){
