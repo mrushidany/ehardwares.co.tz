@@ -115,7 +115,7 @@ $('.all_users_table').DataTable({
     processing: true,
     lengthMenu: [[10, 25, 50], [10, 25, 50]],
     ajax: {
-        url: "/admin/settings/all_users_list",
+        url: "route('all_users_list')",
     },
     columns: [
         {data: 'name', name: 'name', orderable: true, searchable: true},
@@ -164,7 +164,7 @@ $('.hardware_categories_table').DataTable({
     processing: true,
     lengthMenu: [[10, 25, 50], [10, 25, 50]],
     ajax: {
-        url: "/admin/hardware_categories/list",
+        url: "{{ route('hardware_category_list') }}",
     },
     columns: [
         {data: 'category_name', name: 'category_name', orderable: true, searchable: true},
@@ -193,7 +193,7 @@ $('.save_hardware_category').on('click', function(e) {
         ajax_setup();
 
         $.ajax({
-            url: "/admin/hardware_categories/save_hardware_category",
+            url: "{{ route('save_hardware_category') }}",
             method: "POST",
             data:
             {
@@ -218,7 +218,7 @@ $('.hardware_sub_categories_table').DataTable({
     processing: true,
     lengthMenu: [[10, 25, 50], [10, 25, 50]],
     ajax: {
-        url: "/admin/hardware_categories/sub_category_list",
+        url: "{{ route('hardware_sub_category_list') }}",
     },
     columns: [
         {data: 'name', name: 'name', orderable: true, searchable: true},
@@ -248,7 +248,7 @@ $('.save_hardware_sub_category').on('click', function(e) {
         ajax_setup();
 
         $.ajax({
-            url: "/admin/hardware_categories/save_hardware_sub_category",
+            url: "{{ route('save_hardware_sub_category') }}",
             method: "POST",
             data:
             {
@@ -301,7 +301,7 @@ $('.db_migrate').on('click', function (e) {
     ajax_setup();
 
     $.ajax({
-        url: "database/migrate",
+        url: "{{ route('db_migrate') }}",
         method: "POST",
 
         success: function(data) {
@@ -317,7 +317,7 @@ $('.dg_migrate_rollback').on('click', function (e) {
     ajax_setup();
 
     $.ajax({
-        url: "database/migrate_rollback",
+        url: "{{ route('db_migrate_rollback') }}",
         method: "POST",
 
         success: function(data) {
@@ -332,7 +332,7 @@ $('.clear_cache').on('click', function(e) {
     ajax_setup();
 
     $.ajax({
-        url: "database/clear_cache",
+        url: "{{ route('clear_cache') }}",
         method: "POST",
 
         success: function(data) {
@@ -346,4 +346,4 @@ $('.clear_cache').on('click', function(e) {
  End of settings sections
 */
 
-  </script>
+</script>
