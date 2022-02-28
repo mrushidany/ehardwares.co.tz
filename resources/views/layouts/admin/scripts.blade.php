@@ -103,7 +103,7 @@ function destroy(url) {
     Swal.fire({
         title: 'Do you want to delete this?',
         showDenyButton: true,
-        showCancelButton: true,
+        showCancelButton: false,
         confirmButtonText: 'Delete',
         denyButtonText: `Don't delete`,
       }).then((result) => {
