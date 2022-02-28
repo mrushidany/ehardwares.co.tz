@@ -82,23 +82,6 @@ var toast = function(type, title, message)
 /*
  CRUD functions sections
 */
-function delete_post(url, method){
-    ajax_setup();
-    $.ajax({
-            url: url,
-            type: 'POST',
-            data: { _method : method },
-            success: function(data) {
-                location.reload(true);
-                toast(data.type, data.title, data.message);
-                if(datatable !== null){
-                   datatable.draw();
-                }
-                main_datatable.draw();
-            }
-        });
-}
-
 function destroy(url) {
     var method = 'DELETE';
     Swal.fire({
@@ -117,6 +100,10 @@ function destroy(url) {
       })
 }
 
+function edit(url, modal){
+    alert("Url is "+ url + " and modal name is "+ modal)
+}
+
 
 
 /*
@@ -126,6 +113,23 @@ function destroy(url) {
 /*
  Defined functions sections
 */
+function delete_post(url, method){
+    ajax_setup();
+    $.ajax({
+            url: url,
+            type: 'POST',
+            data: { _method : method },
+            success: function(data) {
+                location.reload(true);
+                toast(data.type, data.title, data.message);
+                if(datatable !== null){
+                   datatable.draw();
+                }
+                main_datatable.draw();
+            }
+        });
+}
+
 //Ajax Setup function
 function ajax_setup(){
     $.ajaxSetup({
