@@ -234,6 +234,11 @@ $('.save_hardware_sub_category').on('click', function(e) {
     }
 });
 
+function delete_hardware_sub_category(e){
+    e.preventDefault();
+    alert('we want to delete hardware sub category right now');
+}
+
 
 
 /*
