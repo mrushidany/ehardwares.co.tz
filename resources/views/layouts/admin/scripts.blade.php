@@ -105,7 +105,7 @@ function destroy(url) {
             main_post(url, method)
             Swal.fire('Deleted!', '', 'success')
         } else if (result.isDenied) {
-          Swal.fire('Sub category is not deleted', '', 'info')
+          Swal.fire('Delete failed', '', 'info')
         }
       })
 }
