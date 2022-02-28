@@ -35,6 +35,3 @@
     <!-- ===============================================-->
     <script src="{{ asset('ecommerce/swal/dist/sweetalert2.min.js') }}"></script>
 
-    <!--   Application scripts-->
-    <script src="{{ asset('js/ehardwares.js') }}" type="text/javascript"></script>
-
