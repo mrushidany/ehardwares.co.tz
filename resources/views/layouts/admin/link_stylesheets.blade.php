@@ -43,3 +43,8 @@
     <!-- ===============================================-->
     <link href="{{ asset('ecommerce/vendors/choices/choices.min.css') }}" rel="stylesheet" />
 
+    <!-- ===============================================-->
+    <!--    Sweet alert -->
+    <!-- ===============================================-->
+    <link href="{{ asset('ecommerce/swal/dist/sweetalert2.css') }}" rel="stylesheet" />
+
