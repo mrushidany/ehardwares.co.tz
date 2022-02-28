@@ -235,7 +235,20 @@ $('.save_hardware_sub_category').on('click', function(e) {
 });
 
 function delete_hardware_sub_category(){
-    alert('we want to delete hardware sub category right now');
+    Swal.fire({
+        title: 'Do you want to delete this sub category?',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Delete',
+        denyButtonText: `Don't delete`,
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+          Swal.fire('Deleted!', '', 'success')
+        } else if (result.isDenied) {
+          Swal.fire('Sub category is not deleted', '', 'info')
+        }
+      })
 }
 
 
