@@ -46,5 +46,5 @@
     <!-- ===============================================-->
     <!--    Sweet alert -->
     <!-- ===============================================-->
-    <link href="{{ asset('ecommerce/swal/dist/sweetalert2.css') }}" rel="stylesheet" />
+    <link href="{{ asset('ecommerce/swal/dist/sweetalert2.min.css') }}" rel="stylesheet" />
 
