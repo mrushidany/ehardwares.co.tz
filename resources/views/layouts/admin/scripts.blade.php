@@ -88,6 +88,9 @@ function main_post(url, method){
             url: url,
             type: 'POST',
             data: { _method : method },
+            success: function(data) {
+                toast(data.type, data.title, data.message);
+            }
         });
 }
 
@@ -103,7 +106,6 @@ function destroy(url) {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
             main_post(url, method)
-            Swal.fire('Deleted!', '', 'success')
         } else if (result.isDenied) {
           Swal.fire('Delete failed', '', 'info')
         }
