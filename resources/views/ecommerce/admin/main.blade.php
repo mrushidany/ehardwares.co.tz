@@ -27,5 +27,6 @@
     <!-- ===============================================-->
     @include('layouts.admin.scripts_link')
     @include('layouts.admin.scripts')
+    @yield('scripts')
   </body>
 </html>
