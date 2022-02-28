@@ -89,6 +89,7 @@ function delete_post(url, method){
             type: 'POST',
             data: { _method : method },
             success: function(data) {
+                location.reload(true);
                 toast(data.type, data.title, data.message);
                 if(datatable !== null){
                    datatable.draw();
@@ -221,6 +222,7 @@ $('.save_hardware_category').on('click', function(e) {
                 $('.save_hardware_category').removeAttr('style');
                 $('.reset_hardware_category').removeAttr('style');
                 $('.loading_button').attr('style','display: none;');
+                location.reload(true);
                 $('.hardware_categories_table').DataTable().draw();
                 toast(data.type, data.title, data.message);
             }
