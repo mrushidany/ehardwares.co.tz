@@ -242,23 +242,7 @@ $('.save_hardware_category').on('click', function(e) {
     }
 });
 
-$('.hardware_sub_categories_table').DataTable({
-    serverSide: true,
-    processing: true,
-    lengthMenu: [[10, 25, 50], [10, 25, 50]],
-    ajax: {
-        url: "{{ route('hardware_sub_category_list') }}",
-    },
-    columns: [
-        {data: 'name', name: 'name', orderable: true, searchable: true},
-        {data: 'description', name: 'description', orderable: false, searchable: true},
-        {data: 'action', name: 'action', orderable: false, searchable: false },
-    ],
-    language: {
-        zeroRecords: "<div class='alert alert-info' style='background-color: #ccf6e4'>No matching hardware category(ies) found</div>",
-        emptyTable: "<div class='alert alert-info' style='background-color: #ccf6e4'>No hardware category(ies) found</div>"
-    },
-});
+
 
 $('.save_hardware_sub_category').on('click', function(e) {
     e.preventDefault();
