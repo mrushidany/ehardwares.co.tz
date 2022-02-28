@@ -45,9 +45,9 @@
 
 @section('scripts')
 <script type="application/javascript">
-    let main_datatable;
 
-    main_datatable = $('.hardware_categories_table').DataTable({
+
+   let datatable = $('.hardware_categories_table').DataTable({
                 serverSide: true,
                 processing: true,
                 lengthMenu: [[10, 25, 50], [10, 25, 50]],
@@ -65,7 +65,7 @@
                 },
             });
 
-    main_datatable = $('.hardware_sub_categories_table').DataTable({
+  let main_datatable = $('.hardware_sub_categories_table').DataTable({
                 serverSide: true,
                 processing: true,
                 lengthMenu: [[10, 25, 50], [10, 25, 50]],
