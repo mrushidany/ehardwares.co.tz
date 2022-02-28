@@ -90,7 +90,7 @@ function delete_post(url, method){
             data: { _method : method },
             success: function(data) {
                 toast(data.type, data.title, data.message);
-                if(datatable){
+                if(datatable !== null){
                    datatable.draw();
                 }
                 main_datatable.draw();
