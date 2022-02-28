@@ -82,7 +82,7 @@ var toast = function(type, title, message)
 /*
  CRUD functions sections
 */
-function main_post(url, method){
+function delete_post(url, method){
     ajax_setup();
     $.ajax({
             url: url,
@@ -109,7 +109,7 @@ function destroy(url) {
       }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
-            main_post(url, method)
+            delete_post(url, method)
         } else if (result.isDenied) {
           Swal.fire('Delete failed', '', 'info')
         }
