@@ -90,6 +90,7 @@ function main_post(url, method){
             data: { _method : method },
             success: function(data) {
                 toast(data.type, data.title, data.message);
+                main_datatable.draw();
             }
         });
 }
