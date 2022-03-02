@@ -10,7 +10,7 @@
                         <button class="btn btn-outline-primary btn-sm me-1 mb-1" type="button" data-bs-toggle="modal" data-bs-target="#hardware_sub_category_modal">
                             <i class="fas fa-file-csv"></i>
                         </button>
-                        <div class="modal fade" id="hardware_sub_category_modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal fade hardware_sub_category_modal" tabindex="-1" role="dialog" aria-hidden="true">
                             @include('ecommerce.hardware.categories.forms.sub_categories_form')
                         </div>
                     </span>
