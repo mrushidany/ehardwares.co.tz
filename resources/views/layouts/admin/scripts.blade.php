@@ -103,7 +103,9 @@ function destroy(url) {
 function edit(url, modal){
     var form_modal = $('.' + modal)
     form_modal.modal('show')
-    console.log(form_modal)
+}
+
+function retrieve_edit_form(){
 
 }
 
