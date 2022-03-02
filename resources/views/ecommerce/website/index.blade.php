@@ -83,15 +83,15 @@ Shopify.routes.root = "index.html";</script>
   <script src="{{ asset('ecommerce/landing_page/assets/jquery-2.2.0.min6c53.js?v=5502557466260439001') }}" type="text/javascript"></script>
   <script src="{{  asset('ecommerce/landing_page/assets/ajax/jquery.min.js') }}"></script>
 
-  <script src="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/jquery-cookie.minbdb8.js?v=7236575574540404818" type="text/javascript"></script>
-  <script src="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/modernizr.min933d.js?v=2662005555110224600" type="text/javascript"></script>
-  <script src="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/jquery.flexslider.min001a.js?v=6172782483838229146" type="text/javascript"></script>
+  <script src="{{  asset('ecommerce/landing_page/assets/jquery-cookie.minbdb8.js?v=7236575574540404818') }}" type="text/javascript"></script>
+  <script src="{{  asset('ecommerce/landing_page/assets/modernizr.min933d.js?v=2662005555110224600') }}" type="text/javascript"></script>
+  <script src="{{  asset('ecommerce/landing_page/assets/jquery.flexslider.min001a.js?v=6172782483838229146') }}" type="text/javascript"></script>
 
 
-  <script src="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/jquery.sticky58fc.js?v=927087828438276111" type="text/javascript"></script>
+  <script src="{{  asset('ecommerce/landing_page/assets/jquery.sticky58fc.js?v=927087828438276111') }}" type="text/javascript"></script>
 
-  <script src="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/bootstrap.min02fd.js?v=14137471164888349019" type="text/javascript"></script>
-  <script src="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/jquery.fitvidc973.js?v=804461218874163264" type="text/javascript"></script>
+  <script src="{{  asset('ecommerce/landing_page/assets/bootstrap.min02fd.js?v=14137471164888349019') }}" type="text/javascript"></script>
+  <script src="{{  asset('ecommerce/landing_page/assets/jquery.fitvidc973.js?v=804461218874163264') }}" type="text/javascript"></script>
 
 <link href="https://monorail-edge.shopifysvc.com/" rel="dns-prefetch">
 <script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 27216956,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "index"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
