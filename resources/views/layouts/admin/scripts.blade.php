@@ -102,8 +102,8 @@ function destroy(url) {
 
 function edit(url, modal){
     retrieve_edit_form(url, 'edit', modal)
-    var form_modal = $('.' + modal)
-    form_modal.modal('show')
+    // var form_modal = $('.' + modal)
+    // form_modal.modal('show')
 }
 
 function retrieve_edit_form(url, action, modal){
