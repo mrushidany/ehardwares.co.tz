@@ -102,8 +102,7 @@ function destroy(url) {
 
 function edit(url, modal){
     retrieve_edit_form(url, 'edit', modal)
-    // var form_modal = $('.' + modal)
-    // form_modal.modal('show')
+
 }
 
 function retrieve_edit_form(url, action, modal){
@@ -114,7 +113,9 @@ function retrieve_edit_form(url, action, modal){
            // startSpinner();
         },
         success: function (data) {
-            //onAjaxSuccess(data, action);
+            console.log(data)
+            var form_modal = $('.' + modal)
+            form_modal.modal('show')
         },
         error: function (data, textStatus, error) {
            // onAjaxError(data, textStatus, error);

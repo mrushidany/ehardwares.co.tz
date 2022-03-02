@@ -12,7 +12,7 @@
                     <div class="row">
                         <div class="mb-3 col-6">
                             <label class="col-form-label" for="hardware_category_name">Name</label>
-                            <input class="form-control" name="category_name" type="text">
+                            <input class="form-control" name="category_name" type="text" value="{{ $category->name ?? '' }}">
                         </div>
                         <div class="mb-3 col-6">
                             <label class="col-form-label" for="description">Description</label>

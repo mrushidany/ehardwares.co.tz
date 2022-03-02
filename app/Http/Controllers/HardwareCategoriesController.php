@@ -75,7 +75,11 @@ class HardwareCategoriesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $category = HardwareCategory::find($id);
+        $data = [
+            'category' => $category,
+        ];
+        return view('ecommerce.hardware.categories.forms.hardware_category_form')->with($data);
     }
 
     /**
