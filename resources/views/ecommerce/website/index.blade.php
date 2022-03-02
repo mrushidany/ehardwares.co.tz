@@ -34,7 +34,6 @@
 
 
   <!-- Helpers ================================================== -->
-  <link rel="canonical" href="index.html">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#fab915">
 
@@ -7857,12 +7856,12 @@ var prodVideoId= $('iframe').data('video-id');
         }
 
         // Regardless of stock, update the product price
-        productPrice.html(Shopify.formatMoney(variant.price, "<span class=money>${{amount}}</span>"));
+        productPrice.html(Shopify.formatMoney(variant.price, "<span class=money></span>"));
 
         // Also update and show the product's compare price if necessary
         if ( variant.compare_at_price > variant.price ) {
           comparePrice
-            .html(Shopify.formatMoney(variant.compare_at_price, "<span class=money>${{amount}}</span>"))
+            .html(Shopify.formatMoney(variant.compare_at_price, "<span class=money></span>"))
             .show();
           productPrice.addClass('on-sale');
         } else {
