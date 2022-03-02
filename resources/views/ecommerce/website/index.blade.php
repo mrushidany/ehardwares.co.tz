@@ -38,19 +38,19 @@
   <meta name="theme-color" content="#fab915">
 
   <!-- CSS ================================================== -->
-  <link href="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/timber.scss69ef.css?v=7690668082289213232" rel="stylesheet" type="text/css" media="all" />
-  <link href="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/fonts.minebf6.css?v=16985556578604991768" rel="stylesheet" type="text/css" media="all" />
-  <link href="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/styleccd6.css?v=10363825443368449355" rel="stylesheet" type="text/css" media="all" />
-  <link href="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/settings2bda.css?v=17324639497196226345" rel="stylesheet" type="text/css" media="all" />
-  <link href="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/prettyPhotode1c.css?v=12757784511525754184" rel="stylesheet" type="text/css" media="all" />
-  <link href="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/jquery.hotspotcffd.css?v=5143873597195958623" rel="stylesheet" type="text/css" media="all" />
-  <link href="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/owl-carousel6191.css?v=3122916516346956967" rel="stylesheet" type="text/css" media="all" />
-  <link href="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/slick.scss7984.css?v=9050957912482249729" rel="stylesheet" type="text/css" media="all" />
-  <link href="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/slick-theme1c9f.css?v=3013931175492484333" rel="stylesheet" type="text/css" media="all" />
-  <link href="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/flex-sliderddff.css?v=7255559145996557430" rel="stylesheet" type="text/css" media="all" />
-  <link href="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/magnific-popup5b32.css?v=6545196245694404998" rel="stylesheet" type="text/css" media="all" />
-  <link href="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/lightsliderb8e4.css?v=3555473591325615650" rel="stylesheet" type="text/css" media="all" />
-  <link href="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/animatea14e.css?v=17046942425478865338" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ asset('ecommerce/landing_page/assets/timber.scss69ef.css?v=7690668082289213232') }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ asset('ecommerce/landing_page/assets/fonts.minebf6.css?v=16985556578604991768') }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ asset('ecommerce/landing_page/assets/styleccd6.css?v=10363825443368449355') }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ asset('ecommerce/landing_page/assets/settings2bda.css?v=17324639497196226345') }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ asset('ecommerce/landing_page/assets/prettyPhotode1c.css?v=12757784511525754184') }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ asset('ecommerce/landing_page/assets/jquery.hotspotcffd.css?v=5143873597195958623') }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ asset('ecommerce/landing_page/assets/owl-carousel6191.css?v=3122916516346956967') }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ asset('ecommerce/landing_page/assets/slick.scss7984.css?v=9050957912482249729') }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ asset('ecommerce/landing_page/assets/slick-theme1c9f.css?v=3013931175492484333') }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ asset('ecommerce/landing_page/assets/flex-sliderddff.css?v=7255559145996557430') }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ asset('ecommerce/landing_page/assets/magnific-popup5b32.css?v=6545196245694404998') }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ asset('ecommerce/landing_page/assets/lightsliderb8e4.css?v=3555473591325615650') }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ asset('ecommerce/landing_page/assets/animatea14e.css?v=17046942425478865338') }}" rel="stylesheet" type="text/css" media="all" />
 
 
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,400italic,600italic,700,700italic,800,800italic">
