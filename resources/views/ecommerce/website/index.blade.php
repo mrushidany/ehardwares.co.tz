@@ -74,8 +74,8 @@
                                         <span>Call Us : (+255) 659 608 061</span>
                                     </li>
                                     <li>
-                                        Mail  : <a href="mailto:info@somedomain.com"> info@ehardwares.co.tz</a></li>
-
+                                        Mail  : <a href="mailto:info@ehardwares.co.tz"> info@ehardwares.co.tz</a>
+                                    </li>
           </ul>
         </li>
 
