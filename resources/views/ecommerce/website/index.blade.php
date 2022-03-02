@@ -76,37 +76,34 @@
                                     <li>
                                         Mail  : <a href="mailto:info@ehardwares.co.tz"> info@ehardwares.co.tz</a>
                                     </li>
-          </ul>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-  <div id="SearchDrawer" class="search-bar drawer drawer--top search-bar-type-3">
-  <div class="search-bar__table">
-    <form action="https://nora-demo.myshopify.com/search" method="get" class="search-bar__table-cell search-bar__form" role="search">
-      <input type="hidden" name="type" value="product">
-      <div class="search-bar__table">
-        <div class="search-bar__table-cell search-bar__icon-cell">
-          <button type="submit" class="search-bar__icon-button search-bar__submit">
-            <span class="fa fa-search" aria-hidden="true"></span>
-          </button>
-        </div>
-        <div class="search-bar__table-cell">
-          <input type="search" id="SearchInput" name="q" value="" placeholder="Search..." aria-label="Search..." class="search-bar__input">
-        </div>
-      </div>
-    </form>
-    <div class="search-bar__table-cell text-right">
-      <button type="button" class="search-bar__icon-button search-bar__close js-drawer-close">
-        <span class="fa fa-times" aria-hidden="true"></span>
-      </button>
-    </div>
-  </div>
-</div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="SearchDrawer" class="search-bar drawer drawer--top search-bar-type-3">
+                <div class="search-bar__table">
+                    <form action="https://nora-demo.myshopify.com/search" method="get" class="search-bar__table-cell search-bar__form" role="search">
+                        <input type="hidden" name="type" value="product">
+                        <div class="search-bar__table">
+                            <div class="search-bar__table-cell search-bar__icon-cell">
+                                <button type="submit" class="search-bar__icon-button search-bar__submit">
+                                    <span class="fa fa-search" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="search-bar__table-cell">
+                                <input type="search" id="SearchInput" name="q" value="" placeholder="Search..." aria-label="Search..." class="search-bar__input">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="search-bar__table-cell text-right">
+                        <button type="button" class="search-bar__icon-button search-bar__close js-drawer-close">
+                            <span class="fa fa-times" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
   <header class="site-header">
     <div class="header-sticky">
