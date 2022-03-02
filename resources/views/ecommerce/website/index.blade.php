@@ -65,21 +65,16 @@
                         <ul class="inline-list social-icons social-links-type-1">
                             {{-- Social Links Section --}}
                         </ul>
-
-    </div>
-
-
-    <div class="top_bar_menu">
-      <ul class="menu_bar_right grid__item wide--one-sixth post-large--one-sixth">
-
-
-        <li>
-          <ul class="top_bar_right">
-
-            <li><span>Call Us : (00) 000 111 222</span></li>
-
-
-            <li>Mail  : <a href="mailto:info@somedomain.com"> info@somedomain.com</a></li>
+                    </div>
+                    <div class="top_bar_menu">
+                        <ul class="menu_bar_right grid__item wide--one-sixth post-large--one-sixth">
+                            <li>
+                                <ul class="top_bar_right">
+                                    <li>
+                                        <span>Call Us : (+255) 659 608 061</span>
+                                    </li>
+                                    <li>
+                                        Mail  : <a href="mailto:info@somedomain.com"> info@ehardwares.co.tz</a></li>
 
           </ul>
         </li>
