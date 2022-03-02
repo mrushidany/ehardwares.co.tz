@@ -80,8 +80,8 @@ Shopify.routes.root = "index.html";</script>
 
 
   <script src="{{ asset('ecommerce/landing_page/js/jquery-3.2.1.min.js') }}"></script>
-  <script src="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/jquery-2.2.0.min6c53.js?v=5502557466260439001" type="text/javascript"></script>
-  <script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script src="{{ asset('ecommerce/landing_page/assets/jquery-2.2.0.min6c53.js?v=5502557466260439001') }}" type="text/javascript"></script>
+  <script src="{{  asset('ecommerce/landing_page/assets/ajax/jquery.min.js') }}"></script>
 
   <script src="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/jquery-cookie.minbdb8.js?v=7236575574540404818" type="text/javascript"></script>
   <script src="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/modernizr.min933d.js?v=2662005555110224600" type="text/javascript"></script>
