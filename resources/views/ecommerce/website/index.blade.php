@@ -37,37 +37,21 @@
   <!-- Header hook for plugins ================================================== -->
   <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script>
   <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/27216956/digital_wallets/dialog">
-  <script id="shopify-features" type="application/json">{"accessToken":"4791e6a49b2f782cf17e5812fd5937b7","betas":["rich-media-storefront-analytics"],"domain":"nora-demo.myshopify.com","predictiveSearch":true,"shopId":27216956,"smart_payment_buttons_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en"}</script>
+  <script id="shopify-features" type="application/json">
+    {"accessToken":"4791e6a49b2f782cf17e5812fd5937b7","betas":["rich-media-storefront-analytics"],"domain":"nora-demo.myshopify.com","predictiveSearch":true,"shopId":27216956,"smart_payment_buttons_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en"}</script>
   <script>var Shopify = Shopify || {}; Shopify.shop = "nora-demo.myshopify.com";
-Shopify.locale = "en";
-Shopify.currency = {"active":"USD","rate":"1.0"};
-Shopify.country = "US";
-Shopify.theme = {"name":"Nora (final)","id":78833549355,"theme_store_id":null,"role":"main"};
-Shopify.theme.handle = "null";
-Shopify.theme.style = {"id":null,"handle":null};
-Shopify.cdnHost = "cdn.shopify.com";
-Shopify.routes = Shopify.routes || {};
-Shopify.routes.root = "index.html";</script>
-<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
-<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
-<script>(function() {
-  function asyncLoad() {
-    var urls = ["\/\/productreviews.shopifycdn.com\/assets\/v4\/spr.js?shop=nora-demo.myshopify.com","https:\/\/instafeed.nfcube.com\/cdn\/5cfcb5d44d4ba52c62b66ecea5048595.js?shop=nora-demo.myshopify.com"];
-    for (var i = 0; i < urls.length; i++) {
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = urls[i];
-      var x = document.getElementsByTagName('script')[0];
-      x.parentNode.insertBefore(s, x);
-    }
-  };
-  if(window.attachEvent) {
-    window.attachEvent('onload', asyncLoad);
-  } else {
-    window.addEventListener('load', asyncLoad, false);
-  }
-})();</script>
+    Shopify.locale = "en";
+    Shopify.currency = {"active":"USD","rate":"1.0"};
+    Shopify.country = "US";
+    Shopify.theme = {"name":"Nora (final)","id":78833549355,"theme_store_id":null,"role":"main"};
+    Shopify.theme.handle = "null";
+    Shopify.theme.style = {"id":null,"handle":null};
+    Shopify.cdnHost = "cdn.shopify.com";
+    Shopify.routes = Shopify.routes || {};
+    Shopify.routes.root = "index.html";</script>
+    <script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+    <script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+
 <script id="__st">var __st={"a":27216956,"offset":-18000,"reqid":"ce81e54d-306e-491e-b710-a0354fed2989","pageurl":"nora-demo.myshopify.com\/","u":"ce74358ef3df","p":"home"};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","../cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
