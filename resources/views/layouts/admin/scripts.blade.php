@@ -101,12 +101,28 @@ function destroy(url) {
 }
 
 function edit(url, modal){
+    retrieve_edit_form(url, 'edit', modal)
     var form_modal = $('.' + modal)
     form_modal.modal('show')
 }
 
-function retrieve_edit_form(){
-
+function retrieve_edit_form(url, action, modal){
+    $.ajax({
+        url: url,
+        type: "GET",
+        beforeSend: function () {
+           // startSpinner();
+        },
+        success: function (data) {
+            //onAjaxSuccess(data, action);
+        },
+        error: function (data, textStatus, error) {
+           // onAjaxError(data, textStatus, error);
+        },
+        complete: function() {
+           // stopSpinner();
+        }
+    });
 }
 
 
