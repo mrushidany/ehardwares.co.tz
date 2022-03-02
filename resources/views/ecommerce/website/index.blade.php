@@ -35,32 +35,7 @@
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,400italic,600italic,700,700italic,800,800italic">
 
   <!-- Header hook for plugins ================================================== -->
-  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script>
-  <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/27216956/digital_wallets/dialog">
-  <script id="shopify-features" type="application/json">
-    {"accessToken":"4791e6a49b2f782cf17e5812fd5937b7","betas":["rich-media-storefront-analytics"],"domain":"nora-demo.myshopify.com","predictiveSearch":true,"shopId":27216956,"smart_payment_buttons_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en"}</script>
-  <script>var Shopify = Shopify || {}; Shopify.shop = "nora-demo.myshopify.com";
-    Shopify.locale = "en";
-    Shopify.currency = {"active":"USD","rate":"1.0"};
-    Shopify.country = "US";
-    Shopify.theme = {"name":"Nora (final)","id":78833549355,"theme_store_id":null,"role":"main"};
-    Shopify.theme.handle = "null";
-    Shopify.theme.style = {"id":null,"handle":null};
-    Shopify.cdnHost = "cdn.shopify.com";
-    Shopify.routes = Shopify.routes || {};
-    Shopify.routes.root = "index.html";</script>
-    <script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
-    <script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
 
-<script id="__st">var __st={"a":27216956,"offset":-18000,"reqid":"ce81e54d-306e-491e-b710-a0354fed2989","pageurl":"nora-demo.myshopify.com\/","u":"ce74358ef3df","p":"home"};</script>
-<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
-<script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","../cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
-<script integrity="sha256-fnL7TRTwbWDFcwa4DcFG8Ozb5OTAlB9PNTe+5NVDFK8=" data-source-attribution="shopify.loadfeatures" defer="defer" src="../cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-7e72fb4d14f06d60c57306b80dc146f0ecdbe4e4c0941f4f3537bee4d54314af.js" crossorigin="anonymous"></script>
-<script integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4=" data-source-attribution="shopify.dynamic-checkout" defer="defer" src="../cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" media="screen" href="../cdn.shopify.com/s/files/1/2721/6956/t/4/compiled_assets/stylesa554.css?2392">
-<script id="sections-script" data-sections="video-section,brands,header,slideshow,footer-model-6" defer="defer" src="../cdn.shopify.com/s/files/1/2721/6956/t/4/compiled_assets/scriptsa554.js?2392"></script>
-
-<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
 
 
   <script src="{{ asset('ecommerce/landing_page/js/jquery-3.2.1.min.js') }}"></script>
