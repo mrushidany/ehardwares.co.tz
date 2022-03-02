@@ -55,56 +55,16 @@
 </head>
 
 <body id="nora" class="template-index" >
-
-  <div id="PageContainer"></div>
-  <div class="quick-view"></div>
- <div id="shopify-section-header" class="shopify-section"><div data-section-id="header" data-section-type="header-type-3" class="header-type-3">
-
-
-  <div class="top_bar top-bar-type-3">
-  <div class="container">
-
-    <div class="header_social top_bar_left">
-
-      <ul class="inline-list social-icons social-links-type-1">
-
-    <li>
-      <a style="color:;" class="icon-fallback-text twitt hexagon" target="blank" href="https://twitter.com/shopify" onmouseover="this.style.color='';" onmouseout="this.style.color='';" title="Twitter">
-        <span class="fab fa-twitter" aria-hidden="true"></span>
-      </a>
-    </li>
-
-
-    <li>
-      <a style="color:;" class="icon-fallback-text fb hexagon" target="blank" href="https://www.facebook.com/shopify" onmouseover="this.style.color='';" onmouseout="this.style.color='';" title="Facebook">
-        <span class="fab fa-facebook" aria-hidden="true"></span>
-        <span class="fallback-text">Facebook</span>
-      </a>
-    </li>
-
-
-
-    <li>
-      <a style="color:;" class="icon-fallback-text google hexagon" target="blank" href="#" onmouseover="this.style.color='';" onmouseout="this.style.color='';" title="Google+" rel="publisher">
-        <span class="fab fa-google" aria-hidden="true"></span>
-        <span class="fallback-text">Google</span>
-      </a>
-    </li>
-
-
-
-    <li>
-      <a style="color:;" class="icon-fallback-text tumblr" target="blank" href="#" onmouseover="this.style.color='';" onmouseout="this.style.color='';" title="Tumblr">
-        <span class="fab fa-tumblr" aria-hidden="true"></span>
-        <span class="fallback-text">Tumblr</span>
-      </a>
-    </li>
-
-
-
-
-
-</ul>
+    <div id="PageContainer"></div>
+    <div class="quick-view"></div>
+    <div id="shopify-section-header" class="shopify-section">
+        <div data-section-id="header" data-section-type="header-type-3" class="header-type-3">
+            <div class="top_bar top-bar-type-3">
+                <div class="container">
+                    <div class="header_social top_bar_left">
+                        <ul class="inline-list social-icons social-links-type-1">
+                            {{-- Social Links Section --}}
+                        </ul>
 
     </div>
 
