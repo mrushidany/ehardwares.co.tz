@@ -79,7 +79,7 @@ class HardwareCategoriesController extends Controller
         $data = [
             'category' => $category,
         ];
-        return view('ecommerce.hardware.categories.forms.hardware_category_form')->with($data);
+        //return view('ecommerce.hardware.categories.forms.hardware_category_form')->with($data);
     }
 
     /**
