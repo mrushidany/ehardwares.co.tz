@@ -11,27 +11,6 @@
   <!-- Title and description ================================================== -->
   <title>{{ config('app.name') }}</title>
 
-  <!-- Social meta ================================================== -->
-
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Nora">
-  <meta property="og:url" content="index.html">
-
-  <meta property="og:image" content="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/logo68ec.png?v=10529722157190815409">
-  <meta property="og:image:secure_url" content="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/logo68ec.png?v=10529722157190815409">
-
-
-
-<meta property="og:site_name" content="Nora">
-
-
-
-<meta name="twitter:card" content="summary">
-
-
-
-
 
   <!-- Helpers ================================================== -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
