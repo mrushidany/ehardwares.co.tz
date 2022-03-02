@@ -34,15 +34,11 @@
 
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,400italic,600italic,700,700italic,800,800italic">
 
-
-
-
-
   <!-- Header hook for plugins ================================================== -->
-  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/27216956/digital_wallets/dialog">
-<script id="shopify-features" type="application/json">{"accessToken":"4791e6a49b2f782cf17e5812fd5937b7","betas":["rich-media-storefront-analytics"],"domain":"nora-demo.myshopify.com","predictiveSearch":true,"shopId":27216956,"smart_payment_buttons_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en"}</script>
-<script>var Shopify = Shopify || {};
-Shopify.shop = "nora-demo.myshopify.com";
+  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script>
+  <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/27216956/digital_wallets/dialog">
+  <script id="shopify-features" type="application/json">{"accessToken":"4791e6a49b2f782cf17e5812fd5937b7","betas":["rich-media-storefront-analytics"],"domain":"nora-demo.myshopify.com","predictiveSearch":true,"shopId":27216956,"smart_payment_buttons_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en"}</script>
+  <script>var Shopify = Shopify || {}; Shopify.shop = "nora-demo.myshopify.com";
 Shopify.locale = "en";
 Shopify.currency = {"active":"USD","rate":"1.0"};
 Shopify.country = "US";
@@ -83,16 +79,7 @@ Shopify.routes.root = "index.html";</script>
 <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
 
 
-<!--[if lt IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
-<script src="//cdn.shopify.com/s/files/1/2721/6956/t/4/assets/respond.min.js?v=5224867783754261923" type="text/javascript"></script>
-<link href="//cdn.shopify.com/s/files/1/2721/6956/t/4/assets/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
-<link href="//nora-demo.myshopify.com/search?q=6a243cadb9a729dd1be775f97c945da7" id="respond-redirect" rel="respond-redirect" />
-<script src="//nora-demo.myshopify.com/search?q=6a243cadb9a729dd1be775f97c945da7" type="text/javascript"></script>
-<![endif]-->
-
-
-  <script src="../code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="{{ asset('ecommerce/landing_page/js/jquery-3.2.1.min.js') }}"></script>
   <script src="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/jquery-2.2.0.min6c53.js?v=5502557466260439001" type="text/javascript"></script>
   <script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 
@@ -103,13 +90,8 @@ Shopify.routes.root = "index.html";</script>
 
   <script src="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/jquery.sticky58fc.js?v=927087828438276111" type="text/javascript"></script>
 
-
-
   <script src="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/bootstrap.min02fd.js?v=14137471164888349019" type="text/javascript"></script>
   <script src="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/jquery.fitvidc973.js?v=804461218874163264" type="text/javascript"></script>
-
-
-
 
 <link href="https://monorail-edge.shopifysvc.com/" rel="dns-prefetch">
 <script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 27216956,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "index"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
