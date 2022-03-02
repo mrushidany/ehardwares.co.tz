@@ -101,7 +101,8 @@ function destroy(url) {
 }
 
 function edit(url, modal){
-    alert("Url is "+ url + " and modal name is "+ modal)
+    var form_modal = $('#'+ modal).find('.modal-content')
+    form_modal.modal('show')
 }
 
 
