@@ -24,7 +24,7 @@
                 <div class="col-auto ms-auto">
                     <div class="nav nav-pills nav-pills-falcon flex-grow-1">
                         <span>
-                            <button class="btn btn-falcon-success rounded-pill btn-sm me-1 mb-1" type="button">
+                            <button class="btn btn-falcon-success rounded-pill btn-sm me-1 mb-1" type="button" data-bs-toggle="modal" data-bs-target="#hardware_stock_modal">
                                 <span class="fas fa-plus" data-fa-transform="shrink-3 down-2"></span>
                                 <span class="ms-1">Stock</span>
                             </button>
@@ -32,7 +32,7 @@
                                 <span class="fas fa-plus" data-fa-transform="shrink-3 down-2"></span>
                                 <span class="ms-1"><i class="fas fa-file-csv"></i></span>
                             </button>
-                            <div class="modal fade hardware_category_modal" id="hardware_category_modal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal fade hardware_stock_modal" id="hardware_stock_modal" tabindex="-1" role="dialog" aria-hidden="true">
                                 @include('ecommerce.hardware.categories.forms.hardware_category_form')
                             </div>
                         </span>
