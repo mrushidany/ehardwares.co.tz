@@ -42,7 +42,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card-body pt-0">
-                        <table class="table table-striped table-bordered hardware_categories_table" style="width:100%">
+                        <table class="table table-striped table-bordered hardware_stocks_table" style="width:100%">
                             <thead>
                                 <tr>
                                     <th>Main-Category Name</th>
@@ -60,4 +60,15 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('scripts')
+<script type="application/javascript">
+let main_datatable = $('.hardware_stocks_table').DataTable({
+
+});
+
+</script>
+
+
 @endsection
