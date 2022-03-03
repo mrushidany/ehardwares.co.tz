@@ -45,8 +45,12 @@
                         <table class="table table-striped table-bordered hardware_stocks_table" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>Main-Category Name</th>
-                                    <th>Description</th>
+                                    <th>Code</th>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Units</th>
+                                    <th>Qunatity</th>
+                                    <th>Price</th>
                                     <th></th>
                                 </tr>
                             </thead>
