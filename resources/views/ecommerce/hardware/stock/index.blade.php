@@ -49,7 +49,7 @@
                                     <th>Image</th>
                                     <th>Name</th>
                                     <th>Units</th>
-                                    <th>Qunatity</th>
+                                    <th>Quantity</th>
                                     <th>Price</th>
                                     <th></th>
                                 </tr>
@@ -73,11 +73,15 @@ let main_datatable = $('.hardware_stocks_table').DataTable({
     processing: true,
     lengthMenu: [[10, 25, 50], [10, 25, 50]],
     ajax: {
-        url: "{{ route('hardware_category_list') }}",
+        url: "{{ route('stock_list') }}",
     },
     columns: [
-        {data: 'category_name', name: 'category_name', orderable: true, searchable: true},
-        {data: 'description', name: 'description', orderable: false, searchable: true},
+        {data: 'code', name: 'code', orderable: true, searchable: true},
+        {data: 'image', name: 'image', orderable: false, searchable: false},
+        {data: 'name', name: 'name', orderable: true, searchable: true },
+        {data: 'units', name: 'units', orderable: false, searchable: true},
+        {data: 'quantity', name: 'quantity', orderable: false, searchable: true},
+        {data: 'price', name: 'price', orderable: false, searchable: true },
         {data: 'action', name: 'action', orderable: false, searchable: false },
     ],
     language: {
