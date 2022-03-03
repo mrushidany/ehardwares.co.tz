@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HardwareCategoriesController;
 use App\Http\Controllers\HardwareSubCategoriesController;
 use App\Http\Controllers\Settings\DatabaseSettingsController;
+use App\Http\Controllers\Stocks\HardwareStockController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,6 +47,9 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     Route::resource('/hardware_sub_categories', HardwareSubCategoriesController::class)->only(['index', 'destroy']);
     Route::post('/hardware_categories/save_hardware_sub_category', [HardwareSubCategoriesController::class, 'store'])->name('save_hardware_sub_category');
     Route::get('/hardware_categories/sub_category_list', [HardwareSubCategoriesController::class, 'hardware_sub_category_list'])->name('hardware_sub_category_list');
+
+    //HardwareStockController
+    Route::resource('/hardware_stock', HardwareStockController::class);
 
 
     // Database Settings
