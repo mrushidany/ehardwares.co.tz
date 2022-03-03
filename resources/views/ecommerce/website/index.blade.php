@@ -126,300 +126,132 @@
                                                             <ul class="site-nav-dropdown"></ul>
                                                         </li>
                                                         <li >
-                                                            <a class="" href="collections/construction.html">Equipments</a>
-                                                            <div class="site-nav-dropdown">
-                                                                <div class="container style_3">
-                                                                    <div class="col-1 parent-mega-menu"></div>
-                                                                </div>
-                                                                <script type="text/javascript">
-                                                                    $('.dropdown.mega-menu').hover(function(){
-                                                                        $('.main-content').addClass('call-overlay');
-                                                                    },function(){
-                                                                        $('.main-content').removeClass('call-overlay');
-                                                                    });
-                                                                </script>
+                                                          <a class="" href="collections/construction.html">Equipments</a>
+                                                          <div class="site-nav-dropdown">
+                                                            <div class="container style_3">
+                                                              <div class="col-1 parent-mega-menu"></div>
                                                             </div>
+                                                            <script type="text/javascript">
+                                                              $('.dropdown.mega-menu').hover(function(){
+                                                                 $('.main-content').addClass('call-overlay');
+                                                                },function(){
+                                                                  $('.main-content').removeClass('call-overlay');
+                                                                });
+                                                            </script>
+                                                          </div>
                                                         </li>
-                                                       <li class="dropdown mega-menu">
-                                                       <a class="" href="collections/plumber.html">
-                    Shop
-                    <i class="zmdi zmdi-caret-down"></i>
-                  </a>
+                                                        <li class="dropdown mega-menu">
+                                                          <a class="" href="collections/plumber.html">Shop<i class="zmdi zmdi-caret-down"></i></a>
+                                                          <div class="site-nav-dropdown">
+                                                            <div class="container style_1">
+                                                              <div class="col-1 parent-mega-menu">
+                                                                <div class="inner">
+                                                                  <!-- Menu level 2 -->
+                                                                  <a href="collections/construction.html" class="">
+                                                                    Spanner
+                                                                  </a>
+                                                                </div>
+                                                                <div class="inner">
+                                                                  <!-- Menu level 2 -->
+                                                                  <a href="collections/hardware.html" class="">
+                                                                    Paint brushes
 
-                  <div class="site-nav-dropdown">
-
-
-                    <div class="container style_1">
-                      <div class="col-1 parent-mega-menu">
-
-                        <div class="inner">
-                          <!-- Menu level 2 -->
-                          <a href="collections/construction.html" class="">
-                            Spanner
-
-                          </a>
-
-                          <ul class="dropdown">
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/a-pair-of-brushes.html"  class=" ">
-                                Steel Pipe Wrench
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/carpentry-tools-set.html"  class=" ">
-                                Multi Wrench Spanner
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/clamps-reducers.html"  class=" ">
-                                Household Spanner
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/safety-kit.html"  class=" ">
-                                Professional Pipe wrench
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="collections/all.html"  class=" ">
-                                Doe Spanner Set
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="#"  class=" ">
-                                Adjustable Spanner
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="#"  class=" ">
-                                 Combination
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="#"  class=" ">
-                                Universal Wrenches
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="#"  class=" ">
-                                Double Ended
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="#"  class=" ">
-                                Hex Key Set
-                              </a>
-                            </li>
-
-                          </ul>
-
-                        </div>
-
-                        <div class="inner">
-                          <!-- Menu level 2 -->
-                          <a href="collections/hardware.html" class="">
-                            Paint brushes
-
-                          </a>
-
-                          <ul class="dropdown">
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/carpentry-tools-set.html"  class=" ">
-                                Wall Decoration brush
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/clamps-reducers.html"  class=" ">
-                                Gam Paint brush
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/drilling-machine.html"  class=" ">
-                                Sash paint brush
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/hacksaw-blades-kit.html"  class=" ">
-                                Brass Brush
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/hammer.html"  class=" ">
-                                Spray Painting Machine
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/steel-hacksaw-blades.html"  class=" ">
-                                Wall Paint Brush
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="#"  class=" ">
-                                Brush Roller
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="#"  class=" ">
-                                Brush Multicolour
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="#"  class=" ">
-                                Paint Sprayer
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="#"  class=" ">
-                                Eco-Friendly Angle
-                              </a>
-                            </li>
-
-                          </ul>
-
-                        </div>
-
-                        <div class="inner">
-                          <!-- Menu level 2 -->
-                          <a href="collections/plumber.html" class="">
-                             Tape
-
-                          </a>
-
-                          <ul class="dropdown">
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/drilling-machine.html"  class=" ">
-                                Emergency Repair tape
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/hardware-starter-kit.html"  class=" ">
-                                Surface Protection Tape
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/drilling-machine.html"  class=" ">
-                                Thread Seal Tape
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/hacksaw-blades-kit.html"  class=" ">
-                                Inch Tape
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/monkey-spanners.html"  class=" ">
-                                Emergency Repair
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="products/safety-kit.html"  class=" ">
-                                Double Sided Self
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="#"  class=" ">
-                                Rubberized
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="#"  class=" ">
-                                Ceramic Disk
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="#"  class=" ">
-                                TeflonTape
-                              </a>
-                            </li>
-
-                            <!-- Menu level 3 -->
-                            <li>
-                              <a href="#"  class=" ">
-                                 Insulation Foam
-                              </a>
-                            </li>
-
-                          </ul>
-
-                        </div>
-
-                      </div>
+                                                                  </a>
 
 
-                      <div class="col-2">
+                                                                </div>
+                                                                <div class="inner">
+                                                                  <!-- Menu level 2 -->
+                                                                  <a href="collections/plumber.html" class="">
+                                                                     Tape
 
-                        <div class="col-left">
+                                                                  </a>
 
+                                                                  <ul class="dropdown">
 
+                                                                    <!-- Menu level 3 -->
+                                                                    <li>
+                                                                      <a href="products/drilling-machine.html"  class=" ">
+                                                                        Emergency Repair tape
+                                                                      </a>
+                                                                    </li>
 
+                                                                    <!-- Menu level 3 -->
+                                                                    <li>
+                                                                      <a href="products/hardware-starter-kit.html"  class=" ">
+                                                                        Surface Protection Tape
+                                                                      </a>
+                                                                    </li>
 
+                                                                    <!-- Menu level 3 -->
+                                                                    <li>
+                                                                      <a href="products/drilling-machine.html"  class=" ">
+                                                                        Thread Seal Tape
+                                                                      </a>
+                                                                    </li>
 
+                                                                    <!-- Menu level 3 -->
+                                                                    <li>
+                                                                      <a href="products/hacksaw-blades-kit.html"  class=" ">
+                                                                        Inch Tape
+                                                                      </a>
+                                                                    </li>
 
-<div class="widget-featured-product">
+                                                                    <!-- Menu level 3 -->
+                                                                    <li>
+                                                                      <a href="products/monkey-spanners.html"  class=" ">
+                                                                        Emergency Repair
+                                                                      </a>
+                                                                    </li>
 
-  <div class="widget-title">
-    <h3>
-      <span>Featured Products</span>
-    </h3>
-  </div>
+                                                                    <!-- Menu level 3 -->
+                                                                    <li>
+                                                                      <a href="products/safety-kit.html"  class=" ">
+                                                                        Double Sided Self
+                                                                      </a>
+                                                                    </li>
+
+                                                                    <!-- Menu level 3 -->
+                                                                    <li>
+                                                                      <a href="#"  class=" ">
+                                                                        Rubberized
+                                                                      </a>
+                                                                    </li>
+
+                                                                    <!-- Menu level 3 -->
+                                                                    <li>
+                                                                      <a href="#"  class=" ">
+                                                                        Ceramic Disk
+                                                                      </a>
+                                                                    </li>
+
+                                                                    <!-- Menu level 3 -->
+                                                                    <li>
+                                                                      <a href="#"  class=" ">
+                                                                        TeflonTape
+                                                                      </a>
+                                                                    </li>
+
+                                                                    <!-- Menu level 3 -->
+                                                                    <li>
+                                                                      <a href="#"  class=" ">
+                                                                         Insulation Foam
+                                                                      </a>
+                                                                    </li>
+
+                                                                  </ul>
+
+                                                                </div>
+
+                                                              </div>
+                                                              <div class="col-2">
+                                                                <div class="col-left">
+                                                                  <div class="widget-featured-product">
+                                                                    <div class="widget-title">
+                                                                      <h3>
+                                                                        <span>Featured Products</span>
+                                                                      </h3>
+                                                                    </div>
 
 
 
