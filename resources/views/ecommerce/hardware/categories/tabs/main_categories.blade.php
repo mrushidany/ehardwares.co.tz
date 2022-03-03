@@ -4,11 +4,13 @@
             <div class="col-auto ms-auto">
                 <div class="nav nav-pills nav-pills-falcon flex-grow-1">
                     <span>
-                        <button class="btn btn-outline-primary btn-sm me-1 mb-1" type="button" data-bs-toggle="modal" data-bs-target="#hardware_category_modal">
-                            <i class="fas fa-plus"></i>&nbsp; Main Category
+                        <button class="btn btn-falcon-primary rounded-pill btn-sm me-1 mb-1" type="button" data-bs-toggle="modal" data-bs-target="#hardware_category_modal">
+                            <span class="fas fa-plus" data-fa-transform="shrink-3 down-2"></span>
+                            <span class="ms-1">&nbsp; Main Category</span>
                         </button>
-                        <button class="btn btn-outline-primary btn-sm me-1 mb-1" type="button" data-bs-toggle="modal" data-bs-target="#hardware_category_modal">
-                            <i class="fas fa-file-csv"></i>
+                        <button class="btn btn-falcon-primary rounded-pill btn-sm me-1 mb-1" type="button" data-bs-toggle="modal" data-bs-target="#hardware_category_modal">
+                            <span class="fas fa-plus" data-fa-transform="shrink-3 down-2"></span>
+                            <span class="ms-1"><i class="fas fa-file-csv"></i></span>
                         </button>
                         <div class="modal fade hardware_category_modal" id="hardware_category_modal" tabindex="-1" role="dialog" aria-hidden="true">
                             @include('ecommerce.hardware.categories.forms.hardware_category_form')
