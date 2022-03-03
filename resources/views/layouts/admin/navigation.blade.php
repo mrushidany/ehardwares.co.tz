@@ -59,7 +59,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="" aria-expanded="false">
+                            <a class="nav-link" href="{{ route('hardware_stock.index') }}" aria-expanded="false">
                                 <div class="d-flex align-items-center">
                                     <span class="nav-link-icon">
                                         <span class="text-xl fs-1 bi-building"></span>
