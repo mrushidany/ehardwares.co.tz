@@ -14,7 +14,7 @@ class HardwareStockController extends Controller
      */
     public function index()
     {
-        //
+        return view('ecommerce.hardware.stock.index');
     }
 
     /**
