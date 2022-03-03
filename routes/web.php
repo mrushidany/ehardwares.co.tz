@@ -50,6 +50,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
 
     //HardwareStockController
     Route::resource('/hardware_stock', HardwareStockController::class);
+    Route::get('/hardware_stock_list', [HardwareStockController::class, 'stock_list'])->name('stock_list');
 
 
     // Database Settings
