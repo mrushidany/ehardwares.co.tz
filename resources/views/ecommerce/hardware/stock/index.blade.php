@@ -33,7 +33,7 @@
                                 <span class="ms-1"><i class="fas fa-file-csv"></i></span>
                             </button>
                             <div class="modal fade hardware_stock_modal" id="hardware_stock_modal" tabindex="-1" role="dialog" aria-hidden="true">
-                                @include('ecommerce.hardware.categories.forms.hardware_category_form')
+                                @include('ecommerce.hardware.stock.forms.stock_form')
                             </div>
                         </span>
                     </div>
