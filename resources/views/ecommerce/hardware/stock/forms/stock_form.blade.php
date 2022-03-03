@@ -10,11 +10,11 @@
                 </div>
                 <div class="p-4 pb-0">
                     <div class="row">
-                        <div class="mb-3 col-4">
+                        <div class="mb-3 col-3">
                             <label class="col-form-label" for="name">Name</label>
                             <input class="form-control" name="name" type="text" value="">
                         </div>
-                        <div class="mb-3 col-4">
+                        <div class="mb-3 col-3">
                             <label class="col-form-label" for="category">Category</label>
                             <select class="form-select js-choice main_category" id="organizerSingle" size="1" name="main_category_id" data-options='{"removeItemButton":true,"placeholder":true}'>
                                 <option value="">Select main category</option>
@@ -22,6 +22,10 @@
                                     <option value="{{ $category->id }}">{{ $category->category_name }}</option>
                                 @endforeach
                             </select>
+                        </div>
+                        <div class="mb-3 col-3">
+                            <label class="col-form-label" for="unit">Units</label>
+                            <input class="form-control" name="units" type="text" value="">
                         </div>
                     </div>
                 </div>
