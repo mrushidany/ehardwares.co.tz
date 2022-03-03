@@ -19,6 +19,7 @@ class CreateHardwareStocksTable extends Migration
             $table->string('description');
             $table->string('code');
             $table->softDeletesTz($column = 'deleted_at', $precision = 0);
+            $table->foreign('category_id')->references('id')->on('hardwares')->cascadeOnDelete()->cascadeOnUpdate();
             $table->timestamps();
         });
     }
