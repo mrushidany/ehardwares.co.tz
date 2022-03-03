@@ -29229,7 +29229,7 @@ input[type=file].form-control-lg {
 }
 
 .nav-pills-falcon {
-    background-color:var(--falcon-list-group-item-success-background);
+    background-color: var(--falcon-100);
     border-radius: .25rem !important;
     border: 1px solid var(--falcon-200)
 }
