@@ -14,7 +14,7 @@ class AddNameColumnToHardwareStocksTable extends Migration
     public function up()
     {
         Schema::table('hardware_stocks', function (Blueprint $table) {
-            //
+            $table->string('name')->after('code');
         });
     }
 
@@ -26,7 +26,7 @@ class AddNameColumnToHardwareStocksTable extends Migration
     public function down()
     {
         Schema::table('hardware_stocks', function (Blueprint $table) {
-            $table->string('name')->after('code');
+            $table->dropColumn('name');
         });
     }
 }
