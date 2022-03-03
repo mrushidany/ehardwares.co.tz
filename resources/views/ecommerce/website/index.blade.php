@@ -105,88 +105,43 @@
                 </div>
             </div>
 
-  <header class="site-header">
-    <div class="header-sticky">
-      <div id="header-landing" class="sticky-animate">
-        <div class="grid--full site-header__menubar">
-          <div class="container">
-            <div class="menubar_container" style="position:relative;float:left;width:100%;">
-
-<h1 class="grid__item wide--one-sixth post-large--one-sixth large--one-sixth site-header__logo" itemscope itemtype="http://schema.org/Organization">
-
-
-    <a href="index.html" style="max-width: 450px;">
-      <img class="normal-logo" src="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/logo68ec.png?v=10529722157190815409" alt="Nora" itemprop="logo">
-    </a>
-
-
-    </h1>
-
-            <div class="grid__item wide--five-sixths post-large--five-sixths large--five-sixths menubar-section">
-              <div class="menu-tool medium-down--hide">
-                          <div class="menu-tool">
-            <div class="container">
-
-              <ul class="site-nav">
-
-
-
-
-
-
-                <li >
-                  <a class="current" href="index.html">
-                    Home
-
-                  </a>
-
-
-                  <ul class="site-nav-dropdown">
-
-                  </ul>
-
-                </li>
-
-
-
-
-
-
-                <li >
-                  <a class="" href="collections/construction.html">
-                    Equipments
-
-                  </a>
-
-                  <div class="site-nav-dropdown">
-
-
-                    <div class="container style_3">
-                      <div class="col-1 parent-mega-menu">
-
-                      </div>
-
-
-
-                    </div>
-                    <script type="text/javascript">
-                      $('.dropdown.mega-menu').hover(function(){
-                        $('.main-content').addClass('call-overlay');
-                      },function(){
-                        $('.main-content').removeClass('call-overlay');
-                      });
-                    </script>
-                  </div>
-
-                </li>
-
-
-
-
-
-
-                <li class="dropdown mega-menu">
-                  <a class="" href="collections/plumber.html">
+            <header class="site-header">
+                <div class="header-sticky">
+                    <div id="header-landing" class="sticky-animate">
+                        <div class="grid--full site-header__menubar">
+                            <div class="container">
+                                <div class="menubar_container" style="position:relative;float:left;width:100%;">
+                                    <h1 class="grid__item wide--one-sixth post-large--one-sixth large--one-sixth site-header__logo" itemscope itemtype="http://schema.org/Organization">
+                                        <a href="index.html" style="max-width: 450px;">
+                                            <img class="normal-logo" src="../cdn.shopify.com/s/files/1/2721/6956/t/4/assets/logo68ec.png?v=10529722157190815409" alt="Nora" itemprop="logo">
+                                        </a>
+                                    </h1>
+                                    <div class="grid__item wide--five-sixths post-large--five-sixths large--five-sixths menubar-section">
+                                        <div class="menu-tool medium-down--hide">
+                                            <div class="menu-tool">
+                                                <div class="container">
+                                                    <ul class="site-nav">
+                                                        <li >
+                                                            <a class="current" href="index.html">Home</a>
+                                                            <ul class="site-nav-dropdown"></ul>
+                                                        </li>
+                                                        <li >
+                                                            <a class="" href="collections/construction.html">Equipments</a>
+                                                            <div class="site-nav-dropdown">
+                                                                <div class="container style_3">
+                                                                    <div class="col-1 parent-mega-menu"></div>
+                                                                </div>
+                                                                <script type="text/javascript">
+                                                                    $('.dropdown.mega-menu').hover(function(){
+                                                                        $('.main-content').addClass('call-overlay');
+                                                                    },function(){
+                                                                        $('.main-content').removeClass('call-overlay');
+                                                                    });
+                                                                </script>
+                                                            </div>
+                                                        </li>
+                                                       <li class="dropdown mega-menu">
+                                                       <a class="" href="collections/plumber.html">
                     Shop
                     <i class="zmdi zmdi-caret-down"></i>
                   </a>
