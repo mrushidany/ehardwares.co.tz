@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Stocks;
 
 use App\Http\Controllers\Controller;
+use App\Models\HardwareCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Yajra\DataTables\Facades\DataTables;
@@ -16,7 +17,9 @@ class HardwareStockController extends Controller
      */
     public function index()
     {
-        return view('ecommerce.hardware.stock.index');
+        $data = [
+            'main_categories' => HardwareCategory::get(),];
+        return view('ecommerce.hardware.stock.index')->with($data);
     }
 
     /**
