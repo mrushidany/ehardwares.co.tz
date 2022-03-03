@@ -169,7 +169,7 @@
 
                                                                   <ul class="dropdown">
 
-                                                                    
+
 
                                                                   </ul>
 
@@ -184,53 +184,27 @@
                                                                         <span>Featured Products</span>
                                                                       </h3>
                                                                     </div>
+                                                                    <div class="widget-product">
+	                                                                    <div class="products-grid owl-carousel owl-theme">
+                                                                        <div class="grid-item product-item " id="product-742930579499">
+                                                                          <a href="products/safety-kit.html" class="product-grid-image">
+                                                                            <img src="../cdn.shopify.com/s/files/1/2721/6956/products/product27_medium85fe.jpg?v=1518084601" alt="Safety Kit">
+                                                                          </a>
+                                                                          <div class="details">
+                                                                            <a class="product-title" href="products/safety-kit.html">
+                                                                              Safety Kit
+                                                                            </a>
+                                                                            <span class="shopify-product-reviews-badge" data-id="742930579499"></span>
+                                                                            <div class="price-box">
 
+                                                                                <p class="regular-product">
+                                                                                  <span><span class=money>$670.00</span></span>
+                                                                                </p>
 
+                                                                            </div>
 
-
-
-  <div class="widget-product">
-	<div class="products-grid owl-carousel owl-theme">
-
-
-
-
-
-
-
-
-
-<div class="grid-item product-item " id="product-742930579499">
-  <a href="products/safety-kit.html" class="product-grid-image">
-    <img src="../cdn.shopify.com/s/files/1/2721/6956/products/product27_medium85fe.jpg?v=1518084601" alt="Safety Kit">
-  </a>
-
-
-
-  <div class="details">
-    <a class="product-title" href="products/safety-kit.html">
-      Safety Kit
-    </a>
-    <span class="shopify-product-reviews-badge" data-id="742930579499"></span>
-    <div class="price-box">
-
-        <p class="regular-product">
-          <span><span class=money>$670.00</span></span>
-        </p>
-
-    </div>
-
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
+                                                                          </div>
+                                                                        </div>
 <div class="grid-item product-item  on-sale" id="product-742930645035">
   <a href="products/cutting-pliers-set.html" class="product-grid-image">
     <img src="../cdn.shopify.com/s/files/1/2721/6956/products/product4_medium84bd.jpg?v=1518071901" alt="Cutting Pliers Set">
