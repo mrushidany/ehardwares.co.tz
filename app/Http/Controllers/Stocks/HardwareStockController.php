@@ -82,4 +82,9 @@ class HardwareStockController extends Controller
     {
         //
     }
+
+    public function stock_list()
+    {
+
+    }
 }
