@@ -15,6 +15,10 @@ class CreateHardwareStocksTable extends Migration
     {
         Schema::create('hardware_stocks', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('category_id');
+            $table->string('description');
+            $table->string('code');
+            $table->softDeletesTz($column = 'deleted_at', $precision = 0);
             $table->timestamps();
         });
     }
