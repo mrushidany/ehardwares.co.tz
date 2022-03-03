@@ -85,8 +85,8 @@ let main_datatable = $('.hardware_stocks_table').DataTable({
         {data: 'action', name: 'action', orderable: false, searchable: false },
     ],
     language: {
-        zeroRecords: "<div class='alert alert-info' style='background-color: #ccf6e4'>No matching hardware category(ies) found</div>",
-        emptyTable: "<div class='alert alert-info' style='background-color: #ccf6e4'>No hardware category(ies) found</div>"
+        zeroRecords: "<div class='alert alert-info' style='background-color: #ccf6e4'>No matching hardware stock found</div>",
+        emptyTable: "<div class='alert alert-info' style='background-color: #ccf6e4'>No hardware stock found</div>"
     },
 
 
