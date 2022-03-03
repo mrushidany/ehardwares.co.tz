@@ -69,6 +69,9 @@
 @section('scripts')
 <script type="application/javascript">
 let main_datatable = $('.hardware_stocks_table').DataTable({
+    serverSide: true,
+    processing: true,
+
 
 });
 
