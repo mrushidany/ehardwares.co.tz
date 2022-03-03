@@ -169,75 +169,7 @@
 
                                                                   <ul class="dropdown">
 
-                                                                    <!-- Menu level 3 -->
-                                                                    <li>
-                                                                      <a href="products/drilling-machine.html"  class=" ">
-                                                                        Emergency Repair tape
-                                                                      </a>
-                                                                    </li>
-
-                                                                    <!-- Menu level 3 -->
-                                                                    <li>
-                                                                      <a href="products/hardware-starter-kit.html"  class=" ">
-                                                                        Surface Protection Tape
-                                                                      </a>
-                                                                    </li>
-
-                                                                    <!-- Menu level 3 -->
-                                                                    <li>
-                                                                      <a href="products/drilling-machine.html"  class=" ">
-                                                                        Thread Seal Tape
-                                                                      </a>
-                                                                    </li>
-
-                                                                    <!-- Menu level 3 -->
-                                                                    <li>
-                                                                      <a href="products/hacksaw-blades-kit.html"  class=" ">
-                                                                        Inch Tape
-                                                                      </a>
-                                                                    </li>
-
-                                                                    <!-- Menu level 3 -->
-                                                                    <li>
-                                                                      <a href="products/monkey-spanners.html"  class=" ">
-                                                                        Emergency Repair
-                                                                      </a>
-                                                                    </li>
-
-                                                                    <!-- Menu level 3 -->
-                                                                    <li>
-                                                                      <a href="products/safety-kit.html"  class=" ">
-                                                                        Double Sided Self
-                                                                      </a>
-                                                                    </li>
-
-                                                                    <!-- Menu level 3 -->
-                                                                    <li>
-                                                                      <a href="#"  class=" ">
-                                                                        Rubberized
-                                                                      </a>
-                                                                    </li>
-
-                                                                    <!-- Menu level 3 -->
-                                                                    <li>
-                                                                      <a href="#"  class=" ">
-                                                                        Ceramic Disk
-                                                                      </a>
-                                                                    </li>
-
-                                                                    <!-- Menu level 3 -->
-                                                                    <li>
-                                                                      <a href="#"  class=" ">
-                                                                        TeflonTape
-                                                                      </a>
-                                                                    </li>
-
-                                                                    <!-- Menu level 3 -->
-                                                                    <li>
-                                                                      <a href="#"  class=" ">
-                                                                         Insulation Foam
-                                                                      </a>
-                                                                    </li>
+                                                                    
 
                                                                   </ul>
 
