@@ -309,7 +309,7 @@ $('.save_hardware_stock').on('click', function(e) {
 
     if(name !== '' && main_category !== '' && quantity !== '' && units !== '' && raw_price !== '' && description !== '' && image !== ''){
         $(this).attr('style', 'display: none;');
-        $('.reset_hardware_sub_category').attr('style', 'display: none;');
+        $('.reset_hardware_stock').attr('style', 'display: none;');
         $('.loading_button').removeAttr('style');
 
         ajax_setup();
