@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Stocks;
 use App\Http\Controllers\Controller;
 use App\Models\HardwareCategory;
 use App\Models\HardwareStock;
+use App\Models\HardwareStockDetail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Yajra\DataTables\Facades\DataTables;
@@ -43,6 +44,16 @@ class HardwareStockController extends Controller
     {
         $stock = new HardwareStock();
         $stock->category_id = $request->main_category;
+        $stock->description = $request->description;
+        $stock->code = $request->code;
+        $stock->name = $request->name;
+        $stock->save();
+        if($stock->id) {
+            $stock_detail = new HardwareStockDetail();
+            $stock_detail->units = $request->units;
+            $stock_detail->quantity = $request->quantity;
+            $stock_detail->raw_price = $request->raw_price;
+        }
 
     }
 
