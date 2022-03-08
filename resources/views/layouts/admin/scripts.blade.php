@@ -315,13 +315,17 @@ $('.save_hardware_stock').on('click', function(e) {
         ajax_setup();
 
         $.ajax({
-            url: "{{ route('save_hardware_sub_category') }}",
+            url: "{{ route('hardware_stock.store') }}",
             method: "POST",
             data:
             {
-                main_category : main_category,
                 name : name,
+                main_category : main_category,
+                quantity : quantity,
+                units : units,
+                raw_price : raw_price,
                 description : description,
+                image : image,
              },
             success: function(data) {
                 $('form').trigger('reset');
