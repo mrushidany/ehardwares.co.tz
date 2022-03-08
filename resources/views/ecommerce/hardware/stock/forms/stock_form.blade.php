@@ -25,15 +25,18 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 col-6">
+                        <div class="mb-3 col-4">
                             <label class="col-form-label" for="unit">Quantity</label>
                             <input class="form-control" name="quantity" type="text" value="">
                         </div>
-                        <div class="mb-3 col-6">
+                        <div class="mb-3 col-4">
                             <label class="col-form-label" for="unit">Units</label>
                             <input class="form-control" name="units" type="text" value="">
                         </div>
-
+                        <div class="mb-3 col-4">
+                            <label class="col-form-label" for="unit">Price</label>
+                            <input class="form-control" name="raw_price" type="text" value="">
+                        </div>
                     </div>
                 </div>
             </div>
