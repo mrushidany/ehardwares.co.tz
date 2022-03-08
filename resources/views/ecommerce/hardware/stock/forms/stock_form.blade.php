@@ -10,9 +10,13 @@
                 </div>
                 <div class="p-4 pb-0">
                     <div class="row">
-                        <div class="mb-3 col-6">
+                        <div class="mb-3 col-3">
                             <label class="col-form-label" for="name">Name</label>
                             <input class="form-control" name="name" type="text" value="">
+                        </div>
+                        <div class="mb-3 col-3">
+                            <label class="col-form-label" for="code">Code</label>
+                            <input class="form-control" name="code" type="text" value="">
                         </div>
                         <div class="mb-3 col-6">
                             <label class="col-form-label" for="category">Category</label>
@@ -47,8 +51,6 @@
                             <label class="col-form-label" for="image">Image</label>
                             <input class="form-control" type="file" name="image">
                         </div>
-
-
                     </div>
                 </div>
             </div>
