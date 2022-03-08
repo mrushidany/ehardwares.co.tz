@@ -34,9 +34,21 @@
                             <input class="form-control" name="units" type="text" value="">
                         </div>
                         <div class="mb-3 col-4">
-                            <label class="col-form-label" for="unit">Price</label>
+                            <label class="col-form-label" for="price">Price</label>
                             <input class="form-control" name="raw_price" type="text" value="">
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-6">
+                            <label class="col-form-label" for="description">Description</label>
+                            <textarea class="form-control" name="description" rows="1"></textarea>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label class="col-form-label" for="image">Image</label>
+                            <input class="form-control" type="file" name="image">
+                        </div>
+
+
                     </div>
                 </div>
             </div>
