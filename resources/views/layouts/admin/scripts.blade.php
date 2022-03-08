@@ -218,7 +218,6 @@ $('.save_new_user').on('click', function()
 /*
  Hardware sections
 */
-
 $('.save_hardware_category').on('click', function(e) {
     e.preventDefault();
 
@@ -255,8 +254,6 @@ $('.save_hardware_category').on('click', function(e) {
         })
     }
 });
-
-
 
 $('.save_hardware_sub_category').on('click', function(e) {
     e.preventDefault();
@@ -295,6 +292,50 @@ $('.save_hardware_sub_category').on('click', function(e) {
         })
     }
 });
+
+$('.save_hardware_stock').on('click', function(e) {
+    e.preventDefault();
+
+    var button = $(this);
+    var form = button.closest('form');
+    var name = form.find('input[name="name"]').val();
+    var main_category = form.find('select[name="main_category_id"]').val();
+    var quantity = form.find('input[name="quantity"]').val();
+    var units = form.find('input[name="units"]').val();
+    var raw_price = form.find('input[name="raw_price"]').val();
+    var description = form.find('textarea[name="description"]').val();
+    var image = form.find('input[name="image"]').val();
+
+
+    if(name !== '' && main_category !== '' && quantity !== '' && units !== '' && raw_price !== '' && description !== '' && image !== ''){
+        $(this).attr('style', 'display: none;');
+        $('.reset_hardware_sub_category').attr('style', 'display: none;');
+        $('.loading_button').removeAttr('style');
+
+        ajax_setup();
+
+        $.ajax({
+            url: "{{ route('save_hardware_sub_category') }}",
+            method: "POST",
+            data:
+            {
+                main_category : main_category,
+                name : name,
+                description : description,
+             },
+            success: function(data) {
+                $('form').trigger('reset');
+                $('.close').click();
+                $('.save_hardware_sub_category').removeAttr('style');
+                $('.reset_hardware_sub_category').removeAttr('style');
+                $('.loading_button').attr('style','display: none;');
+                $('.hardware_sub_categories_table').DataTable().draw();
+                toast(data.type, data.title, data.message);
+            }
+        })
+    }
+});
+
 
 /*
  End of hardware sections
