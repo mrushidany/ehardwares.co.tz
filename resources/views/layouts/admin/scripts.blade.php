@@ -330,10 +330,10 @@ $('.save_hardware_stock').on('click', function(e) {
             success: function(data) {
                 $('form').trigger('reset');
                 $('.close').click();
-                $('.save_hardware_sub_category').removeAttr('style');
-                $('.reset_hardware_sub_category').removeAttr('style');
+                $('.save_hardware_stock').removeAttr('style');
+                $('.reset_hardware_stock').removeAttr('style');
                 $('.loading_button').attr('style','display: none;');
-                $('.hardware_sub_categories_table').DataTable().draw();
+                $('.hardware_stocks_table').DataTable().draw();
                 toast(data.type, data.title, data.message);
             }
         })
