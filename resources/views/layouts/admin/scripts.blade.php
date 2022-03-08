@@ -299,6 +299,7 @@ $('.save_hardware_stock').on('click', function(e) {
     var button = $(this);
     var form = button.closest('form');
     var name = form.find('input[name="name"]').val();
+    var code = form.find('input[name="code"]').val();
     var main_category = form.find('select[name="main_category_id"]').val();
     var quantity = form.find('input[name="quantity"]').val();
     var units = form.find('input[name="units"]').val();
@@ -320,6 +321,7 @@ $('.save_hardware_stock').on('click', function(e) {
             data:
             {
                 name : name,
+                code : code,
                 main_category : main_category,
                 quantity : quantity,
                 units : units,
