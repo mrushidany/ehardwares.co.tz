@@ -3,7 +3,7 @@
         <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
             <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form class="hardware_category_form">
+        <form class="hardware_category_form" enctype="multipart/form-data">
             <div class="modal-body p-0">
                 <div class="rounded-top-lg py-3 ps-4 pe-6 bg-light text-center">
                     <h4 class="mb-1" id="modalExampleDemoLabel">Add a new hardware stock </h4>
@@ -49,7 +49,7 @@
                         </div>
                         <div class="mb-3 col-6">
                             <label class="col-form-label" for="image">Image</label>
-                            <input class="form-control" type="file" name="image">
+                            <input class="form-control" type="file" name="image" multiple>
                         </div>
                     </div>
                 </div>
