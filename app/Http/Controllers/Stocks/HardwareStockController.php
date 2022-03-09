@@ -42,7 +42,7 @@ class HardwareStockController extends Controller
      */
     public function store(Request $request)
     {
-        dd($this->price_calculator($request->raw_price));
+
         $stock = new HardwareStock();
         $stock->category_id = $request->main_category;
         $stock->description = $request->description;
@@ -54,7 +54,9 @@ class HardwareStockController extends Controller
             $stock_detail->units = $request->units;
             $stock_detail->quantity = $request->quantity;
             $stock_detail->raw_price = $request->raw_price;
-        }
+            $stock_detail->selling_price = price_calculator($request->raw_price);
+            $stock_detail->hardware_stock_id = $stock->id;
+            }
 
     }
 
@@ -124,7 +126,12 @@ class HardwareStockController extends Controller
         $admin_costs = $raw_price * $admin;
         $vat_costs = $admin_costs * $vat;
         return $raw_price + $admin_costs + $vat_costs;
+    }
 
-
+    public function validate_image($request)
+    {
+        return $request->validate([
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,bmp,tiff,psd,cr2|max:2048'
+        ]);
     }
 }
