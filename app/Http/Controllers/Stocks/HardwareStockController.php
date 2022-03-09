@@ -50,15 +50,17 @@ class HardwareStockController extends Controller
         $stock->name = $request->name;
         $stock->save();
         if($stock->id) {
-            $image_name = $request->file('image')->getClientOriginalName();
             $stock_detail = new HardwareStockDetail();
             $stock_detail->units = $request->units;
             $stock_detail->quantity = $request->quantity;
             $stock_detail->raw_price = $request->raw_price;
             $stock_detail->selling_price = price_calculator($request->raw_price);
             $stock_detail->hardware_stock_id = $stock->id;
+            $stock_detail->image_url = $request->file('image')->getClientOriginalName();
+            $stock_detail->save();
             }
 
+        $request->file('image')->store('public/stock');
     }
 
     /**
