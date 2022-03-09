@@ -42,7 +42,7 @@ class HardwareStockController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate_image($request);
+        //$this->validate_image($request->image);
         $stock = new HardwareStock();
         $stock->category_id = $request->main_category;
         $stock->description = $request->description;
@@ -59,7 +59,6 @@ class HardwareStockController extends Controller
             $stock_detail->image_url = $request->file('image')->getClientOriginalName();
             $stock_detail->save();
             }
-
         $request->file('image')->store('public/stock');
     }
 
@@ -134,7 +133,7 @@ class HardwareStockController extends Controller
     public function validate_image($request)
     {
         return $request->validate([
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,bmp,tiff,psd,cr2|max:2048'
+            'image' => 'required|jpeg,png,jpg,gif,bmp,tiff,psd,cr2|max:2048'
         ]);
     }
 }
