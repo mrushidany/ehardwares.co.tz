@@ -42,6 +42,7 @@ class HardwareStockController extends Controller
      */
     public function store(Request $request)
     {
+        dd($this->price_calculator($request->raw_price));
         $stock = new HardwareStock();
         $stock->category_id = $request->main_category;
         $stock->description = $request->description;
@@ -114,5 +115,16 @@ class HardwareStockController extends Controller
 
                             })
                             ->make(true);
+    }
+
+    public function price_calculator($raw_price)
+    {
+        $admin = 0.10;
+        $vat = 0.18;
+        $admin_costs = $raw_price * $admin;
+        $vat_costs = $admin_costs * $vat;
+        return $raw_price + $admin_costs + $vat_costs;
+
+
     }
 }
