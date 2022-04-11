@@ -111,9 +111,9 @@ class HardwareStockController extends Controller
     public function stock_list()
     {
         $stock_list = DB::table('hardware_stocks')
-                        ->leftJoin('hardware_categories','hardware_categories.id','=','hardware_stocks.category_id')
+                        ->leftJoin('hardware_categories','hardware_categories.id','=','hardware_stocks.category')
                         ->leftJoin('hardware_stock_details', 'hardware_stock_details.hardware_stock_id','=','hardware_stocks.id')
-                        ->select('hardware_stocks.id','hardware_stock_details.image_url as image','hardware_stocks.name','hardware_stock_details.units','hardware_stock_details.quantity','hardware_stock_details.raw_price');
+                        ->select('hardware_stocks.id','hardware_stocks.code','hardware_stocks.name','hardware_stock_details.units','hardware_stock_details.quantity','hardware_stock_details.raw_price');
 
        return DataTables::of($stock_list)
                             ->addColumn('action', function($list){

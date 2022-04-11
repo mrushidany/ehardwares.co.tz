@@ -46,7 +46,6 @@
                             <thead>
                                 <tr>
                                     <th>Code</th>
-                                    <th>Image</th>
                                     <th>Name</th>
                                     <th>Units</th>
                                     <th>Quantity</th>
@@ -77,7 +76,6 @@ let main_datatable = $('.hardware_stocks_table').DataTable({
     },
     columns: [
         {data: 'code', name: 'code', orderable: true, searchable: true},
-        {data: 'image', name: 'image', orderable: false, searchable: false},
         {data: 'name', name: 'name', orderable: true, searchable: true },
         {data: 'units', name: 'units', orderable: false, searchable: true},
         {data: 'quantity', name: 'quantity', orderable: false, searchable: true},
