@@ -42,8 +42,6 @@ class HardwareStockController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
-        //$this->validate_image($request->image);
         $stock = new HardwareStock();
         $stock->category = $request->main_category;
         $stock->description = $request->description;
@@ -57,10 +55,8 @@ class HardwareStockController extends Controller
             $stock_detail->raw_price = $request->raw_price;
             $stock_detail->selling_price = $this->price_calculator($request->raw_price);
             $stock_detail->hardware_stock_id = $stock->id;
-            $stock_detail->image_url = $request->file('image')->getClientOriginalName();
             $stock_detail->save();
             }
-        $request->file('image')->store('public/stock');
     }
 
     /**
