@@ -42,7 +42,7 @@ class HardwareStockController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->file('image')->getClientOriginalName());
+        dd($request->all());
         //$this->validate_image($request->image);
         $stock = new HardwareStock();
         $stock->category = $request->main_category;
