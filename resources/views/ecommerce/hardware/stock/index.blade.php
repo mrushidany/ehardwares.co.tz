@@ -79,7 +79,7 @@ let main_datatable = $('.hardware_stocks_table').DataTable({
         {data: 'name', name: 'name', orderable: true, searchable: true },
         {data: 'units', name: 'units', orderable: false, searchable: true},
         {data: 'quantity', name: 'quantity', orderable: false, searchable: true},
-        {data: 'price', name: 'price', orderable: false, searchable: true },
+        {data: 'raw_price', name: 'price', orderable: false, searchable: true },
         {data: 'action', name: 'action', orderable: false, searchable: false },
     ],
     language: {
