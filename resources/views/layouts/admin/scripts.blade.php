@@ -80,6 +80,17 @@ var toast = function(type, title, message)
 */
 
 /*
+ Remove Rouge sections
+*/
+
+function RemoveRougeChar(convertString){
+    if(convertString.substring(0,1) == ","){
+        return convertString.substring(1, convertString.length)
+    }
+    return convertString;
+}
+
+/*
  CRUD functions sections
 */
 function destroy(url) {
@@ -339,6 +350,12 @@ $('.save_hardware_stock').on('click', function(e) {
         })
     }
 });
+$('.raw_price').keyup(function (e) {
+    var $this = $(this);
+    var num = $this.val().replace(/,/gi, "").split("").reverse().join("");
+    var num2 = RemoveRougeChar(num.replace(/(.{3})/g,"$1,").split("").reverse().join(""));
+    $this.val(num2)
+})
 
 
 /*

@@ -39,7 +39,7 @@
                         </div>
                         <div class="mb-3 col-4">
                             <label class="col-form-label" for="price">Price</label>
-                            <input class="form-control" name="raw_price" type="text" value="">
+                            <input class="form-control raw_price" name="raw_price" type="text" value="">
                         </div>
                     </div>
                     <div class="row">
