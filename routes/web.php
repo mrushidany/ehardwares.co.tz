@@ -6,6 +6,7 @@ use App\Http\Controllers\HardwareCategoriesController;
 use App\Http\Controllers\HardwareSubCategoriesController;
 use App\Http\Controllers\Settings\DatabaseSettingsController;
 use App\Http\Controllers\Stocks\HardwareStockController;
+use App\Http\Controllers\Stocks\HardwareStockProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,7 +53,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     Route::get('/hardware_stock_list', [HardwareStockController::class, 'stock_list'])->name('stock_list');
 
     //HardwareStockProfileController Routes
-    Route::get('/hardware_stock_profile/{id}', [HardwareStockProfileController::class, 'index'])->name('hardware_stock_profile');
+    Route::get('/hardware_stock_profile/{id}', [HardwareStockProfileController::class, 'profile'])->name('hardware_stock_profile');
 
     // Database Settings
     Route::post('/settings/database/migrate', [DatabaseSettingsController::class, 'db_migrate'])->name('db_migrate');
