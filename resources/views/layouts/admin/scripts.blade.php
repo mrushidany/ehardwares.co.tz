@@ -305,10 +305,9 @@ $('.save_hardware_stock').on('click', function(e) {
     var units = form.find('input[name="units"]').val();
     var raw_price = form.find('input[name="raw_price"]').val();
     var description = form.find('textarea[name="description"]').val();
-    var image = form.find('input[name="image"]').val();
 
 
-    if(name !== '' && main_category !== '' && quantity !== '' && units !== '' && raw_price !== '' && description !== '' && image !== ''){
+    if(name !== '' && main_category !== '' && quantity !== '' && units !== '' && raw_price !== '' && description !== ''){
         $(this).attr('style', 'display: none;');
         $('.reset_hardware_stock').attr('style', 'display: none;');
         $('.loading_button').removeAttr('style');
@@ -327,7 +326,6 @@ $('.save_hardware_stock').on('click', function(e) {
                 units : units,
                 raw_price : raw_price,
                 description : description,
-                image : image,
              },
             success: function(data) {
                 $('form').trigger('reset');

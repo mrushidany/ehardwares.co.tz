@@ -43,13 +43,9 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 col-6">
+                        <div class="mb-3 col-12">
                             <label class="col-form-label" for="description">Description</label>
-                            <textarea class="form-control" name="description" rows="1"></textarea>
-                        </div>
-                        <div class="mb-3 col-6">
-                            <label class="col-form-label" for="image">Image</label>
-                            <input class="form-control" type="file" name="image" multiple>
+                            <textarea class="form-control" name="description" rows="2"></textarea>
                         </div>
                     </div>
                 </div>
