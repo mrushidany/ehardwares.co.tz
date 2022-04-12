@@ -11,8 +11,13 @@ class HardwareStockProfileController extends Controller
     {
         $this->middleware('auth');
     }
+
     public function profile ($id)
     {
         return view('ecommerce.hardware.stock.profile.index');
+    }
+
+    public function image_gallery($id){
+        dd($id);
     }
 }

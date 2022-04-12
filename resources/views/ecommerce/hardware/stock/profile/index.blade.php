@@ -38,6 +38,16 @@
     function render_gallery(){
         var url = $(location).attr("href");
         var id = url.split('/').pop();
+        $.ajax({
+            url : "{{route('hardware_stock_image', '')}}"+"/"+id,
+            type: 'GET',
+            data : {
+                _token: "{{csrf_token()}}",
+            },
+            success: function (data){
+
+            }
+        })
 
 
     }
