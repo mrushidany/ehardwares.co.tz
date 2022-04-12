@@ -12,7 +12,7 @@
                     <span class="fas fa-laptop-code text-primary fs-5"></span> &nbsp;&nbsp;
                     <div class="flex-1">
                         <h6 class="fs-0 mb-0">
-                            <a class="stretched-link" href="{{ route('app_settings') }}"> App Settings</a>
+                            <a class="stretched-link" onclick="render_gallery()"> Web Images</a>
                         </h6>
                     </div>
                 </div>
@@ -20,6 +20,23 @@
         </div>
     </div>
 </div>
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+m,,kkfk
+        </div>
+    </div>
+
+</div>
+
+@endsection
+
+@section('scripts')
+<script type="application/javascript">
+    function render_gallery(){
+
+    }
+</script>
 
 
 @endsection
