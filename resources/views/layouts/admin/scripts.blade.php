@@ -314,7 +314,8 @@ $('.save_hardware_stock').on('click', function(e) {
     var main_category = form.find('select[name="main_category_id"]').val();
     var quantity = form.find('input[name="quantity"]').val();
     var units = form.find('input[name="units"]').val();
-    var raw_price = form.find('input[name="raw_price"]').val();
+    var input_raw_price = form.find('input[name="raw_price"]').val();
+    var raw_price = input_raw_price.replace(/,/g, "");
     var description = form.find('textarea[name="description"]').val();
 
 
