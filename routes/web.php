@@ -54,6 +54,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
 
     //HardwareStockProfileController Routes
     Route::get('/hardware_stock_profile/{id}', [HardwareStockProfileController::class, 'profile'])->name('hardware_stock_profile');
+    Route::get('/hardware_stock_image/{id}', [HardwareStockProfileController::class, 'image_gallery'])->name('hardware_stock_image');
 
     // Database Settings
     Route::post('/settings/database/migrate', [DatabaseSettingsController::class, 'db_migrate'])->name('db_migrate');
