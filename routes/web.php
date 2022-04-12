@@ -52,7 +52,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     Route::get('/hardware_stock_list', [HardwareStockController::class, 'stock_list'])->name('stock_list');
 
     //HardwareStockProfileController Routes
-    Route::get('/hardware_stock_profile', [HardwareStockProfileController::class, 'index'])->name('hardware_stock_profile');
+    Route::get('/hardware_stock_profile/{id}', [HardwareStockProfileController::class, 'index'])->name('hardware_stock_profile');
 
     // Database Settings
     Route::post('/settings/database/migrate', [DatabaseSettingsController::class, 'db_migrate'])->name('db_migrate');
@@ -60,6 +60,5 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     Route::post('/settings/database/clear_cache', [DatabaseSettingsController::class, 'clear_cache'])->name('clear_cache');
 
 });
-
 
 require __DIR__.'/auth.php';
