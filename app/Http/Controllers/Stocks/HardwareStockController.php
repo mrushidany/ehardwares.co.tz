@@ -132,7 +132,7 @@ class HardwareStockController extends Controller
                                 return '<nobr>'. $button . '</nobr>';
                             })
                             ->addColumn('name' , function($list) {
-                                $link = '<a class="text-success" href="" >'. $list->name .'</a>';
+                                $link = '<a class="text-success" href="javascript:redirectToController(\''. route('hardware_stock_profile', $list->id) .'\')" >'. $list->name .'</a>';
                                 return $link;
                             })
                             ->rawColumns(['name', 'action'])
