@@ -20,20 +20,25 @@
         </div>
     </div>
 </div>
-<div class="card">
-    <div class="card-body">
-        <div class="row">
-m,,kkfk
+<div class="container-fluid image_gallery_collapse">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                m,,kkfk
+            </div>
         </div>
     </div>
-
 </div>
+
 
 @endsection
 
 @section('scripts')
 <script type="application/javascript">
     function render_gallery(){
+        var url = $(location).attr("href");
+        var id = url.split('/').pop();
+
 
     }
 </script>
