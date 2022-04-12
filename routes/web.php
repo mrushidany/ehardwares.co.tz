@@ -38,7 +38,6 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     Route::get('/settings/all_users_list', [AdministratorController::class, 'all_users_list'])->name('all_users_list');
     Route::get('/settings/app', [AdministratorController::class, 'app_settings'])->name('app_settings');
 
-
     // Hardware Controllers Routes
     Route::resource('/hardware_categories', HardwareCategoriesController::class)->only(['index','edit','update', 'destroy']);
     Route::post('/hardware_categories/save_hardware_category', [HardwareCategoriesController::class, 'store'])->name('save_hardware_category');
@@ -52,12 +51,13 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     Route::resource('/hardware_stock', HardwareStockController::class);
     Route::get('/hardware_stock_list', [HardwareStockController::class, 'stock_list'])->name('stock_list');
 
+    //HardwareStockProfileController Routes
+    Route::get('/hardware_stock_profile', [HardwareStockProfileController::class, 'index'])->name('hardware_stock_profile');
 
     // Database Settings
     Route::post('/settings/database/migrate', [DatabaseSettingsController::class, 'db_migrate'])->name('db_migrate');
     Route::post('/settings/database/migrate_rollback', [DatabaseSettingsController::class, 'db_migrate_rollback'])->name('db_migrate_rollback');
     Route::post('/settings/database/clear_cache', [DatabaseSettingsController::class, 'clear_cache'])->name('clear_cache');
-
 
 });
 
