@@ -15,6 +15,11 @@ class CreateHardwareImagesTable extends Migration
     {
         Schema::create('hardware_images', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('path');
+            $table->unsignedBigInteger('stock_details_id');
+            $table->foreign('stock_details_id')->references('id')->on('hardware_stock_details')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->softDeletesTz($column = 'deleted_at', $precision = 0);
             $table->timestamps();
         });
     }
