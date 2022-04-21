@@ -62,7 +62,7 @@
                                     <div class="input-group">
                                         <input id="password" class="form-control  @error('password') is-invalid @enderror" type="password" name="password" placeholder="Password" required autocomplete="current-password" />
                                         <div class="input-group-addon">
-                                            <i class="far fa-eye mx-2 mt-2" style="cursor: pointer;" id="toggle_password" ></i>
+                                            <i class="far fa-eye mx-2 mt-2" style="cursor: pointer;" onclick="toggle_password()"></i>
                                         </div>
                                     </div>
                                     @error('password')
@@ -123,6 +123,16 @@
     <script src="{{ asset('ecommerce/polyfill/polyfill.min58be.js?features=window.scroll')}}"></script>
     <script src="{{ asset('ecommerce/vendors/list.js/list.min.js') }}"></script>
     <script src="{{ asset('ecommerce/assets/js/theme.js') }}"></script>
+    <script>
+        function toggle_password(){
+            var password = document.getElementById('password')
+            if(password.type === "password") {
+                password.type = "text";
+            } else {
+                password.type = "password"
+            }
+        }
+    </script>
 </body>
 
 </html>

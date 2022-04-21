@@ -308,5 +308,14 @@ $('.clear_cache').on('click', function(e) {
 })
 
 /*
+ Toggle Password function
+*/
+function toggle_password(){
+    var password = $('#password').val();
+    alert(password);
+}
+
+
+/*
  End of settings sections
 */
