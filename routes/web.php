@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdministratorController;
+use App\Http\Controllers\WebsiteController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HardwareCategoriesController;
 use App\Http\Controllers\HardwareSubCategoriesController;
@@ -21,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //Landing Page Route
-Route::get('/', function () { return view('ecommerce.website.home');})->name('home');
+Route::get('/', [WebsiteController::class, 'index'])->name('home');
 Route::get('/landing_page', function () { return view('ecommerce.website.index');})->name('landing_page');
 
 Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
