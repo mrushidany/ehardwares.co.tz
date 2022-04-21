@@ -59,7 +59,12 @@
                                     @enderror
                                 </div>
                                 <div class="mb-3">
-                                    <input id="password" class="form-control  @error('password') is-invalid @enderror" type="password" name="password" placeholder="Password" required autocomplete="current-password" />
+                                    <div class="input-group">
+                                        <input id="password" class="form-control  @error('password') is-invalid @enderror" type="password" name="password" placeholder="Password" required autocomplete="current-password" />
+                                        <div class="input-group-addon">
+                                            <i class="far fa-eye mx-2 mt-2" style="cursor: pointer;" id="toggle_password" ></i>
+                                        </div>
+                                    </div>
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
