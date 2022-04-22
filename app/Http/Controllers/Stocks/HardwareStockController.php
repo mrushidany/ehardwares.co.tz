@@ -44,10 +44,10 @@ class HardwareStockController extends Controller
     public function store(Request $request)
     {
         $stock = new HardwareStock();
-        $stock->category = $request->main_category;
         $stock->description = $request->description;
         $stock->code = $request->code;
         $stock->name = $request->name;
+        $stock->category = $request->main_category;
         $stock->save();
         if($stock->id) {
             $stock_detail = new HardwareStockDetail();
