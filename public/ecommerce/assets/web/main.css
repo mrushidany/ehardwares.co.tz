@@ -1,8 +1,6 @@
 body {
-    overflow-y: auto;
-    height: auto;
-    overflow-x: hidden;
+    position: relative;
+    background: #F9F9F9;
     width: 100%;
-    min-height: 100vh;
-    background-color: #ffffff;
+    height: 100%;
 }
