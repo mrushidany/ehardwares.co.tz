@@ -17,7 +17,7 @@
                     <li href="#" class="font-medium px-3 py-2 text-slate-700 rounded-sm phone">+255 659 608 061</li>
                     <li href="#" class="font-medium px-3 py-2 text-slate-700 rounded-sm phone">info@ehardwares.co.tz</li>
                 </ul>
-                <ul class="flex mx-auto">
+                <ul class="flex about">
                     <a href="#" class="font-medium py-2  rounded-sm hover:bg-slate-100 hover:text-slate-900 about">About Us</a>
                 </ul>
 

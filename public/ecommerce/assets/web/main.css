@@ -33,4 +33,6 @@ body {
 
 .about {
     color: #6A983C;
+    margin-left: auto;
+    margin-right: 0;
 }
