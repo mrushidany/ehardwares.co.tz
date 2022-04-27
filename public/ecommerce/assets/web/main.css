@@ -5,6 +5,10 @@ body {
     height: 100%;
 }
 
+.app {
+    margin: 0px 120px;
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -14,4 +18,10 @@ body {
 
 .header .nav {
     position: static;
+}
+
+.header .nav .chat {
+    position: static;
+    font-family: 'Open Sans', sans-serif;
+    color: #6A983C;
 }
