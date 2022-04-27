@@ -21,12 +21,12 @@
                     <a href="#" class="font-medium py-2  rounded-sm hover:bg-slate-100 hover:text-slate-900 about">About Us</a>
                 </ul>
             </nav>
-            <div>
-                <hr class="hr mx-auto"></hr>
-            </div>
+            <div><hr class="hr mx-auto"></hr></div>
+            <div class="flex my-4 py-4">
+                <div class="logo">
+                    <a href=""><img src="{{ asset('ecommerce/img/ehard.jpg')}}" alt="ehardwares"></a>
+                </div>
 
-            <div>
-                <p>kjkjk</p>
             </div>
         </div>
 
