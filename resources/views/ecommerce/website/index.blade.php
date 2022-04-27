@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('ecommerce/img/icon.jpeg') }}">
     <link rel="stylesheet" href="{{ asset('ecommerce/assets/web/main.css')}}">
-    <link  rel="{{ asset('css/app.css')}}"/>
+    <link  href="{{ asset('css/app.css')}}" rel="stylesheet"/>
     <title>ehardwares</title>
 </head>
 <body>
-    <p class="text-3xl font-bold underline">
+    <h1 class="text-3xl font-bold underline">
         Hello world!
-      </p>
+      </h1>
 
 </body>
 </html>
