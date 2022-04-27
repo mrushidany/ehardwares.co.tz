@@ -7,6 +7,7 @@ body {
 
 .app {
     margin: 0px 120px;
+    width: auto;
 }
 
 .header {
@@ -18,10 +19,18 @@ body {
 
 .header .nav {
     position: static;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.header .nav .chat {
-    position: static;
-    font-family: 'Open Sans', sans-serif;
+.chat {
+
+    color: orange;
+}
+
+.phone {
+    color: #151515;
+}
+
+.about {
     color: #6A983C;
 }

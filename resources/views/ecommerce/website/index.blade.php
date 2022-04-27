@@ -9,16 +9,19 @@
     <title>ehardwares</title>
 </head>
 <body>
-    <div class="app w-16 md:w-32 lg:w-48">
+    <div class="app">
         <div class="header">
-            <div class="nav">
-                <nav class="flex justify-start space-x-4">
-                    <a href="#" class="font-medium px-3 py-2 text-slate-700 rounded-sm hover:bg-slate-100 hover:text-slate-900 chat">Chat with us</a>
-                    <a href="#" class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Team</a>
-                    <a href="#" class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Projects</a>
-                    <a href="#" class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Reports</a>
-                </nav>
-            </div>
+            <nav class="flex" >
+                <ul class="flex justify-start space-x-2 mr-4">
+                    <li href="#" class="font-medium px-3 py-2  rounded-sm chat">Chat with us</li>
+                    <li href="#" class="font-medium px-3 py-2 text-slate-700 rounded-sm phone">+255 659 608 061</li>
+                    <li href="#" class="font-medium px-3 py-2 text-slate-700 rounded-sm phone">info@ehardwares.co.tz</li>
+                </ul>
+                <ul class="flex mx-auto">
+                    <a href="#" class="font-medium py-2  rounded-sm hover:bg-slate-100 hover:text-slate-900 about">About Us</a>
+                </ul>
+
+            </nav>
         </div>
     </div>
 
