@@ -38,6 +38,8 @@ body {
 }
 
 .hr {
+    position: relative;
     opacity: 0.2;
     border: 1px solid #151515;
+    margin-top: 40px;
 }

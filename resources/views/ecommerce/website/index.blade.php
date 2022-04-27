@@ -21,7 +21,13 @@
                     <a href="#" class="font-medium py-2  rounded-sm hover:bg-slate-100 hover:text-slate-900 about">About Us</a>
                 </ul>
             </nav>
-            <hr class="hr mx-auto my-4"></hr>
+            <div>
+                <hr class="hr mx-auto"></hr>
+            </div>
+
+            <div>
+                <p>kjkjk</p>
+            </div>
         </div>
 
 
