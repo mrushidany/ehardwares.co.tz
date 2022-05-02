@@ -2,42 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>ehardwares</title>
-    <meta name="description" content="Ehardwares is a hardware based ecommerce site." />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <!-- Open Graph (OG) meta tags are snippets of code that control how URLs are displayed when shared on social media  -->
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Ehardwares - Hardwares ecommerce site" />
-    <meta property="og:url" content="PAGE_URL" />
-    <meta property="og:site_name" content="Ehardwares - Hardwares ecommerce site" />
-    <!-- For the og:image content, replace the # with a link of an image -->
-    <meta property="og:image" content="#" />
-    <meta property="og:description" content="Ehardwares - Hardwares ecommerce site" />
-    <meta name="robots" content="noindex, follow" />
-    <!-- Add site Favicon -->
-    <link rel="icon" href="{{ asset ('ecommerce/img/icon.jpeg') }}" sizes="32x32" />
-    <link rel="icon" href="{{ asset ('ecommerce/img/icon.jpeg') }}" sizes="192x192" />
-    <link rel="apple-touch-icon" href="{{ asset ('ecommerce/img/icon.jpeg') }}" />
-    <meta name="msapplication-TileImage" content="{{ asset ('ecommerce/img/icon.jpeg') }}" />
-    <!-- Structured Data  -->
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "WebSite",
-            "name": "ehardwares",
-            "url": "ehardwares.co.tz"
-        }
-    </script>
-
-    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
-    <link rel="stylesheet" href="{{ asset ('ecommerce/assets/web/dist/css/vendor/vendor.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset ('ecommerce/assets/web/dist/css/plugins/plugins.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset ('ecommerce/assets/web/dist/css/style.min.css') }}">
-
+   @include('layouts.web.link_stylesheets')
 </head>
 
 <body>
@@ -158,17 +123,6 @@
                                     <ul class="mega-menu d-block">
                                         <li class="d-flex">
 
-                                        </li>
-                                        <li>
-
-                                            <ul class="menu-banner w-100">
-                                                <li>
-                                                    <a class="p-0" href="shop-left-sidebar.html"><img class="img-responsive w-100" src="assets/images/banner/3.jpg" alt=""></a>
-                                                </li>
-                                                <li>
-                                                    <a class="p-0" href="shop-left-sidebar.html"><img class="img-responsive w-100" src="assets/images/banner/4.jpg" alt=""></a>
-                                                </li>
-                                            </ul>
                                         </li>
                                     </ul>
                                 </li>
@@ -1746,101 +1700,6 @@
     <!-- Footer Area Start -->
     <div class="footer-area">
         <div class="footer-container">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-                        <!-- Start single blog -->
-                        <div class="col-md-6 col-lg-4 mb-md-30px mb-lm-30px" data-aos="fade-up" data-aos-delay="200">
-                            <div class="single-wedge">
-                                <h4 class="footer-herading">about us</h4>
-                                <p class="about-text">Lorem ipsum dolor sit amet cons adipisicing elit sed do eiusm tempor incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                </p>
-                                <ul class="link-follow">
-                                    <li class="li">
-                                        <a class="paypal icon-paypal m-0" title="Paypal" href="#"></a>
-                                    </li>
-                                    <li class="li">
-                                        <a class="tumblr icon-social-tumblr" title="Tumblr" href="#"></a>
-                                    </li>
-                                    <li class="li">
-                                        <a class="twitter icon-social-twitter" title="Twitter" href="#"></a>
-                                    </li>
-                                    <li class="li">
-                                        <a class="pinterest icon-social-pinterest" title="Pinterest" href="#"></a>
-                                    </li>
-                                    <li class="li">
-                                        <a class="linkedin icon-social-linkedin" title="Linkedin" href="#"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- End single blog -->
-                        <!-- Start single blog -->
-                        <div class="col-md-6 col-sm-6 col-lg-3 mb-md-30px mb-lm-30px" data-aos="fade-up" data-aos-delay="400">
-                            <div class="single-wedge">
-                                <h4 class="footer-herading">information</h4>
-                                <div class="footer-links">
-                                    <div class="footer-row">
-                                        <ul class="align-items-center">
-                                            <li class="li"><a class="single-link" href="about.html">About us</a></li>
-                                            <li class="li"><a class="single-link" href="#">Delivery Information</a></li>
-                                            <li class="li"><a class="single-link" href="privacy-policy.html">Privacy & Policy</a></li>
-                                            <li class="li"><a class="single-link" href="#">Terms & Condition</a></li>
-                                            <li class="li"><a class="single-link" href="#">Manufactures</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End single blog -->
-                        <!-- Start single blog -->
-                        <div class="col-md-6 col-lg-2 col-sm-6 mb-lm-30px" data-aos="fade-up" data-aos-delay="600">
-                            <div class="single-wedge">
-                                <h4 class="footer-herading">my account</h4>
-                                <div class="footer-links">
-                                    <div class="footer-row">
-                                        <ul class="align-items-center">
-                                            <li class="li"><a class="single-link" href="my-account.html">My
-                                                    Account</a>
-                                            </li>
-                                            <li class="li"><a class="single-link" href="cart.html">My Cart</a></li>
-                                            <li class="li"><a class="single-link" href="login.html">Login</a></li>
-                                            <li class="li"><a class="single-link" href="wishlist.html">Wishlist</a></li>
-                                            <li class="li"><a class="single-link" href="checkout.html">Checkout</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End single blog -->
-                        <!-- Start single blog -->
-                        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="800">
-                            <div class="single-wedge">
-                                <h4 class="footer-herading">newsletter</h4>
-                                <div class="footer-links">
-                                    <!-- News letter area -->
-                                    <div id="mc_embed_signup" class="subscribe-form">
-                                        <form id="mc-embedded-subscribe-form" class="validate" novalidate="" target="_blank" name="mc-embedded-subscribe-form" method="post" action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef">
-                                            <div id="mc_embed_signup_scroll" class="mc-form">
-                                                <input class="email" type="email" required="" placeholder="Your Mail*" name="EMAIL" value="" />
-                                                <div class="mc-news" aria-hidden="true">
-                                                    <input type="text" value="" tabindex="-1" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" />
-                                                </div>
-                                                <div class="clear">
-                                                    <button id="mc-embedded-subscribe" class="button btn-primary" type="submit" name="subscribe" value=""><i
-                                                            class="icon-cursor"></i> Send Mail</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <!-- News letter area  End -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End single blog -->
-                    </div>
-                </div>
-            </div>
             <div class="footer-bottom">
                 <div class="container">
                     <div class="row flex-sm-row-reverse">
@@ -1850,8 +1709,8 @@
                             </div>
                         </div>
                         <div class="col-md-6 text-start">
-                            <p class="copy-text"> © 2021 <strong>Furns</strong> Made With <i class="ion-heart" aria-hidden="true"></i> By <a class="company-name" href="https://hasthemes.com/">
-                                <strong> HasThemes</strong></a>.</p>
+                            <p class="copy-text"> &copy;&nbsp;<?php echo date('Y') ?> <strong>ehardwares</strong> Made By <a class="company-name" href="https://valartech.co.tz">
+                                <strong> Valar Technology Solutions</strong></a>.</p>
                         </div>
                     </div>
                 </div>
@@ -1994,33 +1853,6 @@
         </div>
     </div>
     <!-- Modal end -->
-
-
-
-
-
-
-
-    <!-- Global Vendor, plugins JS -->
-
-    <!-- Vendor JS -->
-    <!-- <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/popper.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
-    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script> -->
-
-    <!--Plugins JS-->
-    <!-- <script src="assets/js/plugins/swiper-bundle.min.js"></script>
-    <script src="assets/js/plugins/jquery-ui.min.js"></script>
-    <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
-    <script src="assets/js/plugins/countdown.js"></script>
-    <script src="assets/js/plugins/scrollup.js"></script>
-    <script src="assets/js/plugins/jquery.waypoints.js"></script>
-    <script src="assets/js/plugins/jquery.lineProgressbar.js"></script>
-    <script src="assets/js/plugins/jquery.zoom.min.js"></script>
-    <script src="assets/js/plugins/venobox.min.js"></script>
-    <script src="assets/js/plugins/ajax-mail.js"></script> -->
 
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
     <script src="{{ asset ('ecommerce/assets/web/dist/js/vendor/vendor.min.js') }}"></script>
