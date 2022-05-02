@@ -66,7 +66,7 @@
                     <!-- Header Logo Start -->
                     <div class="col-auto align-self-center">
                         <div class="header-logo">
-                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="Site Logo" /></a>
+                            <a href="{{ route('home') }}"><img src="{{ asset('ecommerce/img/ehard.jpg') }}" alt="ehardwares Logo" /></a>
                         </div>
                     </div>
                     <!-- Header Logo End -->
@@ -117,7 +117,7 @@
                     <!-- Header Logo Start -->
                     <div class="col-auto align-self-center">
                         <div class="header-logo">
-                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="Site Logo" /></a>
+                            <a href="{{ route('home') }}"><img src="{{ asset ('ecommerce/img/icon.jpeg') }}" alt="ehardwares" style="width: 55px; height: 35px;" /></a>
                         </div>
                     </div>
                     <!-- Header Logo End -->
