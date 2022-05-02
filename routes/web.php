@@ -23,6 +23,7 @@ use Illuminate\Support\Facades\Route;
 
 //Landing Page Route
 Route::get('/', [WebsiteController::class, 'index'])->name('home');
+Route::get('/', [WebsiteController::class, 'contact_us'])->name('contact_us');
 Route::get('/landing_page', function () { return view('ecommerce.website.index');})->name('landing_page');
 
 Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {

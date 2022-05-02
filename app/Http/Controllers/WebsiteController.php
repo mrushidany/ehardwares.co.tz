@@ -11,4 +11,9 @@ class WebsiteController extends Controller
     {
         return view('ecommerce.website.index');
     }
+
+    public function contact_us()
+    {
+        return view('ecommerce.website.contact_us');
+    }
 }
