@@ -33,26 +33,10 @@
         }
     </script>
 
-    <!-- vendor css (Bootstrap & Icon Font) -->
-    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
-    <!-- <link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css" />
-    <link rel="stylesheet" href="assets/css/vendor/ionicons.min.css" /> -->
-
-    <!-- plugins css (All Plugins Files) -->
-    <!-- <link rel="stylesheet" href="assets/css/plugins/animate.css" />
-    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/jquery.lineProgressbar.css">
-    <link rel="stylesheet" href="assets/css/plugins/nice-select.css" />
-    <link rel="stylesheet" href="assets/css/plugins/venobox.css" /> -->
-
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
     <link rel="stylesheet" href="{{ asset ('ecommerce/assets/web/dist/css/vendor/vendor.min.css') }}" />
     <link rel="stylesheet" href="{{ asset ('ecommerce/assets/web/dist/css/plugins/plugins.min.css') }}" />
     <link rel="stylesheet" href="{{ asset ('ecommerce/assets/web/dist/css/style.min.css') }}">
-
-    <!-- Main Style -->
-    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
 
 </head>
 
