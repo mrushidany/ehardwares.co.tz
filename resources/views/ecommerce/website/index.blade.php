@@ -101,7 +101,7 @@
                     <!-- Header Logo Start -->
                     <div class="col-auto align-self-center">
                         <div class="header-logo">
-                            <a href="{{ route('home') }}"><img src="{{ asset ('ecommerce/img/icon.jpeg') }}" alt="ehardwares" style="width: 55px; height: 35px;" /></a>
+                            <a href="{{ route('home') }}"><img src="{{ asset ('ecommerce/img/icon.jpeg') }}" alt="ehardwares" style="width: 59px;" /></a>
                         </div>
                     </div>
                     <!-- Header Logo End -->
