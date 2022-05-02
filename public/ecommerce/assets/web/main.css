@@ -43,3 +43,11 @@ body {
     border: 1px solid #151515;
     margin-top: 10px;
 }
+
+.all_categories_search {
+    position: relative;
+    background: #F9F9F9;
+    border-radius: 12px;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+}
