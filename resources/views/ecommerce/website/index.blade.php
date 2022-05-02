@@ -59,8 +59,6 @@
 <body>
     <!-- Header Area start  -->
     <div class="header section">
-        <!-- Header Top Message Start -->
-        <!-- Header Top  End -->
         <!-- Header Bottom  Start -->
         <div class="header-bottom d-none d-lg-block">
             <div class="container position-relative">
