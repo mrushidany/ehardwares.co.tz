@@ -50,7 +50,7 @@
                     <!-- Header Logo Start -->
                     <div class="col-auto align-self-center">
                         <div class="header-logo">
-                            <a href="{{ route('home') }}"><img src="{{ asset('ecommerce/img/ehard.jpg') }}" alt="ehardwares Logo" /></a>
+                            <a href="{{ route('home') }}"><img src="{{ asset('ecommerce/img/ehard.jpg') }}" alt="ehardwares Logo" style="width: 258px;" /></a>
                         </div>
                     </div>
                     <!-- Header Logo End -->
@@ -73,9 +73,9 @@
                                 <button class="dropdown-toggle header-action-btn" data-bs-toggle="dropdown"><i
                                         class="icon-user"></i></button>
                                 <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a class="dropdown-item" href="my-account.html">My account</a></li>
-                                    <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
-                                    <li><a class="dropdown-item" href="login.html">Sign in</a></li>
+                                    <li><a class="dropdown-item" href="">My account</a></li>
+                                    <li><a class="dropdown-item" href="">Checkout</a></li>
+                                    <li><a class="dropdown-item" href="">Sign in</a></li>
                                 </ul>
                             </div>
                             <!-- Single Wedge End -->
@@ -124,9 +124,9 @@
                                 <button class="dropdown-toggle header-action-btn" data-bs-toggle="dropdown"><i
                                         class="icon-user"></i></button>
                                 <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a class="dropdown-item" href="my-account.html">My account</a></li>
-                                    <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
-                                    <li><a class="dropdown-item" href="login.html">Sign in</a></li>
+                                    <li><a class="dropdown-item" href="">My account</a></li>
+                                    <li><a class="dropdown-item" href="">Checkout</a></li>
+                                    <li><a class="dropdown-item" href="">Sign in</a></li>
                                 </ul>
                             </div>
                             <!-- Single Wedge End -->
@@ -152,12 +152,7 @@
                     <div class="col-md-12 align-self-center">
                         <div class="main-menu">
                             <ul>
-                                <li class="dropdown"><a href="#">Home <i class="ion-ios-arrow-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="index.html">Home 1</a></li>
-                                        <li><a href="index-2.html">Home 2</a></li>
-                                    </ul>
-                                </li>
+                                <li ><a href="{{ route('home') }}">Home</a></li>
                                 <li><a href="about.html">About us</a></li>
                                 <li class="dropdown position-static"><a href="#">Shop <i
                                             class="ion-ios-arrow-down"></i></a>
