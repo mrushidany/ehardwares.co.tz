@@ -68,8 +68,8 @@
                 <div class=" swiper-slide">
                     <a href="shop-left-sidebar.html" class="category-inner ">
                         <div class="category-single-item">
-                            <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/1.png') }}{{ asset ('ecommerce/" alt=/web/dist"">
-                    ') }}        <span class="title">Office Chair</span>
+                            <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/1.png') }}" alt="Category">
+                            <span class="title">Office Chair</span>
                         </div>
                     </a>
                 </div>
@@ -77,8 +77,8 @@
                 <div class=" swiper-slide">
                     <a href="shop-left-sidebar.html" class="category-inner ">
                         <div class="category-single-item">
-                            <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/2.png') }}{{ asset ('ecommerce/" alt=/web/dist"">
-                    ') }}        <span class="title">Book Shelf</span>
+                            <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/2.png') }}" alt="Category">
+                            <span class="title">Book Shelf</span>
                         </div>
                     </a>
                 </div>
@@ -86,8 +86,8 @@
                 <div class=" swiper-slide">
                     <a href="shop-left-sidebar.html" class="category-inner ">
                         <div class="category-single-item">
-                            <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/3.png') }}{{ asset ('ecommerce/" alt=/web/dist"">
-                    ') }}        <span class="title">Light & Sofa</span>
+                            <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/3.png') }}" alt="Category">
+                            <span class="title">Light & Sofa</span>
                         </div>
                     </a>
                 </div>
@@ -95,8 +95,8 @@
                 <div class=" swiper-slide">
                     <a href="shop-left-sidebar.html" class="category-inner ">
                         <div class="category-single-item">
-                            <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/4.png') }}{{ asset ('ecommerce/" alt=/web/dist"">
-                    ') }}        <span class="title">Reading Table</span>
+                            <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/4.png') }}" alt="Category">
+                            <span class="title">Reading Table</span>
                         </div>
                     </a>
                 </div>
@@ -104,8 +104,8 @@
                 <div class="swiper-slide">
                     <a href="shop-left-sidebar.html" class="category-inner ">
                         <div class="category-single-item">
-                            <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/5.png') }}{{ asset ('ecommerce/" alt=/web/dist"">
-                    ') }}        <span class="title">Corner Table</span>
+                            <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/5.png') }}" alt="Category">
+                            <span class="title">Corner Table</span>
                         </div>
                     </a>
                 </div>
