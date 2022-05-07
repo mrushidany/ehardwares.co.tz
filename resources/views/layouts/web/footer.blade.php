@@ -5,10 +5,10 @@
                 <div class="row flex-sm-row-reverse">
                     <div class="col-md-6 text-end">
                         <div class="payment-link">
-                            <img src="assets/images/icons/payment.png" alt="">
+                            <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/payment.png') }}" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6 text-start">
+                    <div class="col-md-6 text-center">
                         <p class="copy-text"> &copy;&nbsp;<?php echo date('Y') ?> <strong>ehardwares</strong> | <a class="company-name" href="https://valartech.co.tz">
                             <strong> Valar Technology Solutions</strong></a>.</p>
                     </div>
