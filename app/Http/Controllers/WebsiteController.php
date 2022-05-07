@@ -9,7 +9,7 @@ class WebsiteController extends Controller
 
     public function index()
     {
-        return view('ecommerce.website.index');
+        return view('ecommerce.website.home');
     }
 
     public function contact_us()
