@@ -5,8 +5,8 @@
             <div class="product">
                 <div class="thumb">
                     <a href="shop-left-sidebar.html" class="image">
-                        <img src="assets/images/product-image/1.jpg" alt="Product" />
-                        <img class="hover-image" src="assets/images/product-image/2.jpg" alt="Product" />
+                        <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/1.jpg') }}" alt="Product" />
+                        <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/2.jpg') }}" alt="Product" />
                     </a>
                     <span class="badges">
                         <span class="new">New</span>
@@ -35,8 +35,8 @@
             <div class="product">
                 <div class="thumb">
                     <a href="shop-left-sidebar.html" class="image">
-                        <img src="assets/images/product-image/3.jpg" alt="Product" />
-                        <img class="hover-image" src="assets/images/product-image/4.jpg" alt="Product" />
+                        <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/3.jpg') }}" alt="Product" />
+                        <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/4.jpg') }}" alt="Product" />
                     </a>
                     <span class="badges">
                         <span class="sale">-10%</span>
@@ -68,8 +68,8 @@
             <div class="product">
                 <div class="thumb">
                     <a href="shop-left-sidebar.html" class="image">
-                        <img src="assets/images/product-image/5.jpg" alt="Product" />
-                        <img class="hover-image" src="assets/images/product-image/6.jpg" alt="Product" />
+                        <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/5.jpg') }}" alt="Product" />
+                        <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/6.jpg') }}" alt="Product" />
                     </a>
                     <span class="badges">
                         <span class="sale">-7%</span>
@@ -99,8 +99,8 @@
             <div class="product">
                 <div class="thumb">
                     <a href="shop-left-sidebar.html" class="image">
-                        <img src="assets/images/product-image/7.jpg" alt="Product" />
-                        <img class="hover-image" src="assets/images/product-image/8.jpg" alt="Product" />
+                        <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/7.jpg') }}" alt="Product" />
+                        <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/8.jpg') }}" alt="Product" />
                     </a>
                     <span class="badges">
                         <span class="new">New</span>
@@ -130,8 +130,8 @@
             <div class="product">
                 <div class="thumb">
                     <a href="shop-left-sidebar.html" class="image">
-                        <img src="assets/images/product-image/9.jpg" alt="Product" />
-                        <img class="hover-image" src="assets/images/product-image/10.jpg" alt="Product" />
+                        <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/9.jpg') }}" alt="Product" />
+                        <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/10.jpg') }}" alt="Product" />
                     </a>
                     <span class="badges">
                         <span class="sale">-5%</span>
@@ -162,8 +162,8 @@
             <div class="product">
                 <div class="thumb">
                     <a href="shop-left-sidebar.html" class="image">
-                        <img src="assets/images/product-image/11.jpg" alt="Product" />
-                        <img class="hover-image" src="assets/images/product-image/12.jpg" alt="Product" />
+                        <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/11.jpg') }}" alt="Product" />
+                        <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/12.jpg') }}" alt="Product" />
                     </a>
                     <span class="badges">
                     </span>
@@ -192,8 +192,8 @@
             <div class="product">
                 <div class="thumb">
                     <a href="shop-left-sidebar.html" class="image">
-                        <img src="assets/images/product-image/13.jpg" alt="Product" />
-                        <img class="hover-image" src="assets/images/product-image/14.jpg" alt="Product" />
+                        <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/13.jpg') }}" alt="Product" />
+                        <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/14.jpg') }}" alt="Product" />
                     </a>
                     <span class="badges">
                     </span>
@@ -221,8 +221,8 @@
             <div class="product">
                 <div class="thumb">
                     <a href="shop-left-sidebar.html" class="image">
-                        <img src="assets/images/product-image/15.jpg" alt="Product" />
-                        <img class="hover-image" src="assets/images/product-image/16.jpg" alt="Product" />
+                        <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/15.jpg') }}" alt="Product" />
+                        <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/16.jpg') }}" alt="Product" />
                     </a>
                     <span class="badges">
                         <span class="new">New</span>
