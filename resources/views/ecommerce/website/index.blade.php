@@ -7,134 +7,7 @@
 
 <body>
     <!-- Header Area start  -->
-    <div class="header section">
-        <!-- Header Bottom  Start -->
-        <div class="header-bottom d-none d-lg-block">
-            <div class="container position-relative">
-                <div class="row align-self-center">
-                    <!-- Header Logo Start -->
-                    <div class="col-auto align-self-center">
-                        <div class="header-logo">
-                            <a href="{{ route('home') }}"><img src="{{ asset('ecommerce/img/ehard.jpg') }}" alt="ehardwares Logo" style="width: 258px;" /></a>
-                        </div>
-                    </div>
-                    <!-- Header Logo End -->
-
-                    <!-- Header Action Start -->
-                    <div class="col align-self-center">
-                        <div class="header-actions">
-                            <div class="header_account_list">
-                                <a href="javascript:void(0)" class="header-action-btn search-btn"><i
-                                        class="icon-magnifier"></i></a>
-                                <div class="dropdown_search">
-                                    <form class="action-form" action="#">
-                                        <input class="form-control" placeholder="Enter your search key" type="text">
-                                        <button class="submit" type="submit"><i class="icon-magnifier"></i></button>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- Single Wedge Start -->
-                            <div class="header-bottom-set dropdown">
-                                <button class="dropdown-toggle header-action-btn" data-bs-toggle="dropdown"><i
-                                        class="icon-user"></i></button>
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a class="dropdown-item" href="">My account</a></li>
-                                    <li><a class="dropdown-item" href="">Checkout</a></li>
-                                    <li><a class="dropdown-item" href="">Sign in</a></li>
-                                </ul>
-                            </div>
-                            <!-- Single Wedge End -->
-                            <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
-                                <i class="icon-handbag"></i>
-                                <span class="header-action-num">01</span>
-                                <!-- <span class="cart-amount">€30.00</span> -->
-                            </a>
-                            <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
-                                <i class="icon-menu"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Header Action End -->
-                </div>
-            </div>
-        </div>
-        <!-- Header Bottom  End -->
-        <!-- Header Bottom  Start -->
-        <div class="header-bottom d-lg-none sticky-nav bg-white">
-            <div class="container position-relative">
-                <div class="row align-self-center">
-                    <!-- Header Logo Start -->
-                    <div class="col-auto align-self-center">
-                        <div class="header-logo">
-                            <a href="{{ route('home') }}"><img src="{{ asset ('ecommerce/img/icon.jpeg') }}" alt="ehardwares" style="width: 59px;" /></a>
-                        </div>
-                    </div>
-                    <!-- Header Logo End -->
-
-                    <!-- Header Action Start -->
-                    <div class="col align-self-center">
-                        <div class="header-actions">
-                            <div class="header_account_list">
-                                <a href="javascript:void(0)" class="header-action-btn search-btn"><i
-                                        class="icon-magnifier"></i></a>
-                                <div class="dropdown_search">
-                                    <form class="action-form" action="#">
-                                        <input class="form-control" placeholder="Enter your search key" type="text">
-                                        <button class="submit" type="submit"><i class="icon-magnifier"></i></button>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- Single Wedge Start -->
-                            <div class="header-bottom-set dropdown">
-                                <button class="dropdown-toggle header-action-btn" data-bs-toggle="dropdown"><i
-                                        class="icon-user"></i></button>
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a class="dropdown-item" href="">My account</a></li>
-                                    <li><a class="dropdown-item" href="">Checkout</a></li>
-                                    <li><a class="dropdown-item" href="">Sign in</a></li>
-                                </ul>
-                            </div>
-                            <!-- Single Wedge End -->
-                            <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
-                                <i class="icon-handbag"></i>
-                                <span class="header-action-num">01</span>
-                                <!-- <span class="cart-amount">€30.00</span> -->
-                            </a>
-                            <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
-                                <i class="icon-menu"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Header Action End -->
-                </div>
-            </div>
-        </div>
-        <!-- Header Bottom  End -->
-        <!-- Main Menu Start -->
-        <div class="bg-black d-none d-lg-block sticky-nav">
-            <div class="container position-relative">
-                <div class="row">
-                    <div class="col-md-12 align-self-center">
-                        <div class="main-menu">
-                            <ul>
-                                <li ><a href="{{ route('home') }}">Home</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li class="dropdown position-static"><a href="#">Shop <i class="ion-ios-arrow-down"></i></a>
-                                    <ul class="mega-menu d-block">
-                                        <li class="d-flex">
-
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="{{ route('contact_us')}}">Contact us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Main Menu End -->
-    </div>
+    @include('layouts.web.header')
     <!-- Header Area End  -->
 
     <!-- OffCanvas Cart Start -->
@@ -247,7 +120,7 @@
                             </div>
                             <div class="col-xl-6 col-lg-5 col-md-5 col-sm-5">
                                 <div class="hero-slide-image">
-                                    <img src="assets/images/slider-image/slider-1.png" alt="" />
+                                    <img src="{{ asset ('ecommerce/assets/web/dist/images/slider-image/slider-1.png') }}" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -267,7 +140,7 @@
                             </div>
                             <div class="col-xl-6 col-lg-5 col-md-5 col-sm-5">
                                 <div class="hero-slide-image">
-                                    <img src="assets/images/slider-image/slider-2.png" alt="" />
+                                    <img src="{{ asset ('ecommerce/assets/web/dist/images/slider-image/slider-2.png') }}" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -295,8 +168,8 @@
                     <div class=" swiper-slide">
                         <a href="shop-left-sidebar.html" class="category-inner ">
                             <div class="category-single-item">
-                                <img src="assets/images/icons/1.png" alt="">
-                                <span class="title">Office Chair</span>
+                                <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/1.png') }}{{ asset ('ecommerce/" alt=/web/dist"">
+                        ') }}        <span class="title">Office Chair</span>
                             </div>
                         </a>
                     </div>
@@ -304,8 +177,8 @@
                     <div class=" swiper-slide">
                         <a href="shop-left-sidebar.html" class="category-inner ">
                             <div class="category-single-item">
-                                <img src="assets/images/icons/2.png" alt="">
-                                <span class="title">Book Shelf</span>
+                                <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/2.png') }}{{ asset ('ecommerce/" alt=/web/dist"">
+                        ') }}        <span class="title">Book Shelf</span>
                             </div>
                         </a>
                     </div>
@@ -313,8 +186,8 @@
                     <div class=" swiper-slide">
                         <a href="shop-left-sidebar.html" class="category-inner ">
                             <div class="category-single-item">
-                                <img src="assets/images/icons/3.png" alt="">
-                                <span class="title">Light & Sofa</span>
+                                <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/3.png') }}{{ asset ('ecommerce/" alt=/web/dist"">
+                        ') }}        <span class="title">Light & Sofa</span>
                             </div>
                         </a>
                     </div>
@@ -322,8 +195,8 @@
                     <div class=" swiper-slide">
                         <a href="shop-left-sidebar.html" class="category-inner ">
                             <div class="category-single-item">
-                                <img src="assets/images/icons/4.png" alt="">
-                                <span class="title">Reading Table</span>
+                                <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/4.png') }}{{ asset ('ecommerce/" alt=/web/dist"">
+                        ') }}        <span class="title">Reading Table</span>
                             </div>
                         </a>
                     </div>
@@ -331,8 +204,8 @@
                     <div class="swiper-slide">
                         <a href="shop-left-sidebar.html" class="category-inner ">
                             <div class="category-single-item">
-                                <img src="assets/images/icons/5.png" alt="">
-                                <span class="title">Corner Table</span>
+                                <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/5.png') }}{{ asset ('ecommerce/" alt=/web/dist"">
+                        ') }}        <span class="title">Corner Table</span>
                             </div>
                         </a>
                     </div>
@@ -380,8 +253,8 @@
                                     <div class="product">
                                         <div class="thumb">
                                             <a href="shop-left-sidebar.html" class="image">
-                                                <img src="assets/images/product-image/1.jpg" alt="Product" />
-                                                <img class="hover-image" src="assets/images/product-image/2.jpg" alt="Product" />
+                                                <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/1.jpg') }}" alt="Product" />
+                                                <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/2.jpg') }}" alt="Product" />
                                             </a>
                                             <span class="badges">
                                                 <span class="new">New</span>
@@ -410,8 +283,8 @@
                                     <div class="product">
                                         <div class="thumb">
                                             <a href="shop-left-sidebar.html" class="image">
-                                                <img src="assets/images/product-image/3.jpg" alt="Product" />
-                                                <img class="hover-image" src="assets/images/product-image/4.jpg" alt="Product" />
+                                                <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/3.jpg') }}" alt="Product" />
+                                                <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/4.jpg') }}" alt="Product" />
                                             </a>
                                             <span class="badges">
                                                 <span class="sale">-10%</span>
@@ -443,8 +316,8 @@
                                     <div class="product">
                                         <div class="thumb">
                                             <a href="shop-left-sidebar.html" class="image">
-                                                <img src="assets/images/product-image/5.jpg" alt="Product" />
-                                                <img class="hover-image" src="assets/images/product-image/6.jpg" alt="Product" />
+                                                <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/5.jpg') }}" alt="Product" />
+                                                <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/6.jpg') }}" alt="Product" />
                                             </a>
                                             <span class="badges">
                                                 <span class="sale">-7%</span>
@@ -474,8 +347,8 @@
                                     <div class="product">
                                         <div class="thumb">
                                             <a href="shop-left-sidebar.html" class="image">
-                                                <img src="assets/images/product-image/7.jpg" alt="Product" />
-                                                <img class="hover-image" src="assets/images/product-image/8.jpg" alt="Product" />
+                                                <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/7.jpg') }}" alt="Product" />
+                                                <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/8.jpg') }}" alt="Product" />
                                             </a>
                                             <span class="badges">
                                                 <span class="new">New</span>
@@ -505,8 +378,8 @@
                                     <div class="product">
                                         <div class="thumb">
                                             <a href="shop-left-sidebar.html" class="image">
-                                                <img src="assets/images/product-image/9.jpg" alt="Product" />
-                                                <img class="hover-image" src="assets/images/product-image/10.jpg" alt="Product" />
+                                                <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/9.jpg') }}" alt="Product" />
+                                                <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/10.jpg') }}" alt="Product" />
                                             </a>
                                             <span class="badges">
                                                 <span class="sale">-5%</span>
@@ -537,8 +410,8 @@
                                     <div class="product">
                                         <div class="thumb">
                                             <a href="shop-left-sidebar.html" class="image">
-                                                <img src="assets/images/product-image/11.jpg" alt="Product" />
-                                                <img class="hover-image" src="assets/images/product-image/12.jpg" alt="Product" />
+                                                <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/11.jpg') }}" alt="Product" />
+                                                <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/12.jpg') }}" alt="Product" />
                                             </a>
                                             <span class="badges">
                                             </span>
@@ -567,8 +440,8 @@
                                     <div class="product">
                                         <div class="thumb">
                                             <a href="shop-left-sidebar.html" class="image">
-                                                <img src="assets/images/product-image/13.jpg" alt="Product" />
-                                                <img class="hover-image" src="assets/images/product-image/14.jpg" alt="Product" />
+                                                <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/13.jpg') }}" alt="Product" />
+                                                <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/14.jpg') }}" alt="Product" />
                                             </a>
                                             <span class="badges">
                                             </span>
@@ -596,8 +469,8 @@
                                     <div class="product">
                                         <div class="thumb">
                                             <a href="shop-left-sidebar.html" class="image">
-                                                <img src="assets/images/product-image/15.jpg" alt="Product" />
-                                                <img class="hover-image" src="assets/images/product-image/16.jpg" alt="Product" />
+                                                <img src="{{ asset ('ecommerce/assets/web/dist/images/product-image/15.jpg') }}" alt="Product" />
+                                                <img class="hover-image" src="{{ asset ('ecommerce/assets/web/dist/images/product-image/16.jpg') }}" alt="Product" />
                                             </a>
                                             <span class="badges">
                                                 <span class="new">New</span>
