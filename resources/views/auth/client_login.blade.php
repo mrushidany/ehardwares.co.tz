@@ -141,16 +141,6 @@
     <script src="{{ asset('ecommerce/polyfill/polyfill.min58be.js?features=window.scroll')}}"></script>
     <script src="{{ asset('ecommerce/vendors/list.js/list.min.js') }}"></script>
     <script src="{{ asset('ecommerce/assets/js/theme.js') }}"></script>
-    <script>
-        function toggle_password(){
-            var password = document.getElementById('password')
-            if(password.type === "password") {
-                password.type = "text";
-            } else {
-                password.type = "password"
-            }
-        }
-    </script>
 </body>
 
 </html>
