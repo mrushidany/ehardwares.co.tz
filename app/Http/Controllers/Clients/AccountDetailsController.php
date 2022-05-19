@@ -12,9 +12,10 @@ class AccountDetailsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
-        //
+        return view('ecommerce.website.account.my_account');
     }
 
     /**

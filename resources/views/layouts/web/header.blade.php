@@ -29,7 +29,7 @@
                             <button class="dropdown-toggle header-action-btn" data-bs-toggle="dropdown"><i
                                     class="icon-user"></i></button>
                             <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a class="dropdown-item" href="">My account</a></li>
+                                <li><a class="dropdown-item" href="{{ route('details.index') }}">My account</a></li>
                                 <li><a class="dropdown-item" href="">Checkout</a></li>
                                 <li><a class="dropdown-item" href="">Sign in</a></li>
                             </ul>
@@ -80,7 +80,7 @@
                             <button class="dropdown-toggle header-action-btn" data-bs-toggle="dropdown"><i
                                     class="icon-user"></i></button>
                             <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a class="dropdown-item" href="">My account</a></li>
+                                <li><a class="dropdown-item" href="{{ route('details.index') }}">My account</a></li>
                                 <li><a class="dropdown-item" href="">Checkout</a></li>
                                 <li><a class="dropdown-item" href="">Sign in</a></li>
                             </ul>
