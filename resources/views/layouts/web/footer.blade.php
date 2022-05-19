@@ -18,7 +18,7 @@
                 <div class="row flex-sm-row-reverse">
                     <div class="col-md-6 text-end">
                         <div class="payment-link">
-                            <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/payment.png') }}" alt="">
+                            {{-- <img src="{{ asset ('ecommerce/assets/web/dist/images/icons/payment.png') }}" alt=""> --}}
                         </div>
                     </div>
                     <div class="col-md-6 text-center">
