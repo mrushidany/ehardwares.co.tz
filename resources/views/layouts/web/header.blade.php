@@ -6,7 +6,7 @@
                 <!-- Header Logo Start -->
                 <div class="col-auto align-self-center">
                     <div class="header-logo">
-                        <a href="{{ route('home') }}"><img src="{{ asset('ecommerce/img/ehard.jpg') }}" alt="ehardwares Logo" style="width: 258px;" /></a>
+                        <a href="{{ route('landing_page') }}"><img src="{{ asset('ecommerce/img/ehard.jpg') }}" alt="ehardwares Logo" style="width: 258px;" /></a>
                     </div>
                 </div>
                 <!-- Header Logo End -->
@@ -57,7 +57,7 @@
                 <!-- Header Logo Start -->
                 <div class="col-auto align-self-center">
                     <div class="header-logo">
-                        <a href="{{ route('home') }}"><img src="{{ asset ('ecommerce/img/icon.jpeg') }}" alt="ehardwares" style="width: 59px;" /></a>
+                        <a href="{{ route('landing_page') }}"><img src="{{ asset ('ecommerce/img/icon.jpeg') }}" alt="ehardwares" style="width: 59px;" /></a>
                     </div>
                 </div>
                 <!-- Header Logo End -->
@@ -108,7 +108,7 @@
                 <div class="col-md-12 align-self-center">
                     <div class="main-menu">
                         <ul>
-                            <li ><a href="{{ route('home') }}">Home</a></li>
+                            <li ><a href="{{ route('landing_page') }}">Home</a></li>
                             <li><a href="#">About us</a></li>
                             <li class="dropdown position-static"><a href="#">Shop <i class="ion-ios-arrow-down"></i></a>
                                 <ul class="mega-menu d-block">
