@@ -8,6 +8,7 @@ use App\Http\Controllers\HardwareSubCategoriesController;
 use App\Http\Controllers\Settings\DatabaseSettingsController;
 use App\Http\Controllers\Stocks\HardwareStockController;
 use App\Http\Controllers\Stocks\HardwareStockProfileController;
+use App\Http\Controllers\Clients\AccountDetailsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,6 +27,7 @@ Route::get('/', [WebsiteController::class, 'index'])->name('home');
 Route::get('/contact_us', [WebsiteController::class, 'contact_us'])->name('contact_us');
 Route::get('/landing_page', [WebsiteController::class, 'landing_page'])->name('landing_page');
 
+// Admin Operations Routes
 Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
 
     // Dashboard Controller Routes
@@ -62,7 +64,13 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     Route::post('/settings/database/migrate', [DatabaseSettingsController::class, 'db_migrate'])->name('db_migrate');
     Route::post('/settings/database/migrate_rollback', [DatabaseSettingsController::class, 'db_migrate_rollback'])->name('db_migrate_rollback');
     Route::post('/settings/database/clear_cache', [DatabaseSettingsController::class, 'clear_cache'])->name('clear_cache');
-
 });
+
+//Client Account Details
+Route::group(['prefix' => 'account','middleware' => 'auth'], function() {
+    Route::resource('details', AccountDetailsController::class);
+});
+
+
 
 require __DIR__.'/auth.php';
