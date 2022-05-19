@@ -17,6 +17,11 @@ class AuthenticatedSessionController extends Controller
      */
     public function create()
     {
+        return view('auth.login');
+    }
+
+    public function create_client()
+    {
         return view('auth.client_login');
     }
 
@@ -42,6 +47,17 @@ class AuthenticatedSessionController extends Controller
      * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(Request $request)
+    {
+        Auth::guard('web')->logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/admin/login');
+    }
+
+    public function destroy_client(Request $request)
     {
         Auth::guard('web')->logout();
 

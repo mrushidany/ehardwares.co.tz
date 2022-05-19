@@ -46,7 +46,7 @@
                             <a class="dropdown-item" href="{{ route('settings') }}">Settings</a>
                         @endif
                         <div class="dropdown-divider"></div>
-                        <form action="{{ route('logout') }}" method="POST">
+                        <form action="{{ route('admin_logout') }}" method="POST">
                             @csrf
                             <button class="dropdown-item" onclick="event.preventDefault(); this.closest('form').submit();">Logout</button>
                         </form>
