@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Clients;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AccountDetailsController extends Controller
 {
@@ -15,7 +16,12 @@ class AccountDetailsController extends Controller
 
     public function index()
     {
-        return view('ecommerce.website.account.my_account');
+        if (isset(Auth::user()->name)) {
+            return view('ecommerce.website.account.my_account');
+        } else {
+            return redirect('/login');
+        }
+
     }
 
     /**
