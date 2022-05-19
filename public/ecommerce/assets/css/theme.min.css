@@ -25152,7 +25152,7 @@ h5,
 }
 
 .bg-card-gradient {
-    background-image: var(--falcon-card-gradient);
+    background: #ff4500;
     background-position: center
 }
 

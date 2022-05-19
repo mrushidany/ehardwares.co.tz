@@ -71,6 +71,4 @@ Route::group(['prefix' => 'account','middleware' => 'auth'], function() {
     Route::resource('details', AccountDetailsController::class);
 });
 
-
-
 require __DIR__.'/auth.php';
