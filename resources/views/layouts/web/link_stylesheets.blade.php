@@ -32,4 +32,4 @@
 <!-- Use the minified version files listed below for better performance and remove the files listed above -->
 <link rel="stylesheet" href="{{ asset ('ecommerce/assets/web/dist/css/vendor/vendor.min.css') }}" />
 <link rel="stylesheet" href="{{ asset ('ecommerce/assets/web/dist/css/plugins/plugins.min.css') }}" />
-<link rel="stylesheet" href="{{ asset ('ecommerce/assets/web/dist/css/style.min.css') }}">
+<link rel="stylesheet" href="{{ asset ('ecommerce/assets/web/dist/css/style.css') }}">
