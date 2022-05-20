@@ -16,7 +16,7 @@ class AccountDetailsController extends Controller
 
     public function index()
     {
-        if (isset(Auth::user()->name)) {
+        if (isset(Auth::user()->username)) {
             return view('ecommerce.website.account.my_account');
         } else {
             return redirect('/login');
