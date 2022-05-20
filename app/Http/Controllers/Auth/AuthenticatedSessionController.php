@@ -20,7 +20,7 @@ class AuthenticatedSessionController extends Controller
         return view('auth.login');
     }
 
-    public function create_client()
+    public function create_client(Request $request)
     {
         return view('auth.client_login');
     }
@@ -39,6 +39,7 @@ class AuthenticatedSessionController extends Controller
 
         return redirect()->intended(RouteServiceProvider::HOME);
     }
+
 
     /**
      * Destroy an authenticated session.

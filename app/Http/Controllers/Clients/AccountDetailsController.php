@@ -21,7 +21,6 @@ class AccountDetailsController extends Controller
         } else {
             return redirect('/login');
         }
-
     }
 
     /**

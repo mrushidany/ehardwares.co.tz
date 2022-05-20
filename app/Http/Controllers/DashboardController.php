@@ -31,6 +31,7 @@ class DashboardController extends Controller
          {
             return view('ecommerce.admin.owner.index')->with($data);
          }
+         return view('ecommerce.website.home');
      }
 
      public function greeting()

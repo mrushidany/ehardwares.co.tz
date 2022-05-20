@@ -67,7 +67,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
 });
 
 //Client Account Details
-Route::group(['prefix' => 'account','middleware' => 'auth'], function() {
+Route::group(['prefix' => 'account'], function() {
     Route::resource('details', AccountDetailsController::class);
 });
 
