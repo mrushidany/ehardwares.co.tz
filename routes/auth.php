@@ -17,13 +17,6 @@ Route::get('/priveledged/register', [RegisteredUserController::class, 'create'])
 Route::post('/priveledged/register', [RegisteredUserController::class, 'store'])
                 ->middleware('guest');
 
-Route::get('/login', [AuthenticatedSessionController::class, 'create_client'])
-                ->middleware('guest')
-                ->name('login');
-
-Route::post('/login', [AuthenticatedSessionController::class, 'store'])
-                ->middleware('guest');
-
 Route::get('/admin/login', [AuthenticatedSessionController::class, 'create'])
                 ->middleware('guest')
                 ->name('admin_login');

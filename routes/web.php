@@ -71,4 +71,11 @@ Route::group(['prefix' => 'account'], function() {
     Route::resource('details', AccountDetailsController::class);
 });
 
+Route::get('/login', [AuthenticatedSessionController::class, 'create_client'])
+                ->middleware('guest')
+                ->name('login');
+
+Route::post('/login', [AuthenticatedSessionController::class, 'store'])
+                ->middleware('guest');
+
 require __DIR__.'/auth.php';
