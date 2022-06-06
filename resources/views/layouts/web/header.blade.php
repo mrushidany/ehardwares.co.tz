@@ -33,7 +33,7 @@
                                 <li><a class="dropdown-item" href="">Checkout</a></li>
                                 @if(Auth::guest())
                                 <li><a class="dropdown-item" href="{{ route('login') }}">Sign in</a></li>
-                                @else
+                                @elseif (Auth::user())
                                 <form action="{{ route('logout') }}" method="POST">
                                     @csrf
                                     <li><a class="dropdown-item" onclick="event.preventDefault(); this.closest('form').submit();">Sign out</a></li>
@@ -91,7 +91,7 @@
                                 <li><a class="dropdown-item" href="">Checkout</a></li>
                                 @if(Auth::guest())
                                 <li><a class="dropdown-item" href="{{ route('login') }}">Sign in</a></li>
-                                @else
+                                @elseif (Auth::user())
                                 <form action="{{ route('logout') }}" method="POST">
                                     @csrf
                                     <li><a class="dropdown-item" onclick="event.preventDefault(); this.closest('form').submit();">Sign out</a></li>

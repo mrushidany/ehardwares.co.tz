@@ -33,13 +33,13 @@ class AuthenticatingClientController extends Controller
      */
     public function store(LoginRequest $request)
     {
-        // $request->authenticate();
+        $request->authenticate();
 
-        // $request->session()->regenerate();
+        $request->session()->regenerate();
 
-        // return redirect()->back()->route('landing_page');
+        return redirect()->route('landing_page');
 
-        dd('We are at the store method and supposed to be here');
+
 
     }
 
