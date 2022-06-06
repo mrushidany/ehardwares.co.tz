@@ -19,7 +19,7 @@ class AccountDetailsController extends Controller
         if (isset(Auth::user()->username)) {
             return view('ecommerce.website.account.my_account');
         } else {
-            // return redirect('/client_login');
+            return redirect('/login');
         }
     }
 
