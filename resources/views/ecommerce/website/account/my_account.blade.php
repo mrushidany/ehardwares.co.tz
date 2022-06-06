@@ -82,7 +82,7 @@
                                                 <a href="#"><i class="icon-arrow-up-circle"></i> back</a>
                                             </div>
                                             <div class="billing-btn">
-                                                <button type="submit">Update</button>
+                                                <button type="submit" class="update_user_details">Update</button>
                                             </div>
                                         </div>
                                     </div>
@@ -140,4 +140,13 @@
 </div>
 <!-- account area end -->
 
+@endsection
+
+@section('scripts')
+<script type="application/javascript">
+    $('.update_user_details').on('click', function(e) {
+        e.preventDefault();
+
+    })
+</script>
 @endsection

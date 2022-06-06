@@ -27,6 +27,6 @@
 
     @include('layouts.web.scripts_link')
 
-    @yield('scripts')
+    @include('layouts.web.scripts')
 
 </html>
