@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Clients;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Auth\LoginRequest;
 use Illuminate\Http\Request;
+use Session;
 
 class AuthenticatingClientController extends Controller
 {
@@ -29,9 +31,16 @@ class AuthenticatingClientController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(LoginRequest $request)
     {
-        //
+        // $request->authenticate();
+
+        // $request->session()->regenerate();
+
+        // return redirect()->back()->route('landing_page');
+
+        dd('We are at the store method and supposed to be here');
+
     }
 
     /**

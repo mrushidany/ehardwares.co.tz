@@ -9,7 +9,7 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>{{ config('app.name') }} | Login</title>
+    <title>{{ config('app.name') }} | Admin Login</title>
 
     <!-- ===============================================-->
     <!--    Favicons-->
@@ -48,7 +48,7 @@
                                     <h5>Log in</h5>
                                 </div>
                             </div>
-                            <form method="POST" action="{{ route('login') }}">
+                            <form method="POST" action="{{ route('admin_login') }}">
                                 @csrf
                                 <div class="mb-3">
                                     <input id="email" class="form-control @error('email') is-invalid @enderror" type="email" name="email" placeholder="Email address" value="{{ old('email') }}" required autofocus />

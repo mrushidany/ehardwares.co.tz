@@ -31,7 +31,14 @@
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li><a class="dropdown-item" href="{{ route('details.index') }}">My account</a></li>
                                 <li><a class="dropdown-item" href="">Checkout</a></li>
-                                <li><a class="dropdown-item" href="">Sign in</a></li>
+                                @if(Auth::guest())
+                                <li><a class="dropdown-item" href="{{ route('login') }}">Sign in</a></li>
+                                @else
+                                <form action="{{ route('logout') }}" method="POST">
+                                    @csrf
+                                    <li><a class="dropdown-item" onclick="event.preventDefault(); this.closest('form').submit();">Sign out</a></li>
+                                </form>
+                                @endif
                             </ul>
                         </div>
                         <!-- Single Wedge End -->
@@ -82,7 +89,14 @@
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li><a class="dropdown-item" href="{{ route('details.index') }}">My account</a></li>
                                 <li><a class="dropdown-item" href="">Checkout</a></li>
-                                <li><a class="dropdown-item" href="">Sign in</a></li>
+                                @if(Auth::guest())
+                                <li><a class="dropdown-item" href="{{ route('login') }}">Sign in</a></li>
+                                @else
+                                <form action="{{ route('logout') }}" method="POST">
+                                    @csrf
+                                    <li><a class="dropdown-item" onclick="event.preventDefault(); this.closest('form').submit();">Sign out</a></li>
+                                </form>
+                                @endif
                             </ul>
                         </div>
                         <!-- Single Wedge End -->
