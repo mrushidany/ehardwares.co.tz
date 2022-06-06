@@ -20,11 +20,6 @@ class AuthenticatedSessionController extends Controller
         return view('auth.login');
     }
 
-    public function create_client(Request $request)
-    {
-        return view('auth.client_login');
-    }
-
     /**
      * Handle an incoming authentication request.
      *
