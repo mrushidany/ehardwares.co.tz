@@ -49,31 +49,31 @@
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="billing-info">
                                                     <label>First Name</label>
-                                                    <input type="text" />
+                                                    <input type="text" value="{{ $details->first_name ?? '' }}" />
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="billing-info">
                                                     <label>Last Name</label>
-                                                    <input type="text" />
+                                                    <input type="text" value="{{ $details->last_name ?? '' }}" />
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 col-md-12">
                                                 <div class="billing-info">
                                                     <label>Email Address</label>
-                                                    <input type="email" />
+                                                    <input type="email" value="{{ $details->email ?? '' }}" />
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="billing-info">
                                                     <label>Phone Number</label>
-                                                    <input type="text" />
+                                                    <input type="text" value="{{ $details->phone_number ?? '' }}" />
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="billing-info">
                                                     <label>Alternative Phone Number</label>
-                                                    <input type="text" />
+                                                    <input type="text" value="{{ $details->alternative_phone_number ?? '' }}" />
                                                 </div>
                                             </div>
                                         </div>

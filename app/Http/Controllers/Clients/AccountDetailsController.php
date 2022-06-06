@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Clients;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -17,7 +18,7 @@ class AccountDetailsController extends Controller
     public function index()
     {
         if (isset(Auth::user()->username)) {
-            return view('ecommerce.website.account.my_account');
+            return view('ecommerce.website.account.my_account')->with(['details' => User::find(Auth::user()->id)]);
         } else {
             return redirect('/login');
         }
