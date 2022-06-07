@@ -100,7 +100,7 @@
                         </div>
                     </div>
                     @if (Auth::user()->hasRole('administrator') || Auth::user()->hasRole('super_administrator') || Auth::user()->hasRole('owner'))
-                    <a class="nav-link" href="" role="button" aria-expanded="false">
+                    <a class="nav-link" href="{{ route('cms_dashboard') }}" role="button" aria-expanded="false">
                         <div class="d-flex align-items-center">
                             <span class="nav-link-icon">
                                 <span class="fas fa-chart-line"></span>
