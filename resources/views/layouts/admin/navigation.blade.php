@@ -92,7 +92,7 @@
                     @endif
                 </li>
                 <li class="nav-item">
-                    <!--CMS label-->
+                    <!--Content Management System Site label-->
                     <div class="row navbar-vertical-label-wrapper mt-3 mb-2">
                         <div class="col-auto navbar-vertical-label">Content Management System</div>
                         <div class="col ps-0">
@@ -100,37 +100,14 @@
                         </div>
                     </div>
                     @if (Auth::user()->hasRole('administrator') || Auth::user()->hasRole('super_administrator') || Auth::user()->hasRole('owner'))
-                    <a class="nav-link dropdown-indicator" href="#content" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="hardware">
+                    <a class="nav-link" href="" role="button" aria-expanded="false">
                         <div class="d-flex align-items-center">
                             <span class="nav-link-icon">
-                                <span class="fas fa-tools"></span>
+                                <span class="fas fa-chart-line"></span>
                             </span>
-                            <span class="nav-link-text ps-1">New Products</span>
+                            <span class="nav-link-text ps-1">CMS Dashboard</span>
                         </div>
-                    </a>
-                    <ul class="nav collapse false" id="hardware">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('hardware_categories.index') }}" aria-expanded="false">
-                                <div class="d-flex align-items-center">
-                                    <span class="nav-link-icon">
-                                        <span class="text-xl fs-1 bi-diagram-3"></span>
-                                    </span>
-                                    <span class="nav-link-text ps-1">Hardware Categories</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('hardware_stock.index') }}" aria-expanded="false">
-                                <div class="d-flex align-items-center">
-                                    <span class="nav-link-icon">
-                                        <span class="text-xl fs-1 bi-building"></span>
-                                    </span>
-                                    <span class="nav-link-text ps-1">Hardware Stock</span>
-                                </div>
-                            </a>
-                        </li>
-
-                    </ul>
+                      </a>
                     @endif
                 </li>
             </ul>
