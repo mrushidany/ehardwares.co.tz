@@ -19,8 +19,8 @@ class WebsiteController extends Controller
         return view('ecommerce.website.contact_us');
     }
 
-    public function landing_page()
+    public function categories()
     {
-        return view('ecommerce.website.home');
+        return view('ecommerce.website.categories');
     }
 }

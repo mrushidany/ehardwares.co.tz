@@ -133,7 +133,7 @@
                                         </ul>
                                         <ul class="d-block">
                                             <li class="title"><a href="#">Categories</a></li>
-                                            <li><a href="#">Hardware Categories</a></li>
+                                            <li><a href="{{ route('categories') }}">Hardware Categories</a></li>
                                         </ul>
                                     </li>
                                 </ul>

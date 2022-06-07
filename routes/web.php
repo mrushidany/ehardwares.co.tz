@@ -26,7 +26,7 @@ use Illuminate\Support\Facades\Route;
 //Landing Page Route
 Route::get('/', [WebsiteController::class, 'index'])->name('home');
 Route::get('/contact_us', [WebsiteController::class, 'contact_us'])->name('contact_us');
-Route::get('/landing_page', [WebsiteController::class, 'landing_page'])->name('landing_page');
+Route::get('/categories', [WebsiteController::class, 'categories'])->name('categories');
 
 // Admin Operations Routes
 Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
