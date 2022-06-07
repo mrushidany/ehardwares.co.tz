@@ -9,7 +9,6 @@ use App\Http\Controllers\Settings\DatabaseSettingsController;
 use App\Http\Controllers\Stocks\HardwareStockController;
 use App\Http\Controllers\Stocks\HardwareStockProfileController;
 use App\Http\Controllers\Clients\AccountDetailsController;
-use App\Http\Controllers\Clients\AuthenticatingClientController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -71,12 +70,5 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
 Route::group(['prefix' => 'account'], function() {
     Route::resource('details', AccountDetailsController::class);
 });
-
-Route::get('/login', [AuthenticatingClientController::class, 'create'])
-                ->middleware('guest')
-                ->name('login');
-
-Route::post('/login', [AuthenticatingClientController::class, 'store'])
-                ->middleware('guest');
 
 require __DIR__.'/auth.php';

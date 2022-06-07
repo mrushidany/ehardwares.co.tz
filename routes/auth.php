@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
+use App\Http\Controllers\Clients\AuthenticatingClientController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/priveledged/register', [RegisteredUserController::class, 'create'])
@@ -66,3 +67,11 @@ Route::post('/logout', [AuthenticatedSessionController::class, 'destroy_client']
 Route::post('/admin/logout', [AuthenticatedSessionController::class, 'destroy'])
                 ->middleware('auth')
                 ->name('admin_logout');
+
+// Client Authentication Routes
+Route::get('/login', [AuthenticatingClientController::class, 'create'])
+                ->middleware('guest')
+                ->name('login');
+
+Route::post('/login', [AuthenticatingClientController::class, 'store'])
+                ->middleware('guest');
