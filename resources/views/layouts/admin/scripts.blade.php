@@ -417,4 +417,32 @@ $('.clear_cache').on('click', function(e) {
  End of settings sections
 */
 
+//My Account Details
+$('.update_user_details').on('click', function(e) {
+        e.preventDefault();
+
+        ajax_setup()
+
+        $.ajax({
+            url: "{{ route('details.store') }}",
+            method: "PUT",
+
+            data:
+            {
+                _token : $('meta[name="csrf-token"]').attr('content'),
+                first_name : $('input[name="first_name"]').val(),
+                last_name : $('input[name="last_name"]').val(),
+                email : $('input[name="email"]').val(),
+                phone_number : $('input[name="phone_number"]').val(),
+                password : $('input[name="password"]').val(),
+                password_confirmation : $('input[name="password_confirmation"]').val(),
+            },
+            success: function(data){
+
+            }
+
+        })
+
+    })
+
 </script>

@@ -82,7 +82,7 @@
                                                 <a href="#"><i class="icon-arrow-up-circle"></i> back</a>
                                             </div>
                                             <div class="billing-btn">
-                                                <button type="submit" class="update_user_details">Update</button>
+                                                <button type="submit" class="">Update</button>
                                             </div>
                                         </div>
                                     </div>

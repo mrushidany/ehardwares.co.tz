@@ -14,6 +14,7 @@
 <meta property="og:image" content="#" />
 <meta property="og:description" content="Ehardwares - Hardwares ecommerce site" />
 <meta name="robots" content="noindex, follow" />
+<meta name="csrf-token" content="{{ csrf_token() }}" />
 <!-- Add site Favicon -->
 <link rel="icon" href="{{ asset ('ecommerce/img/icon.jpeg') }}" sizes="32x32" />
 <link rel="icon" href="{{ asset ('ecommerce/img/icon.jpeg') }}" sizes="192x192" />
