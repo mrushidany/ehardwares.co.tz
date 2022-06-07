@@ -27,6 +27,5 @@
 
     @include('layouts.web.scripts_link')
 
-    @include('layouts.admin.scripts')
 
 </html>

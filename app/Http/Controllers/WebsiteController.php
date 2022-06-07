@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\HardwareCategory;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class WebsiteController extends Controller
 {

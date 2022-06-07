@@ -127,7 +127,14 @@
                             <li class="dropdown position-static"><a href="#">Shop <i class="ion-ios-arrow-down"></i></a>
                                 <ul class="mega-menu d-block">
                                     <li class="d-flex">
-
+                                        <ul class="d-block">
+                                            <li class="title"><a href="#">Shop</a></li>
+                                            <li><a href="#">New Products</a></li>
+                                        </ul>
+                                        <ul class="d-block">
+                                            <li class="title"><a href="#">Categories</a></li>
+                                            <li><a href="#">Hardware Categories</a></li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </li>
