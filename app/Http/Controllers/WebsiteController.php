@@ -20,7 +20,7 @@ class WebsiteController extends Controller
     {
         $data = [
             'categories' => DB::table('hardware_categories')->get(),
-            'hardwares' => DB::table('hardware_stocks')->count(),
+            'hardwares' => DB::table('hardware_stocks')->get(),
         ];
         return view('ecommerce.website.categories')->with($data);
     }

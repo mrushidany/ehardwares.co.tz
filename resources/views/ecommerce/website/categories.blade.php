@@ -31,10 +31,10 @@
                 <!-- Shop Top Area Start -->
                 <div class="shop-top-bar d-flex">
                     <!-- Left Side start -->
-                    @if ($hardwares > 0 && $hardwares === 1)
-                        <p>There is {{ $hardwares }} Hardware.</p>
+                    @if ($hardwares->count() > 0 && $hardwares->count() === 1)
+                        <p>There is {{ $hardwares->count() }} Hardware.</p>
                     @else
-                    <p>There Are {{ $hardwares }} Hardwares.</p>
+                    <p>There Are {{ $hardwares->count() }} Hardwares.</p>
                     @endif
 
                     <!-- Left Side End -->
@@ -585,15 +585,10 @@
                         </div>
                         <div class="sidebar-widget-category">
                             <ul>
-                                <li><a href="#" class="selected">All <span>({{ $hardwares }})</span> </a></li>
-                                <li><a href="#" class="">Accesssories <span>(3)</span> </a></li>
-                                <li><a href="#" class="">Box <span>(5)</span> </a></li>
-                                <li><a href="#" class="">chair <span>(2)</span> </a></li>
-                                <li><a href="#" class="">Deco <span>(6)</span> </a></li>
-                                <li><a href="#" class="">Furniture <span>(4)</span> </a></li>
-                                <li><a href="#" class="">Glass <span>(1)</span> </a></li>
-                                <li><a href="#" class="">Sofa <span>(3)</span> </a></li>
-                                <li><a href="#" class="">Table <span>(4)</span> </a></li>
+                                <li><a href="#" class="selected">All <span>({{ $hardwares->count() }})</span> </a></li>
+                                @foreach ( $categories as $category )
+                                    <li><a href="#" class="">{{ $category->category_name }} <span>()</span> </a></li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
