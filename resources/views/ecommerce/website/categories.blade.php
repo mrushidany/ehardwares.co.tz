@@ -604,97 +604,6 @@
                                 <div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
                             </div>
                         </div>
-                        <!-- Sidebar single item -->
-                        <div class="sidebar-widget">
-                            <h4 class="pro-sidebar-title mt-5">Size</h4>
-                            <div class="sidebar-widget-list">
-                                <ul>
-                                    <li>
-                                        <div class="sidebar-widget-list-left">
-                                            <input type="checkbox"> <a href="#">Large <span>(4)</span> </a>
-                                            <span class="checkmark"></span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sidebar-widget-list-left">
-                                            <input type="checkbox" value=""> <a href="#">Medium
-                                                <span>(4)</span></a>
-                                            <span class="checkmark"></span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sidebar-widget-list-left">
-                                            <input type="checkbox" value=""> <a href="#">Small <span>(4)</span>
-                                            </a>
-                                            <span class="checkmark"></span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sidebar-widget-list-left">
-                                            <input type="checkbox" value=""> <a href="#">Extra
-                                                Large<span>(4)</span> </a>
-                                            <span class="checkmark"></span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Sidebar single item -->
-                        <div class="sidebar-widget no-cba">
-                            <h4 class="pro-sidebar-title">Colour</h4>
-                            <div class="sidebar-widget-list">
-                                <ul>
-                                    <li>
-                                        <div class="sidebar-widget-list-left">
-                                            <input type="checkbox"> <a href="#">Grey<span>(2)</span> </a>
-                                            <span class="checkmark grey"></span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sidebar-widget-list-left">
-                                            <input type="checkbox" value=""> <a href="#">White<span>(4)</span></a>
-                                            <span class="checkmark white"></span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sidebar-widget-list-left">
-                                            <input type="checkbox" value=""> <a href="#">Black<span>(4)</span>
-                                            </a>
-                                            <span class="checkmark black"></span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sidebar-widget-list-left">
-                                            <input type="checkbox" value=""> <a href="#">Camel<span>(4)</span>
-                                            </a>
-                                            <span class="checkmark camel"></span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Sidebar single item -->
-                        <div class="sidebar-widget">
-                            <h4 class="pro-sidebar-title">Brand</h4>
-                            <div class="sidebar-widget-list">
-                                <ul>
-                                    <li>
-                                        <div class="sidebar-widget-list-left">
-                                            <input type="checkbox"> <a href="#">Studio Design<span>(10)</span>
-                                            </a>
-                                            <span class="checkmark"></span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sidebar-widget-list-left">
-                                            <input type="checkbox" value=""> <a href="#">Graphic
-                                                Corner<span>(7)</span></a>
-                                            <span class="checkmark"></span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                     <!-- Sidebar single item -->
                     <div class="sidebar-widget tag">
@@ -704,12 +613,11 @@
                         <div class="sidebar-widget-tag">
                             <ul>
                                 <li><a href="#">All</a></li>
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">Chair</a></li>
-                                <li><a href="#">Decoration</a></li>
-                                <li><a href="#">Furniture</a></li>
-                                <li><a href="#">Sofa</a></li>
-                                <li><a href="#">Table</a></li>
+                                @foreach ( $categories as $category )
+                                    <li>
+                                        <a href="#">{{ $category->category_name }}</a>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
