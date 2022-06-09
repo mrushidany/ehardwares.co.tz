@@ -46,7 +46,7 @@
                                     </div>
                                     <!--/.bg-holder-->
                                     <div class="z-index-1 position-relative">
-                                        <a class="link-light mb-4 font-sans-serif fs-4 d-inline-block fw-bolder" href="{{ route('landing_page') }}">ehardwares</a>
+                                        <a class="link-light mb-4 font-sans-serif fs-4 d-inline-block fw-bolder" href="{{ route('home') }}">ehardwares</a>
                                         <p class="opacity-75 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, in!</p>
                                     </div>
                                 </div>

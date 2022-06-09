@@ -21,6 +21,9 @@ class WebsiteController extends Controller
 
     public function categories()
     {
+        $data = [
+            'categories' => DB::table('hardware_categories')->get(),
+        ];
         return view('ecommerce.website.categories');
     }
 }
