@@ -38,7 +38,7 @@
                             <hr class="mb-0 navbar-vertical-divider" />
                         </div>
                     </div>
-                    <a class="nav-link" href="{{ route('landing_page') }}" role="button" aria-expanded="false">
+                    <a class="nav-link" href="{{ route('home') }}" role="button" aria-expanded="false">
                         <div class="d-flex align-items-center">
                             <span class="nav-link-icon">
                                 <span class="fas fa-globe"></span>
