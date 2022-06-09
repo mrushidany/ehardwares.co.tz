@@ -585,7 +585,7 @@
                         </div>
                         <div class="sidebar-widget-category">
                             <ul>
-                                <li><a href="#" class="selected">All <span>(4)</span> </a></li>
+                                <li><a href="#" class="selected">All <span>({{ $hardwares }})</span> </a></li>
                                 <li><a href="#" class="">Accesssories <span>(3)</span> </a></li>
                                 <li><a href="#" class="">Box <span>(5)</span> </a></li>
                                 <li><a href="#" class="">chair <span>(2)</span> </a></li>
