@@ -24,7 +24,6 @@
     </div>
 </div>
 {{-- breadcrumb area end --}}
-
 <div class="shop-category-area pb-100px pt-70px">
     <div class="container">
         <div class="row">
@@ -32,7 +31,12 @@
                 <!-- Shop Top Area Start -->
                 <div class="shop-top-bar d-flex">
                     <!-- Left Side start -->
-                    <p>There Are 17 Products.</p>
+                    @if ($hardwares > 0 && $hardwares === 1)
+                        <p>There is {{ $hardwares }} Hardware.</p>
+                    @else
+                    <p>There Are {{ $hardwares }} Hardwares.</p>
+                    @endif
+
                     <!-- Left Side End -->
                     <!-- Right Side Start -->
                     <div class="select-shoing-wrap d-flex align-items-center">

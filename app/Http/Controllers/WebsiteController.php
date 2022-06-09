@@ -1,9 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\HardwareCategory;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class WebsiteController extends Controller
@@ -23,7 +20,8 @@ class WebsiteController extends Controller
     {
         $data = [
             'categories' => DB::table('hardware_categories')->get(),
+            'hardwares' => DB::table('hardware_stocks')->count(),
         ];
-        return view('ecommerce.website.categories');
+        return view('ecommerce.website.categories')->with($data);
     }
 }
