@@ -14,4 +14,9 @@ class HardwareCategory extends Model
         return $this->hasMany(HardwareSubCategory::class);
     }
 
+    public function hardware_stocks()
+    {
+        return $this->hasMany(HardwareStock::class);
+    }
+
 }

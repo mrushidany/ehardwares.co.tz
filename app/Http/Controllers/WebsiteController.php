@@ -24,4 +24,6 @@ class WebsiteController extends Controller
         ];
         return view('ecommerce.website.categories')->with($data);
     }
+
+
 }
