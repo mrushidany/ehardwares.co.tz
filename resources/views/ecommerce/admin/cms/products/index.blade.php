@@ -13,14 +13,14 @@
                             </div>
                             <div class="d-flex justify-content-between offset-md-9">
                                 <div class="order-md-1">
-                                    <button class="btn btn-sm text-primary border order-md-0" type="button" data-bs-toggle="modal" data-bs-target="#addEventModal">
+                                    <button class="btn btn-sm text-primary border order-md-0" type="button" data-bs-toggle="modal" data-bs-target="#new_product_modal">
                                         <span class="fas fa-plus me-2"></span>New Product
                                     </button>
                                 </div>
                             </div>
                         </div>
                         <div class="scrollbar">
-                            <table class="table mb-0 table-borderless fs--2 border-200 overflow-hidden">
+                            <table class="table mb-0 table-borderless fs--2 border-200 overflow-hidden new_product_table">
                                 <thead class="bg-light">
                                     <tr class="text-800">
                                         <th class="sort">Name</th>
@@ -39,4 +39,43 @@
     </div>
 </div>
 
+<div class="modal fade hardware_stock_modal" id="new_product_modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 900px">
+        <div class="modal-content position-relative">
+            <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
+                <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="hardware_category_form" enctype="multipart/form-data">
+                <div class="modal-body p-0">
+                    <div class="rounded-top-lg py-3 ps-4 pe-6 bg-light text-center">
+                        <h4 class="mb-1" id="modalExampleDemoLabel">Add a new hardware stock </h4>
+                    </div>
+                    <div class="p-4 pb-0">
+                        <div class="row">
+                            <div class="mb-3 col-6">
+                                <label class="col-form-label" for="name">Name</label>
+                                <input class="form-control" name="name" type="text" value="">
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label class="col-form-label" for="image">Image</label>
+                                <input class="form-control" name="image" type="text" value="">
+                            </div>
+                            <div class="mb-3 col-12">
+                                <label class="col-form-label" for="description">Description</label>
+                                <textarea class="form-control" name="description"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-warning me-1 mb-1 reset_hardware_stock" type="reset">Reset</button>
+                    <button class="btn btn-outline-success me-1 mb-1 save_hardware_stock" type="button">Save</button>
+                    <button class="btn btn-outline-success me-1 mb-1 disabled loading_button" style="display: none;" type="button">Saving .....</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 @endsection
+
+
