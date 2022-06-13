@@ -28,6 +28,7 @@ Route::get('/', [WebsiteController::class, 'index'])->name('home');
 Route::get('/contact_us', [WebsiteController::class, 'contact_us'])->name('contact_us');
 Route::get('/categories', [WebsiteController::class, 'categories'])->name('categories');
 
+
 // Admin Operations Routes
 Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
 
@@ -75,6 +76,7 @@ Route::group(['prefix' => 'account'], function() {
 // Content Management System routes
 Route::group(['prefix' => 'cms'], function() {
     Route::get('dashboard', [ContentManagementController::class, 'index'])->name('cms_dashboard');
+    Route::get('products', [ContentManagementController::class, 'products'])->name('products');
 });
 
 require __DIR__.'/auth.php';
