@@ -58,7 +58,7 @@
                             </div>
                             <div class="mb-3 col-6">
                                 <label class="col-form-label" for="image">Image</label>
-                                <input class="form-control" name="image" type="text" value="">
+                                <input class="form-control" name="image" type="file" accept="image/*">
                             </div>
                             <div class="mb-3 col-12">
                                 <label class="col-form-label" for="description">Description</label>
