@@ -17,4 +17,9 @@ class ContentManagementController extends Controller
     {
         return view('ecommerce.admin.cms.dashboard');
     }
+
+    public function products()
+    {
+        return view('ecommerce.admin.cms.products.index');
+    }
 }
