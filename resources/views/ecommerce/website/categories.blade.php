@@ -176,10 +176,7 @@
                             <ul>
                                 <li><a href="#" class="selected">All <span>({{ $hardwares->count() }})</span> </a></li>
                                 @foreach ( $categories as $category )
-                                    @foreach ($hardwares as $hardware )
-                                    @endforeach
-                                    <li><a href="#" class="">{{ $category->category_name }} <span>({{ "imo" }})</span> </a></li>
-
+                                    <li><a href="#" class="">{{ $category->category_name }} <span>()</span> </a></li>
                                 @endforeach
                             </ul>
                         </div>

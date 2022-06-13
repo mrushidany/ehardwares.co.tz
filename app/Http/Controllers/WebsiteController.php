@@ -1,6 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\HardwareCategory;
+use App\Models\HardwareStock;
 use Illuminate\Support\Facades\DB;
 
 class WebsiteController extends Controller
@@ -20,9 +23,15 @@ class WebsiteController extends Controller
     {
         $data = [
             'categories' => DB::table('hardware_categories')->get(),
-            'hardwares' => DB::table('hardware_stocks')->get(),
+            'hardwares' => HardwareStock::get(),
+            'stocks' => HardwareCategory::all(),
         ];
         return view('ecommerce.website.categories')->with($data);
+    }
+
+    public function check_hardware_stock($category)
+    {
+        return HardwareStock::where('category', $category)->count();
     }
 
 
