@@ -48,7 +48,7 @@
             <form class="hardware_category_form" enctype="multipart/form-data">
                 <div class="modal-body p-0">
                     <div class="rounded-top-lg py-3 ps-4 pe-6 bg-light text-center">
-                        <h4 class="mb-1" id="modalExampleDemoLabel">Add a new hardware stock </h4>
+                        <h4 class="mb-1" id="modalExampleDemoLabel">Add a new product for a new product section </h4>
                     </div>
                     <div class="p-4 pb-0">
                         <div class="row">
@@ -58,7 +58,7 @@
                             </div>
                             <div class="mb-3 col-6">
                                 <label class="col-form-label" for="image">Image</label>
-                                <input class="form-control" name="image" type="file" accept="image/*">
+                                <input class="form-control" name="image" type="file" accept="image/*" onchange="verifyImageUpload(e)">
                             </div>
                             <div class="mb-3 col-12">
                                 <label class="col-form-label" for="description">Description</label>
@@ -69,13 +69,27 @@
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-outline-warning me-1 mb-1 reset_hardware_stock" type="reset">Reset</button>
-                    <button class="btn btn-outline-success me-1 mb-1 save_hardware_stock" type="button">Save</button>
+                    <button class="btn btn-outline-success me-1 mb-1 save_new_product" onclick="produccc()" type="button">Save</button>
                     <button class="btn btn-outline-success me-1 mb-1 disabled loading_button" style="display: none;" type="button">Saving .....</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
+@endsection
+
+@section('scripts')
+<script type="application/javascript">
+    window.URL = window.URL || window.webkitURl;
+
+    function verifyImageUpload(e)
+    {
+        alert('We have managed to access the function');
+    }
+</script>
+
+
+
 @endsection
 
 
