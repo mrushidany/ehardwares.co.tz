@@ -109,7 +109,7 @@ class HardwareStockController extends Controller
             DB::commit();
             $data = ['type' => 'success', 'title' => 'Success', 'message' => 'Deleted stock'];
             return $request->ajax() ? response()->json($data) : redirect()->back()->with($data);
-        }catch(QuerException $exception) {
+        }catch(QueryException $exception) {
             DB::rollback();
             $data =['type' => 'error', 'title' => 'Fail', 'message' => 'Record could not be Deleted'];
             return $request->ajax() ? response()->json($data) : redirect()->back()->with($data);
