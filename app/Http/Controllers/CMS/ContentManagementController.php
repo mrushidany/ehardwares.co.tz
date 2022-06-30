@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\CMS;
 
 use App\Http\Controllers\Controller;
+use App\Models\HardwareStock;
 use Illuminate\Http\Request;
 
 class ContentManagementController extends Controller
@@ -20,6 +21,9 @@ class ContentManagementController extends Controller
 
     public function products()
     {
-        return view('ecommerce.admin.cms.products.index');
+        $data = [
+            'stocks' => HardwareStock::all()
+        ];
+        return view('ecommerce.admin.cms.products.index')->with($data);
     }
 }
