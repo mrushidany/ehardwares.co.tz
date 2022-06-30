@@ -21,7 +21,7 @@
                         <div class="mb-3 col-6">
                             <label class="col-form-label" for="category">Category</label>
                             <select class="form-select js-choice main_category" id="organizerSingle" size="1" name="main_category_id" data-options='{"removeItemButton":true,"placeholder":true}'>
-                                <option value="">Select main category</option>
+                                <option value="" disabled selected>Select main category</option>
                                 @foreach ($main_categories as $category)
                                     <option value="{{ $category->id }}">{{ $category->category_name }}</option>
                                 @endforeach
