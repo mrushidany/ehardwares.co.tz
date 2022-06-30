@@ -364,6 +364,15 @@ $('.raw_price').keyup(function (e) {
 */
 
 /*
+ Content Management System Part
+*/
+
+$('.new_product_table').DataTable({
+    // serverSide: true,
+    // processing: true,
+})
+
+/*
  Settings sections
 */
 $('.db_migrate').on('click', function (e) {
