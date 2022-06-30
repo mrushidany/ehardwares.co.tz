@@ -372,6 +372,13 @@ $('.new_product_table').DataTable({
     // processing: true,
 })
 
+$('.upload_new_product').submit(function(e) {
+    e.preventDefault();
+    $('.save_new_product').attr('style', 'display: none;');
+    $('.reset_new_product').attr('style', 'display: none;');
+    $('.loading_button').removeAttr('style');
+})
+
 /*
  Settings sections
 */

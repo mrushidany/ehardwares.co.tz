@@ -17,6 +17,7 @@
                         <div class="mb-3 col-6">
                             <label class="col-form-label" for="image">Image</label>
                             <input class="form-control" name="image" type="file" accept="image/*" onchange="verifyImageUpload(e)">
+                            <span class="text-danger" id="image-input-error"></span>
                         </div>
                         <div class="mb-3 col-12">
                             <label class="col-form-label" for="description">Description</label>
@@ -26,8 +27,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-outline-warning me-1 mb-1 reset_hardware_stock" type="reset">Reset</button>
-                <button class="btn btn-outline-success me-1 mb-1 "type="submit">Save</button>
+                <button class="btn btn-outline-warning me-1 mb-1 reset_new_product" type="reset">Reset</button>
+                <button class="btn btn-outline-success me-1 mb-1 save_new_product" type="submit">Save</button>
                 <button class="btn btn-outline-success me-1 mb-1 disabled loading_button" style="display: none;" type="button">Saving .....</button>
             </div>
         </form>
