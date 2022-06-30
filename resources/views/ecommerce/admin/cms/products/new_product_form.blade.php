@@ -12,7 +12,12 @@
                     <div class="row">
                         <div class="mb-3 col-6">
                             <label class="col-form-label" for="name">Name</label>
-                            <input class="form-control" name="name" type="text" value="">
+                            <select name="name" class="form-select js-choice">
+                                <option value="" selected disabled>Select Product Name</option>
+                                @foreach ($stocks as $stock)
+                                    <option value="{{ $stock->name }}">{{ $stock->name }}</option>
+                                @endforeach
+                            </select>
                         </div>
                         <div class="mb-3 col-6">
                             <label class="col-form-label" for="image">Image</label>
