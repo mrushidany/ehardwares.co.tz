@@ -1,40 +1,47 @@
 @extends('ecommerce.admin.main')
 
 @section('content')
-<div class="row g-3">
-    <div class="col-xxl-8">
-        <div class="card overflow-hidden h-100">
-            <div class="card-body p-0">
-                <div class="row g-3">
-                    <div class="col-md-12">
-                        <div class="p-card">
-                            <div class="">
-                                <h6 class="mb-0">New Product Section</h6>
-                            </div>
-                            <div class="d-flex justify-content-between offset-md-9">
-                                <div class="order-md-1">
-                                    <button class="btn btn-sm text-primary border order-md-0" type="button" data-bs-toggle="modal" data-bs-target="#new_product_modal">
-                                        <span class="fas fa-plus me-2"></span>New Product
-                                    </button>
-                                </div>
-                            </div>
+<div class="card-body bg-light">
+    <div class="card mb-3">
+        <div class="card-body position-relative">
+            <div class="row">
+                <div class="col-auto ms-auto">
+                    <div class="p-card">
+                        <div style="margin-left: -450%;">
+                            <h6 class="mb-0">New Product Section</h6>
                         </div>
-                        <div class="scrollbar">
-                            <table class="table mb-0 table-borderless fs--2 border-200 overflow-hidden new_product_table">
-                                <thead class="bg-light">
-                                    <tr class="text-800">
-                                        <th class="sort">Name</th>
-                                        <th class="sort text-center">Image</th>
-                                        <th class="sort text-center">Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="list">
-                                </tbody>
-                            </table>
+                    </div>
+                    <div class="d-flex justify-content-between offset-md-2">
+                        <div class="order-md-1">
+                            <button class="btn btn-sm text-primary border order-md-0" type="button" data-bs-toggle="modal" data-bs-target="#new_product_modal">
+                                <span class="fas fa-plus me-2"></span>New Product
+                            </button>
                         </div>
                     </div>
                 </div>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-body pt-0">
+                        <table class="table mb-0 table-borderless fs--2 border-200 overflow-hidden new_product_table">
+                            <thead>
+                                <tr>
+                                    <th>Code</th>
+                                    <th>Name</th>
+                                    <th>Units</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 </div>
