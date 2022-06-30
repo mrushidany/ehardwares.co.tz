@@ -3,7 +3,7 @@
         <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
             <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form class="" enctype="multipart/form-data">
+        <form class="upload_new_product" method="POST" enctype="multipart/form-data">
             <div class="modal-body p-0">
                 <div class="rounded-top-lg py-3 ps-4 pe-6 bg-light text-center">
                     <h4 class="mb-1" id="modalExampleDemoLabel">Add a new product for a new product section </h4>
@@ -27,7 +27,7 @@
             </div>
             <div class="modal-footer">
                 <button class="btn btn-outline-warning me-1 mb-1 reset_hardware_stock" type="reset">Reset</button>
-                <button class="btn btn-outline-success me-1 mb-1 save_new_product" onclick="produccc()" type="button">Save</button>
+                <button class="btn btn-outline-success me-1 mb-1 "type="submit">Save</button>
                 <button class="btn btn-outline-success me-1 mb-1 disabled loading_button" style="display: none;" type="button">Saving .....</button>
             </div>
         </form>
