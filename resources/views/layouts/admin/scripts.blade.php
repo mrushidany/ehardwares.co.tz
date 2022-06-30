@@ -386,7 +386,6 @@ $('.db_migrate').on('click', function (e) {
 
         success: function(data) {
             toast(data.type, data.title, data.message);
-            console.log(data)
         }
     })
 })
