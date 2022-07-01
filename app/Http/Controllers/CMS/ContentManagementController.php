@@ -29,6 +29,12 @@ class ContentManagementController extends Controller
 
     public function cms_add_new_product(Request $request)
     {
+        $request->validate([
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048|dimensions:width=540,height=458',
+        ]);
+
+        $product = HardwareStock::find($request->name);
+        dd($product);
 
     }
 }

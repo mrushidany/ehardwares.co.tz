@@ -377,6 +377,29 @@ $('.upload_new_product').submit(function(e) {
     $('.save_new_product').attr('style', 'display: none;');
     $('.reset_new_product').attr('style', 'display: none;');
     $('.loading_button').removeAttr('style');
+
+    ajax_setup();
+
+    let form_data = new FormData(this);
+    $('#image-input-error').text('');
+
+    $.ajax({
+        url: '{{ route('new_product') }}',
+        type: 'POST',
+        data: form_data,
+        contentType: false,
+        processData: false,
+        success: (response) => {
+            if(response) {
+                this.reset();
+                alert('Image has been uploaded successfully');
+            }
+        },
+        error: function(response) {
+            console.log(response);
+            $("#image-input-error").text(response.responseJSON.errors.image);
+        }
+    })
 })
 
 /*
