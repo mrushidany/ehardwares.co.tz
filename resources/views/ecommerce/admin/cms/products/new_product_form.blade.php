@@ -15,7 +15,7 @@
                             <select name="name" class="form-select js-choice">
                                 <option value="" selected disabled>Select Product Name</option>
                                 @foreach ($stocks as $stock)
-                                    <option value="{{ $stock->name }}">{{ $stock->name }}</option>
+                                    <option value="{{ $stock->id }}">{{ $stock->name }}</option>
                                 @endforeach
                             </select>
                         </div>
