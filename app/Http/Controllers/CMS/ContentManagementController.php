@@ -26,4 +26,9 @@ class ContentManagementController extends Controller
         ];
         return view('ecommerce.admin.cms.products.index')->with($data);
     }
+
+    public function cms_add_new_product(Request $request)
+    {
+
+    }
 }
