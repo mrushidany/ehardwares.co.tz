@@ -11,7 +11,7 @@
                 <div class="p-4 pb-0">
                     <div class="row">
                         <div class="mb-3 col-6">
-                            <label class="col-form-label" for="name">Name</label>
+                            <label class="col-form-label" for="name">Product</label>
                             <select name="name" class="form-select js-choice">
                                 <option value="" selected disabled>Select Product Name</option>
                                 @foreach ($stocks as $stock)
@@ -23,10 +23,6 @@
                             <label class="col-form-label" for="image">Image</label>
                             <input class="form-control" name="image" type="file" accept="image/*" onchange="verifyImageUpload(e)">
                             <span class="text-danger" id="image-input-error"></span>
-                        </div>
-                        <div class="mb-3 col-12">
-                            <label class="col-form-label" for="description">Description</label>
-                            <textarea class="form-control" name="description"></textarea>
                         </div>
                     </div>
                 </div>
