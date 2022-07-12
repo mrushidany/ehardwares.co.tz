@@ -26,11 +26,10 @@
                         <table class="table mb-0 table-borderless fs--2 border-200 overflow-hidden new_product_table">
                             <thead>
                                 <tr>
-                                    <th>Code</th>
                                     <th>Name</th>
-                                    <th>Units</th>
-                                    <th>Quantity</th>
-                                    <th>Price</th>
+                                    <th>Stock</th>
+                                    <th>Description</th>
+                                    <th>Image</th>
                                     <th></th>
                                 </tr>
                             </thead>
