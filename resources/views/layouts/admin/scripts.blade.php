@@ -395,7 +395,7 @@ $('.upload_new_product').submit(function(e) {
                 alert('Image has been uploaded successfully')
                 $('.save_new_product').removeAttr('style');
                 $('.reset_new_product').removeAttr('style');
-                $('.loading_button').attr('style', 'display:none;');;
+                $('.loading_button').attr('style', 'display:none;');
             }
         },
         error: function(response) {
