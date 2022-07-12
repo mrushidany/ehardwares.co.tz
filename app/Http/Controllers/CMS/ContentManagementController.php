@@ -51,10 +51,11 @@ class ContentManagementController extends Controller
         }catch(QueryException $exception){
             dd($exception);
         }
+    }
 
-
-
-
+    public function new_product_list()
+    {
 
     }
+
 }
