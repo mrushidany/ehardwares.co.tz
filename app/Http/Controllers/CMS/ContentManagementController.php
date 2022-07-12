@@ -40,12 +40,14 @@ class ContentManagementController extends Controller
             if($request->file('image')){
                 $image_path = $request->file('image');
                 $image_name = $image_path->getClientOriginalName();
-                $path = $request->file('image')->storeAs('new_product_uploads', $image_name, 'public');
+                $path = $request->file('image')->storeAs('uploads', $image_name, 'public');
             }
             $image->name = $product->name;
             $image->path = '/storage/'.$path;
             $image->stock_id = $product->id;
             $image->save();
+
+            return response()->json(['success' => 'true']);
         }catch(QueryException $exception){
             dd($exception);
         }
