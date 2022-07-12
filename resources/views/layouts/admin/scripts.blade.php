@@ -368,8 +368,23 @@ $('.raw_price').keyup(function (e) {
 */
 
 $('.new_product_table').DataTable({
-    // serverSide: true,
-    // processing: true,
+    serverSide: true,
+    processing: true,
+    lengthMenu: [[10, 25, 50], [10, 25, 50]],
+    ajax: {
+        url: "route('new_product_list')",
+    },
+    columns: [
+        {data: 'name', name: 'name', orderable: true, searchable: true},
+        {data: 'stock', name: 'stock', orderable: true, searchable: true},
+        {data: 'decription', name: 'decription', orderable: true, searchable: true},
+        {data: 'image', name: 'image', orderable: true, searchable: true},
+        {data: 'action', name: 'action', orderable: false, searchable: false },
+    ],
+    language: {
+        zeroRecords: "<div class='alert alert-info' style='background-color: #ccf6e4'>No matching new product(s) found</div>",
+        emptyTable: "<div class='alert alert-info' style='background-color: #ccf6e4'>No new product(s) found</div>"
+    },
 })
 
 $('.upload_new_product').submit(function(e) {
