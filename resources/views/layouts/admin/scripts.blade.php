@@ -390,7 +390,7 @@ $('.upload_new_product').submit(function(e) {
         contentType: false,
         processData: false,
         success: (response) => {
-            if(response) {
+            if(response.success === 'true') {
                 this.reset();
                 alert('Image has been uploaded successfully');
             }

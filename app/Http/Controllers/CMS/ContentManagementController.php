@@ -4,6 +4,7 @@ namespace App\Http\Controllers\CMS;
 
 use App\Http\Controllers\Controller;
 use App\Models\HardwareStock;
+use App\Models\Image;
 use Doctrine\DBAL\Query\QueryException;
 use Illuminate\Http\Request;
 
@@ -34,8 +35,17 @@ class ContentManagementController extends Controller
             $request->validate([
                 'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048|dimensions:width=540,height=458',
             ]);
-            $product = HardwareStock::where('id',$request->stock);
-            dd($product);
+            $product = HardwareStock::where('id',$request->stock)->first();
+            $image = new Image();
+            if($request->file('image')){
+                $image_path = $request->file('image');
+                $image_name = $image_path->getClientOriginalName();
+                $path = $request->file('image')->storeAs('new_product_uploads', $image_name, 'public');
+            }
+            $image->name = $product->name;
+            $image->path = '/storage/'.$path;
+            $image->stock_id = $product->id;
+            $image->save();
         }catch(QueryException $exception){
             dd($exception);
         }
