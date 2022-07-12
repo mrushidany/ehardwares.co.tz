@@ -399,6 +399,9 @@ $('.upload_new_product').submit(function(e) {
             console.log(response);
             $("#image-input-error").text(response.responseJSON.errors.image + ' Dimensions should be 540X458');
             $('.upload_new_product').reset();
+            $('.save_new_product').removeAttr('style');
+            $('.reset_new_product').removeAttr('style');
+            $('.loading_button').attr('style', 'display:none;');
         }
     })
 })
