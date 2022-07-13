@@ -26,8 +26,8 @@
                         <table class="table mb-0 table-borderless fs--2 border-200 overflow-hidden new_product_table">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
                                     <th>Stock</th>
+                                    <th>Name</th>
                                     <th>Description</th>
                                     <th>Image</th>
                                     <th></th>
@@ -49,6 +49,7 @@
     @include('ecommerce.admin.cms.products.new_product_form')
 </div>
 @endsection
+
 
 
 

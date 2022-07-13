@@ -78,7 +78,7 @@ Route::group(['prefix' => 'cms'], function() {
     Route::get('dashboard', [ContentManagementController::class, 'index'])->name('cms_dashboard');
     Route::get('products', [ContentManagementController::class, 'products'])->name('products');
     Route::post('new_product', [ContentManagementController::class, 'cms_add_new_product'])->name('new_product');
-    Route::get('new_product_list', [ContentManagementController::class, 'new_product_list'])->name('new_product_list');
+    Route::get('/new_product_list', [ContentManagementController::class, 'new_product_list'])->name('new_product_list');
 });
 
 require __DIR__.'/auth.php';

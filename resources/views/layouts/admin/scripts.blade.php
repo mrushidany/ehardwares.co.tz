@@ -375,8 +375,8 @@ $('.new_product_table').DataTable({
         url: "route('new_product_list')",
     },
     columns: [
-        {data: 'name', name: 'name', orderable: true, searchable: true},
         {data: 'stock', name: 'stock', orderable: true, searchable: true},
+        {data: 'name', name: 'name', orderable: true, searchable: true},
         {data: 'decription', name: 'decription', orderable: true, searchable: true},
         {data: 'image', name: 'image', orderable: true, searchable: true},
         {data: 'action', name: 'action', orderable: false, searchable: false },
