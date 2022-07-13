@@ -38,6 +38,7 @@ class ContentManagementController extends Controller
                 'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048|dimensions:width=540,height=458',
             ]);
             $product = HardwareStock::where('id',$request->stock)->first();
+            dd($product);
             $image = new Image();
             if($request->file('image')){
                 $image_path = $request->file('image');
