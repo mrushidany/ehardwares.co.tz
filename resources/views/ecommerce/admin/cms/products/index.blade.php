@@ -50,6 +50,30 @@
 </div>
 @endsection
 
+@section('scripts')
+<script type="application/javascript">
+   let main_datatable = $('.new_product_table').DataTable({
+    serverSide: true,
+    processing: true,
+    lengthMenu: [[10, 25, 50], [10, 25, 50]],
+    ajax: {
+        url: "{{ route('new_product_list') }}",
+    },
+    columns: [
+        {data: 'stock', name: 'stock', orderable: true, searchable: true},
+        {data: 'name', name: 'name', orderable: true, searchable: true},
+        {data: 'description', name: 'description', orderable: true, searchable: true},
+        {data: 'image', name: 'image', orderable: true, searchable: true},
+        {data: 'action', name: 'action', orderable: false, searchable: false },
+    ],
+    language: {
+        zeroRecords: "<div class='alert alert-info' style='background-color: #ccf6e4'>No matching new product(s) found</div>",
+        emptyTable: "<div class='alert alert-info' style='background-color: #ccf6e4'>No new product(s) found</div>"
+    },
+})
+</script>
+@endsection
+
 
 
 
