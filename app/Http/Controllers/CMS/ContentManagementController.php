@@ -65,6 +65,11 @@ class ContentManagementController extends Controller
                                                 ->addColumn('action', function($list){
 
                                                 })
+                                                ->addColumn('image', function($list){
+                                                  $image = '<img src="' . $list->image . '">';
+                                                  return $image;
+                                                })
+                                                ->rawColumns(['action', 'image'])
                                                 ->make(true);
     }
 
