@@ -10,4 +10,9 @@ class Image extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'path'];
+
+    public function hardware_stock()
+    {
+       return $this->belongsTo(HardwareStock::class);
+    }
 }
