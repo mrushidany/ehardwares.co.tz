@@ -38,7 +38,9 @@ class ContentManagementController extends Controller
                 'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048|dimensions:width=540,height=458',
             ]);
             $product = HardwareStock::where('id',$request->stock)->first();
-            dd($product);
+            $product_id = $product->id;
+            $product->status = 'new';
+            $product->update();
             $image = new Image();
             if($request->file('image')){
                 $image_path = $request->file('image');
@@ -47,7 +49,7 @@ class ContentManagementController extends Controller
             }
             $image->name = $product->name;
             $image->path = '/storage/'.$path;
-            $image->stock_id = $product->id;
+            $image->stock_id = $product_id;
             $image->save();
 
             return response()->json(['success' => 'true']);
