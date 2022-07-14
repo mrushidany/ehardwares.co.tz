@@ -60,8 +60,9 @@ class ContentManagementController extends Controller
 
     public function new_product_list()
     {
-        $new_product_list = DB::table('images')
-                            ->leftJoin('hardware_stocks', 'hardware_stocks.id', '=', 'images.stock_id')
+        $new_product_list = DB::table('hardware_stocks')
+                            ->leftJoin('images', 'images.stock_id', '=', 'hardware_stocks.id')
+                            ->where('hardware_stocks.status', 'new')
                             ->select('hardware_stocks.code as stock', 'images.name as name', 'description', 'path as image');
 
                             return DataTables::of($new_product_list)
