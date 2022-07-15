@@ -4,14 +4,20 @@ namespace App\Http\Controllers;
 
 use App\Models\HardwareCategory;
 use App\Models\HardwareStock;
+use App\Models\Image;
 use Illuminate\Support\Facades\DB;
 
 class WebsiteController extends Controller
 {
-
     public function index()
     {
-        return view('ecommerce.website.home');
+        $stock = HardwareStock::where('status', 'new')->get();
+        $images = Image::where(['stock_id', $stock->id])->get();
+        $data = [
+            'product' => $stock,
+            'images' => $images
+        ];
+        return view('ecommerce.website.home')->with($data);
     }
 
     public function contact_us()
@@ -33,6 +39,4 @@ class WebsiteController extends Controller
     {
         return HardwareStock::where('category', $category)->count();
     }
-
-
 }
